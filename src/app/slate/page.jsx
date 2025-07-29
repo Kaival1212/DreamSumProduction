@@ -83,14 +83,15 @@ export default function OnTheSlatePage() {
             id: 5,
             title: "An Irish Heart",
             subtitle: "Romantic Comedy Feature",
-            status: "In Development",
+            status: "Pre-Production",
             image: "/Irish.png", // Replace with actual image
             description: "A romantic comedy exploring themes of love, culture, and connection.",
-            year: "TBA",
+            year: "20226",
             type: "Feature Film",
-            role: "Writer",
+            role: "Writer and Producer",
             achievement: "Part of expanding portfolio"
-        }
+        },
+
     ];
 
     const handleProjectClick = (projectTitle) => {

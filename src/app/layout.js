@@ -137,7 +137,7 @@ export default function RootLayout({ children }) {
               <div>
                 <h3 className="text-xl font-light tracking-[0.1em] mb-4">DREAMSUM PRODUCTIONS</h3>
                 <p className="text-gray-300 font-light mb-4">
-                  Creating meaningful cinema that inspires, informs, and entertains.
+                  Creating meaningful cinema and podcasts that inspire, inform and entertain
                 </p>
                 <p className="text-gray-400 text-sm font-light">Based in London, United Kingdom</p>
               </div>

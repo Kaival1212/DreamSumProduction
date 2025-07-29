@@ -43,11 +43,28 @@ export default function WhoAmIPage() {
             title: "Goodbye Sunshine",
             year: "2024",
             type: "Short Film - Drama",
-            description: "A short film about knife-crime, directed by the very talented filmmaker, cinematographer and editor Ufuk Gokkaya. Nominated for the Cannes Indie Shorts Festival and on IMDb, it's seen through the harrowing prism of a mother's grief.",
+            description: "A short film about knife-crime, written by S.J. Horan and directed by Ufuk Gokkaya. Nominated for the Cannes Indie Shorts Festival and on IMDb, it's seen through the harrowing prism of a mother's grief.",
             status: "Completed & Nominated",
             role: "Writer, Producer, Mostly Funded",
             color: "blue",
             highlight: true
+        },
+
+        //         An Irish Heart - Add to Films Section:
+
+        //  Add film card to "What I have done" films grid
+        //  Role: Writer and Producer
+        //  Status: "In pre-production"
+        //  Include intro text (need to get from Sally)
+        {
+            title: "An Irish Heart",
+            year: "2024",
+            type: "Feature Film - Drama",
+            description: "Maria, an ambitious actress and writer is at a crossroads in her life. Does she marry her long-term boyfriend, Jamie, just as his Nonna wants - or does she role the dice and run off to the bright lights of New York with a free spirited musician, and risk losing everything",
+            status: "In pre-production",
+            role: "Writer, Producer",
+            color: "purple"
+
         },
         {
             title: "Revenge is a Hot Chocolate Fudge Cake",
@@ -128,8 +145,8 @@ export default function WhoAmIPage() {
         {
             title: "Fishermen at Sea",
             year: "2008",
-            venue: "Camden Fringe",
-            description: "Written by S. J. Horan, was produced at the Camden Fringe in August 2008 by Red on Black Productions as a showcase for new writers. One of four Turner Plays, it deals with religion, family tragedy and the impossibility of forgiveness.",
+            venue: "Etcetera Theatre, Camden Fringe",
+            description: "Written by S. J. Horan, was produced at the Etcetera Theatre, Camden Fringe in August 2008 by Red on Black Productions as a showcase for new writers. One of four Turner Plays, it deals with religion, family tragedy and the impossibility of forgiveness.",
             producer: "Red on Black Productions",
             status: "Produced",
             note: "Turner Plays showcase",
@@ -158,17 +175,17 @@ export default function WhoAmIPage() {
         {
             title: "All In The Mind",
             year: "N/A",
-            venue: "Selected by new theatre company",
-            description: "A comedic play written by S. J. Horan was selected by a new theatre company for their inaugural show. Inspired by The Odd Couple, it deals with the perception of relationships. Two people, one relationship - two very different takes.",
-            status: "Selected for inaugural show",
+            venue: "Kent",
+            description: "A comedic play written by S. J. Horan, performed at Kent, chosen by 17% Theatre Company for their inaugural show. Inspired by The Odd Couple, it deals with the perception of relationships. Two people, one relationship - two very different takes.",
+            status: "Produced",
             note: "Comedic play",
             color: "amber"
         },
         {
             title: "Cook It like Mamma",
-            year: "2015",
-            venue: "May 2015",
-            description: "A fifth comedic play, Cook It like Mamma, written by S.J Horan garnered great reviews, May 2015. An unemployed Italian man plots to bring down Berlusconi from his flat in Hounslow. All the while, receiving cheese parcels from his Mamma.",
+            year: "N/A",
+            venue: "London",
+            description: "A fifth comedic play, Cook It like Mamma, written by S.J Horan garnered great reviews, An unemployed Italian man plots to bring down Berlusconi from his flat in Hounslow. All the while, receiving cheese parcels from his Mamma.",
             status: "Great reviews",
             note: "Comedic play",
             color: "orange",
@@ -202,10 +219,10 @@ export default function WhoAmIPage() {
             highlight: true
         },
         {
-            title: "Gavin Loses his Way",
+            title: "Gary Loses his Way",
             year: "2020",
             venue: "Barnes, London",
-            description: "A short, comic Nativity play, Gavin Loses his Way, written by S.J.Horan was to be produced in 2020 as part of the Christmas Cracker Show in Barnes, London. Sadly, the show was cancelled due to Covid. A rather impish take on a former Education Secretary.",
+            description: "A short, comic Nativity play, Gary Loses his Way, written by S.J.Horan was to be produced in 2020 as part of the Christmas Cracker Show in Barnes, London. Sadly, the show was cancelled due to Covid. A rather impish take on a former Education Secretary.",
             status: "Cancelled due to Covid",
             note: "Comic Nativity play",
             color: "pink"
@@ -213,12 +230,10 @@ export default function WhoAmIPage() {
         {
             title: "Dance me to the end",
             year: "2021",
-            venue: "Radio Drama",
+            venue: "London",
             description: "Written by S. J Horan in October 2021, was judged best radio drama. It deals with marriage tensions during Covid and the unhelpful emails from an old French flame.",
             status: "Judged best radio drama",
-            note: "Award winner",
             color: "emerald",
-            highlight: true
         }
     ];
 
@@ -334,7 +349,7 @@ export default function WhoAmIPage() {
                                 transition={{ duration: 0.3 }}
                             >
                                 <img
-                                    src="/Eyesphoto.jpg" // Replace this with your actual image path
+                                    src="/Sallyphoto.jpg" // Replace this with your actual image path
                                     alt="S.J. Horan - Writer, filmmaker and producer"
                                     className="w-full h-full object-cover"
                                 />
@@ -382,7 +397,7 @@ export default function WhoAmIPage() {
                             <div className="space-y-3">
                                 <div>
                                     <p className="font-medium text-gray-800">MA in Creative Writing</p>
-                                    <p className="text-gray-600 italic">(Plays and Scripts) - July 2008</p>
+                                    <p className="text-gray-600 italic">(Plays and Scripts)</p>
                                 </div>
                                 <div>
                                     <p className="font-medium text-gray-800">BSc(Hons)</p>
@@ -397,12 +412,12 @@ export default function WhoAmIPage() {
                             whileHover={{ y: -5 }}
                             transition={{ duration: 0.3 }}
                         >
-                            <h3 className="text-xl font-medium text-blue-700 mb-3">Languages</h3>
+                            <h3 className="text-xl font-medium text-amber-700 mb-3">Languages</h3>
                             <div className="flex flex-wrap gap-2">
-                                {["English", "French", "Spanish", "Italian", "German (some)"].map((lang, index) => (
+                                {["English", "French", "Spanish", "Italian", "German"].map((lang, index) => (
                                     <motion.span
                                         key={lang}
-                                        className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm font-medium"
+                                        className="px-3 py-1 bg-blue-100 text-black rounded-full text-sm font-medium"
                                         initial={{ opacity: 0, scale: 0.8 }}
                                         animate={{ opacity: 1, scale: 1 }}
                                         transition={{ delay: 0.1 * index }}
@@ -442,8 +457,8 @@ export default function WhoAmIPage() {
                                     key={tab.id}
                                     onClick={() => setActiveTab(tab.id)}
                                     className={`px-6 py-2 rounded-md font-medium transition-all duration-200 ${activeTab === tab.id
-                                            ? "bg-amber-600 text-white shadow-md"
-                                            : "text-gray-600 hover:text-gray-800"
+                                        ? "bg-amber-600 text-white shadow-md"
+                                        : "text-gray-600 hover:text-gray-800"
                                         }`}
                                     whileHover={{ scale: 1.05 }}
                                     whileTap={{ scale: 0.95 }}
@@ -476,15 +491,15 @@ export default function WhoAmIPage() {
                                     </div>
 
                                     <div className={`inline-block px-3 py-1 rounded-full text-xs font-medium mb-3 ${film.color === 'blue' ? 'bg-blue-100 text-blue-800' :
-                                            film.color === 'purple' ? 'bg-purple-100 text-purple-800' :
-                                                film.color === 'green' ? 'bg-green-100 text-green-800' :
-                                                    film.color === 'amber' ? 'bg-amber-100 text-amber-800' :
-                                                        film.color === 'pink' ? 'bg-pink-100 text-pink-800' :
-                                                            film.color === 'red' ? 'bg-red-100 text-red-800' :
-                                                                film.color === 'teal' ? 'bg-teal-100 text-teal-800' :
-                                                                    film.color === 'indigo' ? 'bg-indigo-100 text-indigo-800' :
-                                                                        film.color === 'orange' ? 'bg-orange-100 text-orange-800' :
-                                                                            'bg-gray-100 text-gray-800'
+                                        film.color === 'purple' ? 'bg-purple-100 text-purple-800' :
+                                            film.color === 'green' ? 'bg-green-100 text-green-800' :
+                                                film.color === 'amber' ? 'bg-amber-100 text-amber-800' :
+                                                    film.color === 'pink' ? 'bg-pink-100 text-pink-800' :
+                                                        film.color === 'red' ? 'bg-red-100 text-red-800' :
+                                                            film.color === 'teal' ? 'bg-teal-100 text-teal-800' :
+                                                                film.color === 'indigo' ? 'bg-indigo-100 text-indigo-800' :
+                                                                    film.color === 'orange' ? 'bg-orange-100 text-orange-800' :
+                                                                        'bg-gray-100 text-gray-800'
                                         }`}>
                                         {film.type}
                                     </div>
@@ -494,8 +509,8 @@ export default function WhoAmIPage() {
                                     <div className="space-y-2">
                                         <p className="text-xs font-medium text-gray-500">Role: {film.role}</p>
                                         <p className={`text-xs font-medium ${film.status.includes('Seeking') ? 'text-orange-600' :
-                                                film.status.includes('Nominated') || film.status.includes('Finalist') ? 'text-green-600 font-semibold' :
-                                                    'text-green-600'
+                                            film.status.includes('Nominated') || film.status.includes('Finalist') ? 'text-green-600 font-semibold' :
+                                                'text-green-600'
                                             }`}>
                                             {film.status}
                                         </p>
@@ -546,16 +561,16 @@ export default function WhoAmIPage() {
                                     </div>
 
                                     <div className={`inline-block px-3 py-1 rounded-full text-xs font-medium mb-3 ${play.color === 'blue' ? 'bg-blue-100 text-blue-800' :
-                                            play.color === 'purple' ? 'bg-purple-100 text-purple-800' :
-                                                play.color === 'green' ? 'bg-green-100 text-green-800' :
-                                                    play.color === 'amber' ? 'bg-amber-100 text-amber-800' :
-                                                        play.color === 'orange' ? 'bg-orange-100 text-orange-800' :
-                                                            play.color === 'red' ? 'bg-red-100 text-red-800' :
-                                                                play.color === 'teal' ? 'bg-teal-100 text-teal-800' :
-                                                                    play.color === 'indigo' ? 'bg-indigo-100 text-indigo-800' :
-                                                                        play.color === 'pink' ? 'bg-pink-100 text-pink-800' :
-                                                                            play.color === 'emerald' ? 'bg-emerald-100 text-emerald-800' :
-                                                                                'bg-gray-100 text-gray-800'
+                                        play.color === 'purple' ? 'bg-purple-100 text-purple-800' :
+                                            play.color === 'green' ? 'bg-green-100 text-green-800' :
+                                                play.color === 'amber' ? 'bg-amber-100 text-amber-800' :
+                                                    play.color === 'orange' ? 'bg-orange-100 text-orange-800' :
+                                                        play.color === 'red' ? 'bg-red-100 text-red-800' :
+                                                            play.color === 'teal' ? 'bg-teal-100 text-teal-800' :
+                                                                play.color === 'indigo' ? 'bg-indigo-100 text-indigo-800' :
+                                                                    play.color === 'pink' ? 'bg-pink-100 text-pink-800' :
+                                                                        play.color === 'emerald' ? 'bg-emerald-100 text-emerald-800' :
+                                                                            'bg-gray-100 text-gray-800'
                                         }`}>
                                         {play.note || 'Play'}
                                     </div>
@@ -576,21 +591,21 @@ export default function WhoAmIPage() {
                                             <p className="text-xs font-medium text-gray-500">Role: {play.role}</p>
                                         )}
                                         <p className={`text-xs font-medium ${play.status.includes('waiting') || play.status.includes('Cancelled') ? 'text-orange-600' :
-                                                play.status.includes('best') || play.status.includes('favourably') || play.status.includes('Great') ? 'text-green-600 font-semibold' :
-                                                    'text-green-600'
+                                            play.status.includes('best') || play.status.includes('favourably') || play.status.includes('Great') ? 'text-green-600 font-semibold' :
+                                                'text-green-600'
                                             }`}>
                                             {play.status}
                                         </p>
                                     </div>
 
                                     {/* Special badges for notable achievements */}
-                                    {play.status.includes('best radio drama') && (
+                                    {/* {play.status.includes('best radio drama') && (
                                         <div className="mt-3 inline-block">
                                             <span className="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-yellow-100 text-yellow-800">
                                                 🏆 Award Winner
                                             </span>
                                         </div>
-                                    )}
+                                    )} */}
 
                                     {play.status.includes('favourably reviewed') && (
                                         <div className="mt-3 inline-block">
