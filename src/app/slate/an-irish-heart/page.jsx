@@ -106,7 +106,7 @@ export default function SpellInGreecePage() {
                         {/* Status Badge */}
                         <motion.div className="mt-6 text-center" variants={fadeInUp}>
                             <span className="px-4 py-2 rounded-full text-sm font-medium bg-blue-100 text-blue-800 border border-blue-200">
-                                Seeking Funding
+                                Pre-Production
                             </span>
                         </motion.div>
                     </motion.div>
@@ -144,7 +144,7 @@ export default function SpellInGreecePage() {
                                 </p>
 
                                 <p>
-                                    An Irish Heart  is an original, funny and feel-good, film.
+                                    An Irish Heart is an original, funny and feel-good, film.
                                 </p>
 
 
@@ -198,7 +198,7 @@ export default function SpellInGreecePage() {
                                 To sum up...
                             </h2>
                             <p className="text-gray-700 leading-relaxed">
-                                <em className="italic">An Irish Heart</em>
+                                <em className="italic">An Irish Heart </em>
                                 is a funny and romantic story about finding out who we really are, before it’s too late.
                             </p>
                         </motion.div>

@@ -45,7 +45,7 @@ export default function WhoAmIPage() {
             type: "Short Film - Drama",
             description: "A short film about knife-crime, written by S.J. Horan and directed by Ufuk Gokkaya. Nominated for the Cannes Indie Shorts Festival and on IMDb, it's seen through the harrowing prism of a mother's grief.",
             status: "Completed & Nominated",
-            role: "Writer, Producer, Mostly Funded",
+            role: "Writer, Producer",
             color: "blue",
             highlight: true
         },
@@ -58,7 +58,7 @@ export default function WhoAmIPage() {
         //  Include intro text (need to get from Sally)
         {
             title: "An Irish Heart",
-            year: "2024",
+            year: "2025 ",
             type: "Feature Film - Drama",
             description: "Maria, an ambitious actress and writer is at a crossroads in her life. Does she marry her long-term boyfriend, Jamie, just as his Nonna wants - or does she role the dice and run off to the bright lights of New York with a free spirited musician, and risk losing everything",
             status: "In pre-production",
@@ -186,7 +186,7 @@ export default function WhoAmIPage() {
             year: "N/A",
             venue: "London",
             description: "A fifth comedic play, Cook It like Mamma, written by S.J Horan garnered great reviews, An unemployed Italian man plots to bring down Berlusconi from his flat in Hounslow. All the while, receiving cheese parcels from his Mamma.",
-            status: "Great reviews",
+            status: "Produced   ",
             note: "Comedic play",
             color: "orange",
             highlight: true

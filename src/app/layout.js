@@ -168,7 +168,7 @@ export default function RootLayout({ children }) {
             </div>
 
             <div className="border-t border-gray-800 mt-12 pt-8 text-center">
-              <p className="text-gray-400 text-sm font-light">© 2024 Dreamsum Productions. All rights reserved.</p>
+              <p className="text-gray-400 text-sm font-light">© 2025 Dreamsum Productions. All rights reserved.</p>
             </div>
           </div>
         </footer>

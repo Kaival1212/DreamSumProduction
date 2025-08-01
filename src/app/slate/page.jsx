@@ -86,7 +86,7 @@ export default function OnTheSlatePage() {
             status: "Pre-Production",
             image: "/Irish.png", // Replace with actual image
             description: "A romantic comedy exploring themes of love, culture, and connection.",
-            year: "20226",
+            year: "2026",
             type: "Feature Film",
             role: "Writer and Producer",
             achievement: "Part of expanding portfolio"
@@ -252,7 +252,7 @@ export default function OnTheSlatePage() {
 
                                 <div className="space-y-2 text-xs text-gray-500">
                                     <div className="flex justify-between">
-                                        <span>Year:</span>
+                                        <span>Year to be filmed:</span>
                                         <span className="font-medium">{project.year}</span>
                                     </div>
                                     <div className="flex justify-between">
