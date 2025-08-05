@@ -167,7 +167,7 @@ export default function SpellInGreecePage() {
                                     Saffron's efforts are thwarted at every turn and things only get worse
                                     when Peaches invites Alexis, her mother and Hugh's ex, to the retreat.
                                     Alexis hops into Hugh's bed, hoping for er... a friendly
-                                    <em className="italic">reunion</em>... Misunderstandings abound. And Saffron's ready to hold up
+                                    <em className="italic"> reunion</em>... Misunderstandings abound. And Saffron's ready to hold up
                                     the white flag, when things swing back in her favour: mortified by
                                     Saffron's words, Peaches goes missing off the Aegean in the dead of
                                     night. It's all hands to the deck as the owner of the retreat,

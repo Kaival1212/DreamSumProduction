@@ -49,22 +49,14 @@ export default function WhoAmIPage() {
             color: "blue",
             highlight: true
         },
-
-        //         An Irish Heart - Add to Films Section:
-
-        //  Add film card to "What I have done" films grid
-        //  Role: Writer and Producer
-        //  Status: "In pre-production"
-        //  Include intro text (need to get from Sally)
         {
             title: "An Irish Heart",
-            year: "2025 ",
+            year: "2025",
             type: "Feature Film - Drama",
             description: "Maria, an ambitious actress and writer is at a crossroads in her life. Does she marry her long-term boyfriend, Jamie, just as his Nonna wants - or does she role the dice and run off to the bright lights of New York with a free spirited musician, and risk losing everything",
             status: "In pre-production",
             role: "Writer, Producer",
             color: "purple"
-
         },
         {
             title: "Revenge is a Hot Chocolate Fudge Cake",
@@ -146,7 +138,7 @@ export default function WhoAmIPage() {
             title: "Fishermen at Sea",
             year: "2008",
             venue: "Etcetera Theatre, Camden Fringe",
-            description: "Written by S. J. Horan, was produced at the Etcetera Theatre, Camden Fringe in August 2008 by Red on Black Productions as a showcase for new writers. One of four Turner Plays, it deals with religion, family tragedy and the impossibility of forgiveness.",
+            description: "Fishermen at Sea, written by S. J. Horan, was produced at the Etcetera Theatre, Camden Fringe in August 2008 by Red on Black Productions as a showcase for new writers. One of four Turner Plays, it deals with religion, family tragedy and the impossibility of forgiveness.",
             producer: "Red on Black Productions",
             status: "Produced",
             note: "Turner Plays showcase",
@@ -156,7 +148,7 @@ export default function WhoAmIPage() {
             title: "All or Nothing",
             year: "2009",
             venue: "Caldercott Bookshop Theatre",
-            description: "October 2009, written by S. J. Horan, directed by Lucy Collingwood (BBC), was produced by Ziella Bryers at the Caldercott Bookshop Theatre, as part of the Love Bites series. Just in time, a love-struck man realises how superficial his girlfriend is and escapes her clutches.",
+            description: "All or Nothing, October 2009, written by S. J. Horan, directed by Lucy Collingwood (BBC), was produced by Ziella Bryers at the Caldercott Bookshop Theatre, as part of the Love Bites series. Just in time, a love-struck man realises how superficial his girlfriend is and escapes her clutches.",
             producer: "Ziella Bryers",
             director: "Lucy Collingwood (BBC)",
             status: "Produced",
@@ -167,7 +159,7 @@ export default function WhoAmIPage() {
             title: "Family Holiday",
             year: "2010",
             venue: "Cockpit Theatre, Marylebone, London",
-            description: "May 2010, was written, directed and produced by S. J. Horan, at the Cockpit Theatre, Marylebone, London. This play deals with deep family tensions and long-held resentments.",
+            description: "Family Holiday, May 2010, was written, directed and produced by S. J. Horan, at the Cockpit Theatre, Marylebone, London. This play deals with deep family tensions and long-held resentments.",
             role: "Writer, Director, Producer",
             status: "Produced",
             color: "green"
@@ -176,7 +168,7 @@ export default function WhoAmIPage() {
             title: "All In The Mind",
             year: "N/A",
             venue: "Kent",
-            description: "A comedic play written by S. J. Horan, performed at Kent, chosen by 17% Theatre Company for their inaugural show. Inspired by The Odd Couple, it deals with the perception of relationships. Two people, one relationship - two very different takes.",
+            description: "All In The Mind, a comedic play written by S. J. Horan, was chosen by 17% Theatre Company for their inaugural show. Inspired by The Odd Couple, it deals with the perception of relationships. Two people, one relationship - two very different takes.",
             status: "Produced",
             note: "Comedic play",
             color: "amber"
@@ -185,8 +177,8 @@ export default function WhoAmIPage() {
             title: "Cook It like Mamma",
             year: "N/A",
             venue: "London",
-            description: "A fifth comedic play, Cook It like Mamma, written by S.J Horan garnered great reviews, An unemployed Italian man plots to bring down Berlusconi from his flat in Hounslow. All the while, receiving cheese parcels from his Mamma.",
-            status: "Produced   ",
+            description: "A fifth comedic play, <i>Cook It like Mamma</i>, written by S.J Horan garnered great reviews, An unemployed Italian man plots to bring down Berlusconi from his flat in Hounslow. All the while, receiving cheese parcels from his Mamma.",
+            status: "Produced",
             note: "Comedic play",
             color: "orange",
             highlight: true
@@ -195,7 +187,7 @@ export default function WhoAmIPage() {
             title: "A Life in Ruins",
             year: "2014",
             venue: "London",
-            description: "The second part of S. J. Horan's Irish trilogy, was produced in London, August 2014. This play deals with the devastating effects of rape.",
+            description: "<i>A Life in Ruins</i>, the second part of S. J. Horan's Irish trilogy, was produced in London, August 2014. This play deals with the devastating effects of rape.",
             status: "Produced",
             note: "Part of Irish trilogy",
             color: "red"
@@ -204,7 +196,7 @@ export default function WhoAmIPage() {
             title: "All That Glitters",
             year: "2015",
             venue: "Kent",
-            description: "Written by S. J. was performed in Kent, August 2015 and produced by 17% Theatre Company. This play deals with the illusion that the grass is always greener.",
+            description: "<i>All That Glitters</i>, written by S. J. was performed in Kent, August 2015 and produced by 17% Theatre Company. This play deals with the illusion that the grass is always greener.",
             producer: "17% Theatre Company",
             status: "Produced",
             color: "teal"
@@ -213,7 +205,7 @@ export default function WhoAmIPage() {
             title: "Ménage à quatre",
             year: "2016",
             venue: "N/A",
-            description: "Written by S. J. Horan, 2016, is about the feminist writer Simone de Beauvoir and her strange love affair with the existentialist, Jean Paul Sartre - very favourably reviewed, waiting production.",
+            description: "<i>Ménage à quatre</i>, written by S. J. Horan, 2016, is about the feminist writer Simone de Beauvoir and her strange love affair with the existentialist, Jean Paul Sartre - very favourably reviewed, waiting production.",
             status: "Very favourably reviewed, waiting production",
             color: "indigo",
             highlight: true
@@ -222,16 +214,16 @@ export default function WhoAmIPage() {
             title: "Gary Loses his Way",
             year: "2020",
             venue: "Barnes, London",
-            description: "A short, comic Nativity play, Gary Loses his Way, written by S.J.Horan was to be produced in 2020 as part of the Christmas Cracker Show in Barnes, London. Sadly, the show was cancelled due to Covid. A rather impish take on a former Education Secretary.",
+            description: "A short, comic Nativity play, <i>Gary Loses his Way</i>, written by S.J.Horan was to be produced in 2020 as part of the Christmas Cracker Show in Barnes, London. Sadly, the show was cancelled due to Covid. A rather impish take on a former Education Secretary.",
             status: "Cancelled due to Covid",
             note: "Comic Nativity play",
             color: "pink"
         },
         {
-            title: "Dance me to the end",
+            title: "Dance Me To The End",
             year: "2021",
             venue: "London",
-            description: "Written by S. J Horan in October 2021, was judged best radio drama. It deals with marriage tensions during Covid and the unhelpful emails from an old French flame.",
+            description: "A radio play, <i>Dance Me To The End</i>, written by S. J. Horan in October 2021 was judged best radio drama. It deals with marriage tensions during Covid and the unhelpful emails from an old French flame.",
             status: "Judged best radio drama",
             color: "emerald",
         }
@@ -349,7 +341,7 @@ export default function WhoAmIPage() {
                                 transition={{ duration: 0.3 }}
                             >
                                 <img
-                                    src="/Sallyphoto.jpg" // Replace this with your actual image path
+                                    src="/Sallyphoto.jpg"
                                     alt="S.J. Horan - Writer, filmmaker and producer"
                                     className="w-full h-full object-cover"
                                 />
@@ -575,7 +567,7 @@ export default function WhoAmIPage() {
                                         {play.note || 'Play'}
                                     </div>
 
-                                    <p className="text-gray-600 text-sm mb-4 leading-relaxed">{play.description}</p>
+                                    <p className="text-gray-600 text-sm mb-4 leading-relaxed" dangerouslySetInnerHTML={{ __html: play.description }}></p>
 
                                     <div className="space-y-2">
                                         {play.venue && (
@@ -599,14 +591,6 @@ export default function WhoAmIPage() {
                                     </div>
 
                                     {/* Special badges for notable achievements */}
-                                    {/* {play.status.includes('best radio drama') && (
-                                        <div className="mt-3 inline-block">
-                                            <span className="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-yellow-100 text-yellow-800">
-                                                🏆 Award Winner
-                                            </span>
-                                        </div>
-                                    )} */}
-
                                     {play.status.includes('favourably reviewed') && (
                                         <div className="mt-3 inline-block">
                                             <span className="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-purple-100 text-purple-800">

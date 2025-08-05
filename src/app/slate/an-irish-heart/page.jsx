@@ -136,7 +136,7 @@ export default function SpellInGreecePage() {
                             </h2>
                             <div className="text-gray-700 leading-relaxed space-y-4">
                                 <p>
-                                    When Maria’s fiancé Jamie has to visit his grandmother in Italy, Maria’s hitherto life- map is thrown into chaos. A knock on the door and Freddie, a handsome musician turns up, looking for his old friend Jamie. Bored on her own, Maria lets him in and sparks are soon set off. Freddie’s a natural flirt and tells her she’s too good for Jamie.
+                                    When Maria’s fiancé Jamie has to visit his grandmother in Italy, Maria’s hitherto well-planned life map is thrown into chaos. A knock on the door and Freddie, a handsome musician turns up, looking for his old friend Jamie. Bored on her own, Maria lets him in and sparks are soon set off. Freddie’s a natural flirt and tells her she’s too good for Jamie.
                                 </p>
 
                                 <p>
