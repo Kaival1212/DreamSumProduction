@@ -138,7 +138,7 @@ export default function WhoAmIPage() {
             title: "Fishermen at Sea",
             year: "2008",
             venue: "Etcetera Theatre, Camden Fringe",
-            description: "Fishermen at Sea, written by S. J. Horan, was produced at the Etcetera Theatre, Camden Fringe in August 2008 by Red on Black Productions as a showcase for new writers. One of four Turner Plays, it deals with religion, family tragedy and the impossibility of forgiveness.",
+            description: "<i>Fishermen at Sea</i>, written by S. J. Horan, was produced at the Etcetera Theatre, Camden Fringe in August 2008 by Red on Black Productions as a showcase for new writers. One of four Turner Plays, it deals with religion, family tragedy and the impossibility of forgiveness.",
             producer: "Red on Black Productions",
             status: "Produced",
             note: "Turner Plays showcase",
@@ -148,7 +148,7 @@ export default function WhoAmIPage() {
             title: "All or Nothing",
             year: "2009",
             venue: "Caldercott Bookshop Theatre",
-            description: "All or Nothing, October 2009, written by S. J. Horan, directed by Lucy Collingwood (BBC), was produced by Ziella Bryers at the Caldercott Bookshop Theatre, as part of the Love Bites series. Just in time, a love-struck man realises how superficial his girlfriend is and escapes her clutches.",
+            description: "<i>All or Nothing</i>, October 2009, written by S. J. Horan, directed by Lucy Collingwood (BBC), was produced by Ziella Bryers at the Caldercott Bookshop Theatre, as part of the Love Bites series. Just in time, a love-struck man realises how superficial his girlfriend is and escapes her clutches.",
             producer: "Ziella Bryers",
             director: "Lucy Collingwood (BBC)",
             status: "Produced",
@@ -159,7 +159,7 @@ export default function WhoAmIPage() {
             title: "Family Holiday",
             year: "2010",
             venue: "Cockpit Theatre, Marylebone, London",
-            description: "Family Holiday, May 2010, was written, directed and produced by S. J. Horan, at the Cockpit Theatre, Marylebone, London. This play deals with deep family tensions and long-held resentments.",
+            description: "<i>Family Holiday</i>, May 2010, was written, directed and produced by S. J. Horan, at the Cockpit Theatre, Marylebone, London. This play deals with deep family tensions and long-held resentments.",
             role: "Writer, Director, Producer",
             status: "Produced",
             color: "green"
@@ -168,7 +168,7 @@ export default function WhoAmIPage() {
             title: "All In The Mind",
             year: "N/A",
             venue: "Kent",
-            description: "All In The Mind, a comedic play written by S. J. Horan, was chosen by 17% Theatre Company for their inaugural show. Inspired by The Odd Couple, it deals with the perception of relationships. Two people, one relationship - two very different takes.",
+            description: "<i>All In The Mind</i>, a comedic play written by S. J. Horan, was chosen by 17% Theatre Company for their inaugural show. Inspired by The Odd Couple, it deals with the perception of relationships. Two people, one relationship - two very different takes.",
             status: "Produced",
             note: "Comedic play",
             color: "amber"
@@ -324,7 +324,7 @@ export default function WhoAmIPage() {
                             className="text-4xl md:text-5xl font-light text-gray-800 mb-6 tracking-wide"
                             style={{ fontFamily: 'serif' }}
                         >
-                            S.J. Horan
+                            S.J.Horan
                         </motion.h1>
                         <motion.p className="text-xl md:text-2xl text-gray-600 font-light">
                             London-based writer, filmmaker and producer
