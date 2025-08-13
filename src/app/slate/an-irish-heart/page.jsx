@@ -108,14 +108,6 @@ export default function AnIrishHeartPage() {
                         <motion.div className="w-32 h-1 bg-blue-500 mx-auto rounded-full mb-8" />
                     </header>
 
-                    <nav className="mb-12 text-center">
-                        <ul className="flex flex-wrap justify-center gap-4 text-gray-700">
-                            <li><a href="/city-in-flames" className="hover:underline">City in Flames</a></li>
-                            <li><a href="/goodbye-sunshine" className="hover:underline">Goodbye Sunshine</a></li>
-                            <li><a href="/spell-in-greece" className="hover:underline">A Spell in Greece</a></li>
-                            <li><a href="/suppers-off" className="hover:underline">Supper's Off</a></li>
-                        </ul>
-                    </nav>
 
                     <section className="grid xl:grid-cols-2 gap-16 items-start" variants={staggerContainer}>
                         <motion.article variants={fadeInUp}>
