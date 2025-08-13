@@ -387,6 +387,74 @@ export default function Home() {
 
   return (
     <>
+
+      <Head>
+        <title>Dreamsum Productions - London Film Production</title>
+        <meta name="description" content="Dreamsum Productions, a London-based film company by S.J. Horan, creates award-nominated films like Goodbye Sunshine and Supper's Off. Invest or donate today!" />
+        <meta name="keywords" content="Dreamsum Productions, London film production, S.J. Horan, independent film investment, Goodbye Sunshine, Supper's Off, City in Flames" />
+        <meta name="robots" content="index, follow" />
+        <meta property="og:title" content="Dreamsum Productions - London Film Production" />
+        <meta property="og:description" content="Discover Dreamsum Productions, a London-based film company led by S.J. Horan, producing films like Goodbye Sunshine and Supper's Off. Support our mission!" />
+        <meta property="og:image" content="/logo.png" />
+        <meta property="og:url" content="https://www.dreamsumproductions.co.uk/" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              "name": "Dreamsum Productions",
+              "url": "https://www.dreamsumproductions.co.uk",
+              "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "London",
+                "addressCountry": "UK"
+              },
+              "description": "Dreamsum Productions is a London-based film production company led by S.J. Horan, creating award-nominated films and podcasts to inspire, inform, and entertain.",
+              "logo": "https://www.dreamsumproductions.co.uk/logo.png",
+              "contactPoint": {
+                "@type": "ContactPoint",
+                "contactType": "Customer Service",
+                "email": "contact@dreamsumproductions.co.uk"
+              },
+              "founder": {
+                "@type": "Person",
+                "name": "S.J. Horan",
+                "jobTitle": "Writer, Producer, Filmmaker",
+                "url": "https://www.dreamsumproductions.co.uk/who-am-i"
+              },
+              "makesOffer": [
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "CreativeWork",
+                    "name": "Goodbye Sunshine",
+                    "description": "A Cannes-nominated short film about knife-crime."
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "CreativeWork",
+                    "name": "Supper's Off",
+                    "description": "A romantic comedy feature film seeking development funding."
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "CreativeWork",
+                    "name": "City in Flames",
+                    "description": "A historical drama feature film about the 1922 Smyrna crisis."
+                  }
+                }
+              ]
+            })
+          }}
+        />
+      </Head>
+
       <style jsx global>{`
         @keyframes marquee {
           0% { transform: translate3d(100%, 0, 0); }

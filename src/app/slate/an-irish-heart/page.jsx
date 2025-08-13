@@ -38,7 +38,7 @@ export default function AnIrishHeartPage() {
                 <meta property="og:title" content="An Irish Heart - Romantic Comedy Film" />
                 <meta property="og:description" content="A feel-good romantic comedy set in Ireland, exploring love and life choices. In pre-production." />
                 <meta property="og:image" content="/Irish.png" />
-                <meta property="og:url" content="https://yourdomain.com/an-irish-heart" />
+                <meta property="og:url" content="https://www.dreamsumproductions.co.uk/slate/an-irish-heart" />
                 <meta name="twitter:card" content="summary_large_image" />
                 <script
                     type="application/ld+json"
@@ -52,7 +52,7 @@ export default function AnIrishHeartPage() {
                             "inLanguage": "en",
                             "productionCompany": {
                                 "@type": "Organization",
-                                "name": "Your Production Company"
+                                "name": "Dreamsum Productions"
                             }
                         })
                     }}

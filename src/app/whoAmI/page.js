@@ -268,389 +268,445 @@ export default function WhoAmIPage() {
     ];
 
     return (
-        <div className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100">
-            <div className="absolute inset-0 overflow-hidden">
-                <motion.div
-                    className="absolute top-1/4 left-1/6 w-96 h-96 bg-amber-200/20 rounded-full blur-3xl"
-                    animate={{
-                        scale: [1, 1.2, 1],
-                        opacity: [0.3, 0.5, 0.3],
+        <>
+            <Head>
+                <title>S.J. Horan - London Filmmaker & Screenwriter</title>
+                <meta name="description" content="S.J. Horan, a London-based filmmaker, screenwriter, and producer, known for award-nominated films like Goodbye Sunshine and romantic comedies like Supper's Off." />
+                <meta name="keywords" content="S.J. Horan, London filmmaker, screenwriter, romantic comedy writer, Goodbye Sunshine, Supper's Off, City in Flames" />
+                <meta name="robots" content="index, follow" />
+                <meta property="og:title" content="S.J. Horan - London Filmmaker & Screenwriter" />
+                <meta property="og:description" content="Explore the portfolio of S.J. Horan, a London-based filmmaker and screenwriter, featuring award-nominated films and plays." />
+                <meta property="og:image" content="/Sallyphoto.jpg" />
+                <meta property="og:url" content="https://www.dreamsumproductions.co.uk/whoAmI" />
+                <meta name="twitter:card" content="summary_large_image" />
+                <script
+                    type="application/ld+json"
+                    dangerouslySetInnerHTML={{
+                        __html: JSON.stringify({
+                            "@context": "https://schema.org",
+                            "@type": "Person",
+                            "name": "S.J. Horan",
+                            "jobTitle": "Filmmaker, Screenwriter, Producer",
+                            "address": {
+                                "@type": "PostalAddress",
+                                "addressLocality": "London",
+                                "addressCountry": "UK"
+                            },
+                            "knowsLanguage": ["English", "French", "Spanish", "Italian", "German"],
+                            "hasOccupation": {
+                                "@type": "Occupation",
+                                "name": "Filmmaker and Screenwriter",
+                                "description": "London-based writer, filmmaker, and producer known for films like Goodbye Sunshine and Supper's Off."
+                            },
+                            "worksFor": {
+                                "@type": "Organization",
+                                "name": "Dreamsum Productions"
+                            },
+                            "author": [
+                                {
+                                    "@type": "CreativeWork",
+                                    "name": "Goodbye Sunshine",
+                                    "description": "A short film about knife-crime, nominated for the Cannes Indie Shorts Festival."
+                                },
+                                {
+                                    "@type": "CreativeWork",
+                                    "name": "Supper's Off",
+                                    "description": "A romantic comedy feature film, seeking development funding."
+                                },
+                                {
+                                    "@type": "CreativeWork",
+                                    "name": "City in Flames",
+                                    "description": "A historical drama feature film about the 1922 Smyrna crisis."
+                                }
+                            ]
+                        })
                     }}
-                    transition={{ duration: 12, repeat: Infinity }}
                 />
+            </Head>
+            <div className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100">
+                <div className="absolute inset-0 overflow-hidden">
+                    <motion.div
+                        className="absolute top-1/4 left-1/6 w-96 h-96 bg-amber-200/20 rounded-full blur-3xl"
+                        animate={{
+                            scale: [1, 1.2, 1],
+                            opacity: [0.3, 0.5, 0.3],
+                        }}
+                        transition={{ duration: 12, repeat: Infinity }}
+                    />
+                    <motion.div
+                        className="absolute bottom-1/3 right-1/6 w-80 h-80 bg-blue-200/20 rounded-full blur-3xl"
+                        animate={{
+                            scale: [1.2, 1, 1.2],
+                            opacity: [0.2, 0.4, 0.2],
+                        }}
+                        transition={{ duration: 10, repeat: Infinity, delay: 3 }}
+                    />
+                </div>
+
                 <motion.div
-                    className="absolute bottom-1/3 right-1/6 w-80 h-80 bg-blue-200/20 rounded-full blur-3xl"
-                    animate={{
-                        scale: [1.2, 1, 1.2],
-                        opacity: [0.2, 0.4, 0.2],
-                    }}
-                    transition={{ duration: 10, repeat: Infinity, delay: 3 }}
-                />
-            </div>
-
-            <motion.div
-                className="bg-black text-white py-5 overflow-hidden relative"
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ duration: 1 }}
-            >
-                <div className="absolute left-0 top-0 bottom-0 w-24 bg-gradient-to-r from-black to-transparent z-10" />
-                <div className="absolute right-0 top-0 bottom-0 w-24 bg-gradient-to-l from-black to-transparent z-10" />
-
-                <motion.div
-                    className="whitespace-nowrap"
-                    animate={{ x: [1200, -1200] }}
-                    transition={{ duration: 25, repeat: Infinity, ease: "linear" }}
+                    className="bg-black text-white py-5 overflow-hidden relative"
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ duration: 1 }}
                 >
-                    <span className="text-2xl xl:text-3xl font-light tracking-[0.4em] px-10">
-                        Who I am • Who I am • Who I am • Who I am • Who I am • Who I am • Who I am • Who I am •
-                    </span>
-                </motion.div>
-            </motion.div>
-
-            <div className="relative z-10 max-w-8xl mx-auto px-6 xl:px-12 py-24">
-                <motion.section
-                    ref={introRef}
-                    className="mb-20"
-                    initial="hidden"
-                    animate={introInView ? "visible" : "hidden"}
-                    variants={staggerContainer}
-                >
-                    <motion.div className="text-center mb-16" variants={fadeInUp}>
-                        <motion.h1
-                            className="text-5xl xl:text-6xl font-light text-gray-800 mb-8 tracking-wide"
-                            style={{ fontFamily: 'serif' }}
-                        >
-                            S.J.Horan
-                        </motion.h1>
-                        <motion.p className="text-2xl xl:text-3xl text-gray-600 font-light">
-                            London-based writer, filmmaker and producer
-                        </motion.p>
-
-                        <motion.div
-                            className="mt-12 flex justify-center"
-                            variants={fadeInUp}
-                        >
-                            <motion.div
-                                className="relative w-64 h-64 xl:w-80 xl:h-80 rounded-full overflow-hidden shadow-2xl border-4 border-white/50"
-                                whileHover={{ scale: 1.05 }}
-                                transition={{ duration: 0.3 }}
-                            >
-                                <img
-                                    src="/Sallyphoto.jpg"
-                                    alt="S.J. Horan - Writer, filmmaker and producer"
-                                    className="w-full h-full object-cover"
-                                />
-                            </motion.div>
-                        </motion.div>
-                    </motion.div>
+                    <div className="absolute left-0 top-0 bottom-0 w-24 bg-gradient-to-r from-black to-transparent z-10" />
+                    <div className="absolute right-0 top-0 bottom-0 w-24 bg-gradient-to-l from-black to-transparent z-10" />
 
                     <motion.div
-                        className="bg-white/70 backdrop-blur-sm rounded-2xl shadow-xl border border-white/30 p-10 xl:p-12 max-w-5xl mx-auto"
-                        variants={fadeInUp}
+                        className="whitespace-nowrap"
+                        animate={{ x: [1200, -1200] }}
+                        transition={{ duration: 25, repeat: Infinity, ease: "linear" }}
                     >
-                        <motion.p
-                            className="text-xl xl:text-2xl leading-relaxed text-gray-700 font-light mb-6"
-                            variants={fadeInUp}
-                        >
-                            My name is S. J. Horan. I am a London-based writer, filmmaker and producer.
-                        </motion.p>
+                        <span className="text-2xl xl:text-3xl font-light tracking-[0.4em] px-10">
+                            Who I am • Who I am • Who I am • Who I am • Who I am • Who I am • Who I am • Who I am •
+                        </span>
                     </motion.div>
-                </motion.section>
+                </motion.div>
 
-                <motion.section
-                    ref={educationRef}
-                    className="mb-20"
-                    initial="hidden"
-                    animate={educationInView ? "visible" : "hidden"}
-                    variants={staggerContainer}
-                >
-                    <motion.h2
-                        className="text-4xl xl:text-5xl font-light text-gray-800 mb-10 text-center tracking-wide"
-                        style={{ fontFamily: 'serif' }}
-                        variants={fadeInUp}
+                <div className="relative z-10 max-w-8xl mx-auto px-6 xl:px-12 py-24">
+                    <motion.section
+                        ref={introRef}
+                        className="mb-20"
+                        initial="hidden"
+                        animate={introInView ? "visible" : "hidden"}
+                        variants={staggerContainer}
                     >
-                        Education & Languages
-                    </motion.h2>
+                        <motion.div className="text-center mb-16" variants={fadeInUp}>
+                            <motion.h1
+                                className="text-5xl xl:text-6xl font-light text-gray-800 mb-8 tracking-wide"
+                                style={{ fontFamily: 'serif' }}
+                            >
+                                S.J.Horan
+                            </motion.h1>
+                            <motion.p className="text-2xl xl:text-3xl text-gray-600 font-light">
+                                London-based writer, filmmaker and producer
+                            </motion.p>
 
-                    <div className="grid xl:grid-cols-2 gap-10">
-                        <motion.div
-                            className="bg-white/70 backdrop-blur-sm rounded-xl shadow-lg border border-white/30 p-8 xl:p-10"
-                            variants={fadeInUp}
-                            whileHover={{ y: -5 }}
-                            transition={{ duration: 0.3 }}
-                        >
-                            <h3 className="text-2xl font-medium text-amber-700 mb-4">Education</h3>
-                            <div className="space-y-4">
-                                <div>
-                                    <p className="font-medium text-gray-800 text-lg">MA in Creative Writing</p>
-                                    <p className="text-gray-600 italic text-base">Plays and Scripts</p>
-                                </div>
-                                <div>
-                                    <p className="font-medium text-gray-800 text-lg">BSc(Hons)</p>
-                                    <p className="text-gray-600 italic text-base">Computational Linguistics and Modern Languages</p>
-                                </div>
-                            </div>
+                            <motion.div
+                                className="mt-12 flex justify-center"
+                                variants={fadeInUp}
+                            >
+                                <motion.div
+                                    className="relative w-64 h-64 xl:w-80 xl:h-80 rounded-full overflow-hidden shadow-2xl border-4 border-white/50"
+                                    whileHover={{ scale: 1.05 }}
+                                    transition={{ duration: 0.3 }}
+                                >
+                                    <img
+                                        src="/Sallyphoto.jpg"
+                                        alt="S.J. Horan - Writer, filmmaker and producer"
+                                        className="w-full h-full object-cover"
+                                    />
+                                </motion.div>
+                            </motion.div>
                         </motion.div>
 
                         <motion.div
-                            className="bg-white/70 backdrop-blur-sm rounded-xl shadow-lg border border-white/30 p-8 xl:p-10"
+                            className="bg-white/70 backdrop-blur-sm rounded-2xl shadow-xl border border-white/30 p-10 xl:p-12 max-w-5xl mx-auto"
                             variants={fadeInUp}
-                            whileHover={{ y: -5 }}
-                            transition={{ duration: 0.3 }}
                         >
-                            <h3 className="text-2xl font-medium text-amber-700 mb-4">Languages</h3>
-                            <div className="flex flex-wrap gap-3">
-                                {["English", "French", "Spanish", "Italian", "German"].map((lang, index) => (
-                                    <motion.span
-                                        key={lang}
-                                        className="px-4 py-1.5 bg-blue-100 text-black rounded-full text-sm font-medium"
-                                        initial={{ opacity: 0, scale: 0.8 }}
-                                        animate={{ opacity: 1, scale: 1 }}
-                                        transition={{ delay: 0.1 * index }}
+                            <motion.p
+                                className="text-xl xl:text-2xl leading-relaxed text-gray-700 font-light mb-6"
+                                variants={fadeInUp}
+                            >
+                                My name is S. J. Horan. I am a London-based writer, filmmaker and producer.
+                            </motion.p>
+                        </motion.div>
+                    </motion.section>
+
+                    <motion.section
+                        ref={educationRef}
+                        className="mb-20"
+                        initial="hidden"
+                        animate={educationInView ? "visible" : "hidden"}
+                        variants={staggerContainer}
+                    >
+                        <motion.h2
+                            className="text-4xl xl:text-5xl font-light text-gray-800 mb-10 text-center tracking-wide"
+                            style={{ fontFamily: 'serif' }}
+                            variants={fadeInUp}
+                        >
+                            Education & Languages
+                        </motion.h2>
+
+                        <div className="grid xl:grid-cols-2 gap-10">
+                            <motion.div
+                                className="bg-white/70 backdrop-blur-sm rounded-xl shadow-lg border border-white/30 p-8 xl:p-10"
+                                variants={fadeInUp}
+                                whileHover={{ y: -5 }}
+                                transition={{ duration: 0.3 }}
+                            >
+                                <h3 className="text-2xl font-medium text-amber-700 mb-4">Education</h3>
+                                <div className="space-y-4">
+                                    <div>
+                                        <p className="font-medium text-gray-800 text-lg">MA in Creative Writing</p>
+                                        <p className="text-gray-600 italic text-base">Plays and Scripts</p>
+                                    </div>
+                                    <div>
+                                        <p className="font-medium text-gray-800 text-lg">BSc(Hons)</p>
+                                        <p className="text-gray-600 italic text-base">Computational Linguistics and Modern Languages</p>
+                                    </div>
+                                </div>
+                            </motion.div>
+
+                            <motion.div
+                                className="bg-white/70 backdrop-blur-sm rounded-xl shadow-lg border border-white/30 p-8 xl:p-10"
+                                variants={fadeInUp}
+                                whileHover={{ y: -5 }}
+                                transition={{ duration: 0.3 }}
+                            >
+                                <h3 className="text-2xl font-medium text-amber-700 mb-4">Languages</h3>
+                                <div className="flex flex-wrap gap-3">
+                                    {["English", "French", "Spanish", "Italian", "German"].map((lang, index) => (
+                                        <motion.span
+                                            key={lang}
+                                            className="px-4 py-1.5 bg-blue-100 text-black rounded-full text-sm font-medium"
+                                            initial={{ opacity: 0, scale: 0.8 }}
+                                            animate={{ opacity: 1, scale: 1 }}
+                                            transition={{ delay: 0.1 * index }}
+                                        >
+                                            {lang}
+                                        </motion.span>
+                                    ))}
+                                </div>
+                            </motion.div>
+                        </div>
+                    </motion.section>
+
+                    <motion.section
+                        ref={workRef}
+                        className="mb-20"
+                        initial="hidden"
+                        animate={workInView ? "visible" : "hidden"}
+                        variants={staggerContainer}
+                    >
+                        <motion.h2
+                            className="text-4xl xl:text-5xl font-light text-gray-800 mb-10 text-center tracking-wide"
+                            style={{ fontFamily: 'serif' }}
+                            variants={fadeInUp}
+                        >
+                            What I have done
+                        </motion.h2>
+
+                        <motion.div className="flex justify-center mb-10" variants={fadeInUp}>
+                            <div className="bg-white/70 backdrop-blur-sm rounded-lg p-1.5 shadow-lg border border-white/30">
+                                {[
+                                    { id: "films", label: "Films" },
+                                    { id: "plays", label: "Plays" }
+                                ].map((tab) => (
+                                    <motion.button
+                                        key={tab.id}
+                                        onClick={() => setActiveTab(tab.id)}
+                                        className={`px-8 py-3 rounded-md font-medium text-lg transition-all duration-200 ${activeTab === tab.id
+                                            ? "bg-amber-600 text-white shadow-md"
+                                            : "text-gray-600 hover:text-gray-800"
+                                            }`}
+                                        whileHover={{ scale: 1.05 }}
+                                        whileTap={{ scale: 0.95 }}
                                     >
-                                        {lang}
-                                    </motion.span>
+                                        {tab.label}
+                                    </motion.button>
                                 ))}
                             </div>
                         </motion.div>
-                    </div>
-                </motion.section>
 
-                <motion.section
-                    ref={workRef}
-                    className="mb-20"
-                    initial="hidden"
-                    animate={workInView ? "visible" : "hidden"}
-                    variants={staggerContainer}
-                >
-                    <motion.h2
-                        className="text-4xl xl:text-5xl font-light text-gray-800 mb-10 text-center tracking-wide"
-                        style={{ fontFamily: 'serif' }}
-                        variants={fadeInUp}
-                    >
-                        What I have done
-                    </motion.h2>
-
-                    <motion.div className="flex justify-center mb-10" variants={fadeInUp}>
-                        <div className="bg-white/70 backdrop-blur-sm rounded-lg p-1.5 shadow-lg border border-white/30">
-                            {[
-                                { id: "films", label: "Films" },
-                                { id: "plays", label: "Plays" }
-                            ].map((tab) => (
-                                <motion.button
-                                    key={tab.id}
-                                    onClick={() => setActiveTab(tab.id)}
-                                    className={`px-8 py-3 rounded-md font-medium text-lg transition-all duration-200 ${activeTab === tab.id
-                                        ? "bg-amber-600 text-white shadow-md"
-                                        : "text-gray-600 hover:text-gray-800"
-                                        }`}
-                                    whileHover={{ scale: 1.05 }}
-                                    whileTap={{ scale: 0.95 }}
-                                >
-                                    {tab.label}
-                                </motion.button>
-                            ))}
-                        </div>
-                    </motion.div>
-
-                    {activeTab === "films" && (
-                        <motion.div
-                            className="grid xl:grid-cols-3 gap-8"
-                            variants={staggerContainer}
-                            initial="hidden"
-                            animate="visible"
-                        >
-                            {films.map((film, index) => (
-                                <motion.div
-                                    key={film.title}
-                                    className={`bg-white/70 backdrop-blur-sm rounded-xl shadow-lg border border-white/30 p-8 hover:shadow-xl transition-all duration-300 ${film.highlight ? 'ring-2 ring-amber-300/50' : ''}`}
-                                    variants={fadeInUp}
-                                    whileHover={{ y: -5, scale: 1.02 }}
-                                >
-                                    <div className="flex items-start justify-between mb-4">
-                                        <h3 className="text-xl font-medium text-gray-800 italic">{film.title}</h3>
-                                        <span className="text-base font-medium text-gray-500">({film.year})</span>
-                                    </div>
-
-                                    <div className={`inline-block px-4 py-1.5 rounded-full text-sm font-medium mb-4 ${film.color === 'blue' ? 'bg-blue-100 text-blue-800' :
-                                        film.color === 'purple' ? 'bg-purple-100 text-purple-800' :
-                                            film.color === 'green' ? 'bg-green-100 text-green-800' :
-                                                film.color === 'amber' ? 'bg-amber-100 text-amber-800' :
-                                                    film.color === 'pink' ? 'bg-pink-100 text-pink-800' :
-                                                        film.color === 'red' ? 'bg-red-100 text-red-800' :
-                                                            film.color === 'teal' ? 'bg-teal-100 text-teal-800' :
-                                                                film.color === 'indigo' ? 'bg-indigo-100 text-indigo-800' :
-                                                                    film.color === 'orange' ? 'bg-orange-100 text-orange-800' :
-                                                                        'bg-gray-100 text-gray-800'
-                                        }`}>
-                                        {film.type}
-                                    </div>
-
-                                    <p className="text-gray-600 text-base mb-4 leading-relaxed">{film.description}</p>
-
-                                    <div className="space-y-3">
-                                        <p className="text-sm font-medium text-gray-500">Role: {film.role}</p>
-                                        <p className={`text-sm font-medium ${film.status.includes('Seeking') ? 'text-orange-600' :
-                                            film.status.includes('Nominated') || film.status.includes('Finalist') ? 'text-green-600 font-semibold' :
-                                                'text-green-600'
-                                            }`}>
-                                            {film.status}
-                                        </p>
-                                    </div>
-
-                                    {film.status.includes('Nominated') && (
-                                        <div className="mt-4 inline-block">
-                                            <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-yellow-100 text-yellow-800">
-                                                🏆 Cannes Nominee
-                                            </span>
+                        {activeTab === "films" && (
+                            <motion.div
+                                className="grid xl:grid-cols-3 gap-8"
+                                variants={staggerContainer}
+                                initial="hidden"
+                                animate="visible"
+                            >
+                                {films.map((film, index) => (
+                                    <motion.div
+                                        key={film.title}
+                                        className={`bg-white/70 backdrop-blur-sm rounded-xl shadow-lg border border-white/30 p-8 hover:shadow-xl transition-all duration-300 ${film.highlight ? 'ring-2 ring-amber-300/50' : ''}`}
+                                        variants={fadeInUp}
+                                        whileHover={{ y: -5, scale: 1.02 }}
+                                    >
+                                        <div className="flex items-start justify-between mb-4">
+                                            <h3 className="text-xl font-medium text-gray-800 italic">{film.title}</h3>
+                                            <span className="text-base font-medium text-gray-500">({film.year})</span>
                                         </div>
-                                    )}
 
-                                    {film.status.includes('BAFTA') && (
-                                        <div className="mt-4 inline-block">
-                                            <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-purple-100 text-purple-800">
-                                                ⭐ BAFTA Rated
-                                            </span>
-                                        </div>
-                                    )}
-                                </motion.div>
-                            ))}
-                        </motion.div>
-                    )}
-
-                    {activeTab === "plays" && (
-                        <motion.div
-                            className="grid xl:grid-cols-3 gap-8"
-                            variants={staggerContainer}
-                            initial="hidden"
-                            animate="visible"
-                        >
-                            {plays.map((play, index) => (
-                                <motion.div
-                                    key={play.title}
-                                    className={`bg-white/70 backdrop-blur-sm rounded-xl shadow-lg border border-white/30 p-8 hover:shadow-xl transition-all duration-300 ${play.highlight ? 'ring-2 ring-amber-300/50' : ''}`}
-                                    variants={fadeInUp}
-                                    whileHover={{ y: -5, scale: 1.02 }}
-                                >
-                                    <div className="flex items-start justify-between mb-4">
-                                        <h3 className="text-xl font-medium text-gray-800 italic">{play.title}</h3>
-                                        {play.year !== "N/A" && (
-                                            <span className="text-base font-medium text-gray-500">({play.year})</span>
-                                        )}
-                                    </div>
-
-                                    <div className={`inline-block px-4 py-1.5 rounded-full text-sm font-medium mb-4 ${play.color === 'blue' ? 'bg-blue-100 text-blue-800' :
-                                        play.color === 'purple' ? 'bg-purple-100 text-purple-800' :
-                                            play.color === 'green' ? 'bg-green-100 text-green-800' :
-                                                play.color === 'amber' ? 'bg-amber-100 text-amber-800' :
-                                                    play.color === 'orange' ? 'bg-orange-100 text-orange-800' :
-                                                        play.color === 'red' ? 'bg-red-100 text-red-800' :
-                                                            play.color === 'teal' ? 'bg-teal-100 text-teal-800' :
-                                                                play.color === 'indigo' ? 'bg-indigo-100 text-indigo-800' :
-                                                                    play.color === 'pink' ? 'bg-pink-100 text-pink-800' :
-                                                                        play.color === 'emerald' ? 'bg-emerald-100 text-emerald-800' :
+                                        <div className={`inline-block px-4 py-1.5 rounded-full text-sm font-medium mb-4 ${film.color === 'blue' ? 'bg-blue-100 text-blue-800' :
+                                            film.color === 'purple' ? 'bg-purple-100 text-purple-800' :
+                                                film.color === 'green' ? 'bg-green-100 text-green-800' :
+                                                    film.color === 'amber' ? 'bg-amber-100 text-amber-800' :
+                                                        film.color === 'pink' ? 'bg-pink-100 text-pink-800' :
+                                                            film.color === 'red' ? 'bg-red-100 text-red-800' :
+                                                                film.color === 'teal' ? 'bg-teal-100 text-teal-800' :
+                                                                    film.color === 'indigo' ? 'bg-indigo-100 text-indigo-800' :
+                                                                        film.color === 'orange' ? 'bg-orange-100 text-orange-800' :
                                                                             'bg-gray-100 text-gray-800'
-                                        }`}>
-                                        {play.note || 'Play'}
-                                    </div>
-
-                                    <p className="text-gray-600 text-base mb-4 leading-relaxed" dangerouslySetInnerHTML={{ __html: play.description }}></p>
-
-                                    <div className="space-y-3">
-                                        {play.venue && (
-                                            <p className="text-sm font-medium text-gray-500">Venue: {play.venue}</p>
-                                        )}
-                                        {play.producer && (
-                                            <p className="text-sm font-medium text-gray-500">Producer: {play.producer}</p>
-                                        )}
-                                        {play.director && (
-                                            <p className="text-sm font-medium text-gray-500">Director: {play.director}</p>
-                                        )}
-                                        {play.role && (
-                                            <p className="text-sm font-medium text-gray-500">Role: {play.role}</p>
-                                        )}
-                                        <p className={`text-sm font-medium ${play.status.includes('waiting') || play.status.includes('Cancelled') ? 'text-orange-600' :
-                                            play.status.includes('best') || play.status.includes('favourably') || play.status.includes('Great') ? 'text-green-600 font-semibold' :
-                                                'text-green-600'
                                             }`}>
-                                            {play.status}
-                                        </p>
-                                    </div>
-
-                                    {play.status.includes('favourably reviewed') && (
-                                        <div className="mt-4 inline-block">
-                                            <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-purple-100 text-purple-800">
-                                                ⭐ Critically Acclaimed
-                                            </span>
+                                            {film.type}
                                         </div>
-                                    )}
 
-                                    {play.status.includes('Great reviews') && (
-                                        <div className="mt-4 inline-block">
-                                            <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-green-100 text-green-800">
-                                                📝 Great Reviews
-                                            </span>
+                                        <p className="text-gray-600 text-base mb-4 leading-relaxed">{film.description}</p>
+
+                                        <div className="space-y-3">
+                                            <p className="text-sm font-medium text-gray-500">Role: {film.role}</p>
+                                            <p className={`text-sm font-medium ${film.status.includes('Seeking') ? 'text-orange-600' :
+                                                film.status.includes('Nominated') || film.status.includes('Finalist') ? 'text-green-600 font-semibold' :
+                                                    'text-green-600'
+                                                }`}>
+                                                {film.status}
+                                            </p>
                                         </div>
-                                    )}
-                                </motion.div>
-                            ))}
-                        </motion.div>
-                    )}
-                </motion.section>
 
-                <motion.section
-                    ref={reviewsRef}
-                    initial="hidden"
-                    animate={reviewsInView ? "visible" : "hidden"}
-                    variants={staggerContainer}
-                >
-                    <motion.h2
-                        className="text-4xl xl:text-5xl font-light text-gray-800 mb-10 text-center tracking-wide"
-                        style={{ fontFamily: 'serif' }}
-                        variants={fadeInUp}
-                    >
-                        Reviews & Testimonials
-                    </motion.h2>
+                                        {film.status.includes('Nominated') && (
+                                            <div className="mt-4 inline-block">
+                                                <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-yellow-100 text-yellow-800">
+                                                    🏆 Cannes Nominee
+                                                </span>
+                                            </div>
+                                        )}
 
-                    <motion.div
-                        className="grid xl:grid-cols-3 gap-8"
+                                        {film.status.includes('BAFTA') && (
+                                            <div className="mt-4 inline-block">
+                                                <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-purple-100 text-purple-800">
+                                                    ⭐ BAFTA Rated
+                                                </span>
+                                            </div>
+                                        )}
+                                    </motion.div>
+                                ))}
+                            </motion.div>
+                        )}
+
+                        {activeTab === "plays" && (
+                            <motion.div
+                                className="grid xl:grid-cols-3 gap-8"
+                                variants={staggerContainer}
+                                initial="hidden"
+                                animate="visible"
+                            >
+                                {plays.map((play, index) => (
+                                    <motion.div
+                                        key={play.title}
+                                        className={`bg-white/70 backdrop-blur-sm rounded-xl shadow-lg border border-white/30 p-8 hover:shadow-xl transition-all duration-300 ${play.highlight ? 'ring-2 ring-amber-300/50' : ''}`}
+                                        variants={fadeInUp}
+                                        whileHover={{ y: -5, scale: 1.02 }}
+                                    >
+                                        <div className="flex items-start justify-between mb-4">
+                                            <h3 className="text-xl font-medium text-gray-800 italic">{play.title}</h3>
+                                            {play.year !== "N/A" && (
+                                                <span className="text-base font-medium text-gray-500">({play.year})</span>
+                                            )}
+                                        </div>
+
+                                        <div className={`inline-block px-4 py-1.5 rounded-full text-sm font-medium mb-4 ${play.color === 'blue' ? 'bg-blue-100 text-blue-800' :
+                                            play.color === 'purple' ? 'bg-purple-100 text-purple-800' :
+                                                play.color === 'green' ? 'bg-green-100 text-green-800' :
+                                                    play.color === 'amber' ? 'bg-amber-100 text-amber-800' :
+                                                        play.color === 'orange' ? 'bg-orange-100 text-orange-800' :
+                                                            play.color === 'red' ? 'bg-red-100 text-red-800' :
+                                                                play.color === 'teal' ? 'bg-teal-100 text-teal-800' :
+                                                                    play.color === 'indigo' ? 'bg-indigo-100 text-indigo-800' :
+                                                                        play.color === 'pink' ? 'bg-pink-100 text-pink-800' :
+                                                                            play.color === 'emerald' ? 'bg-emerald-100 text-emerald-800' :
+                                                                                'bg-gray-100 text-gray-800'
+                                            }`}>
+                                            {play.note || 'Play'}
+                                        </div>
+
+                                        <p className="text-gray-600 text-base mb-4 leading-relaxed" dangerouslySetInnerHTML={{ __html: play.description }}></p>
+
+                                        <div className="space-y-3">
+                                            {play.venue && (
+                                                <p className="text-sm font-medium text-gray-500">Venue: {play.venue}</p>
+                                            )}
+                                            {play.producer && (
+                                                <p className="text-sm font-medium text-gray-500">Producer: {play.producer}</p>
+                                            )}
+                                            {play.director && (
+                                                <p className="text-sm font-medium text-gray-500">Director: {play.director}</p>
+                                            )}
+                                            {play.role && (
+                                                <p className="text-sm font-medium text-gray-500">Role: {play.role}</p>
+                                            )}
+                                            <p className={`text-sm font-medium ${play.status.includes('waiting') || play.status.includes('Cancelled') ? 'text-orange-600' :
+                                                play.status.includes('best') || play.status.includes('favourably') || play.status.includes('Great') ? 'text-green-600 font-semibold' :
+                                                    'text-green-600'
+                                                }`}>
+                                                {play.status}
+                                            </p>
+                                        </div>
+
+                                        {play.status.includes('favourably reviewed') && (
+                                            <div className="mt-4 inline-block">
+                                                <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-purple-100 text-purple-800">
+                                                    ⭐ Critically Acclaimed
+                                                </span>
+                                            </div>
+                                        )}
+
+                                        {play.status.includes('Great reviews') && (
+                                            <div className="mt-4 inline-block">
+                                                <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-green-100 text-green-800">
+                                                    📝 Great Reviews
+                                                </span>
+                                            </div>
+                                        )}
+                                    </motion.div>
+                                ))}
+                            </motion.div>
+                        )}
+                    </motion.section>
+
+                    <motion.section
+                        ref={reviewsRef}
+                        initial="hidden"
+                        animate={reviewsInView ? "visible" : "hidden"}
                         variants={staggerContainer}
                     >
-                        {reviews.map((review, index) => (
-                            <motion.div
-                                key={index}
-                                className="bg-white/70 backdrop-blur-sm rounded-xl shadow-lg border border-white/30 p-8"
-                                variants={fadeInUp}
-                                whileHover={{ y: -3 }}
-                                transition={{ duration: 0.3 }}
-                            >
-                                <div className="mb-4">
-                                    <svg className="w-10 h-10 text-amber-500 mb-3" fill="currentColor" viewBox="0 0 24 24">
-                                        <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h4v10h-10z" />
-                                    </svg>
-                                    <p className="text-gray-700 text-base xl:text-lg leading-relaxed italic">"{review.quote}"</p>
-                                </div>
-                                <div className="border-t border-gray-200 pt-4">
-                                    <p className="font-medium text-gray-800 text-lg">{review.author}</p>
-                                    <p className="text-sm text-amber-600">{review.type}</p>
-                                </div>
-                            </motion.div>
-                        ))}
-                    </motion.div>
-                </motion.section>
+                        <motion.h2
+                            className="text-4xl xl:text-5xl font-light text-gray-800 mb-10 text-center tracking-wide"
+                            style={{ fontFamily: 'serif' }}
+                            variants={fadeInUp}
+                        >
+                            Reviews & Testimonials
+                        </motion.h2>
 
-                <motion.div
-                    className="flex justify-center items-center mt-20"
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{ delay: 1, duration: 1 }}
-                >
-                    <div className="w-24 h-px bg-amber-400"></div>
-                    <div className="w-4 h-4 rounded-full bg-amber-400 mx-6"></div>
-                    <div className="w-24 h-px bg-amber-400"></div>
-                </motion.div>
+                        <motion.div
+                            className="grid xl:grid-cols-3 gap-8"
+                            variants={staggerContainer}
+                        >
+                            {reviews.map((review, index) => (
+                                <motion.div
+                                    key={index}
+                                    className="bg-white/70 backdrop-blur-sm rounded-xl shadow-lg border border-white/30 p-8"
+                                    variants={fadeInUp}
+                                    whileHover={{ y: -3 }}
+                                    transition={{ duration: 0.3 }}
+                                >
+                                    <div className="mb-4">
+                                        <svg className="w-10 h-10 text-amber-500 mb-3" fill="currentColor" viewBox="0 0 24 24">
+                                            <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h4v10h-10z" />
+                                        </svg>
+                                        <p className="text-gray-700 text-base xl:text-lg leading-relaxed italic">"{review.quote}"</p>
+                                    </div>
+                                    <div className="border-t border-gray-200 pt-4">
+                                        <p className="font-medium text-gray-800 text-lg">{review.author}</p>
+                                        <p className="text-sm text-amber-600">{review.type}</p>
+                                    </div>
+                                </motion.div>
+                            ))}
+                        </motion.div>
+                    </motion.section>
+
+                    <motion.div
+                        className="flex justify-center items-center mt-20"
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        transition={{ delay: 1, duration: 1 }}
+                    >
+                        <div className="w-24 h-px bg-amber-400"></div>
+                        <div className="w-4 h-4 rounded-full bg-amber-400 mx-6"></div>
+                        <div className="w-24 h-px bg-amber-400"></div>
+                    </motion.div>
+                </div>
             </div>
-        </div>
+        </>
     );
 }

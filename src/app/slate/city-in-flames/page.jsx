@@ -38,7 +38,7 @@ export default function CityInFlamesPage() {
                 <meta property="og:title" content="City in Flames - Historical Drama Film" />
                 <meta property="og:description" content="A historical drama depicting the 1922 Smyrna crisis, focusing on Asa K. Jennings' heroic evacuation efforts." />
                 <meta property="og:image" content="/Cityflames.jpg" />
-                <meta property="og:url" content="https://yourdomain.com/city-in-flames" />
+                <meta property="og:url" content="https://www.dreamsumproductions.co.uk/slate/city-in-flames" />
                 <meta name="twitter:card" content="summary_large_image" />
                 <script
                     type="application/ld+json"
@@ -52,7 +52,7 @@ export default function CityInFlamesPage() {
                             "inLanguage": "en",
                             "productionCompany": {
                                 "@type": "Organization",
-                                "name": "Your Production Company"
+                                "name": "Dreamsum Productions"
                             }
                         })
                     }}
@@ -111,14 +111,6 @@ export default function CityInFlamesPage() {
                         </motion.p>
                     </header>
 
-                    <nav className="mb-12 text-center">
-                        <ul className="flex flex-wrap justify-center gap-4 text-gray-700">
-                            <li><a href="/an-irish-heart" className="hover:underline">An Irish Heart</a></li>
-                            <li><a href="/goodbye-sunshine" className="hover:underline">Goodbye Sunshine</a></li>
-                            <li><a href="/spell-in-greece" className="hover:underline">A Spell in Greece</a></li>
-                            <li><a href="/suppers-off" className="hover:underline">Supper's Off</a></li>
-                        </ul>
-                    </nav>
 
                     <section className="grid xl:grid-cols-2 gap-16 items-start" variants={staggerContainer}>
                         <motion.article variants={fadeInUp}>
