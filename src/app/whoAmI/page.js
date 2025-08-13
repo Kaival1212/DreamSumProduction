@@ -2,6 +2,7 @@
 
 import { useState, useRef } from "react";
 import { motion, useInView } from "framer-motion";
+import Head from "next/head";
 
 export default function WhoAmIPage() {
     const [activeTab, setActiveTab] = useState("films");

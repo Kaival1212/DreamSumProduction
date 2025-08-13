@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 
+
 export default function OnTheSlatePage() {
     const [selectedProject, setSelectedProject] = useState(null);
 
