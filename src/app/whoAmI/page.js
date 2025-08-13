@@ -269,10 +269,9 @@ export default function WhoAmIPage() {
 
     return (
         <div className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100">
-            {/* Animated Background */}
             <div className="absolute inset-0 overflow-hidden">
                 <motion.div
-                    className="absolute top-1/4 left-1/5 w-96 h-96 bg-amber-200/20 rounded-full blur-3xl"
+                    className="absolute top-1/4 left-1/6 w-96 h-96 bg-amber-200/20 rounded-full blur-3xl"
                     animate={{
                         scale: [1, 1.2, 1],
                         opacity: [0.3, 0.5, 0.3],
@@ -280,7 +279,7 @@ export default function WhoAmIPage() {
                     transition={{ duration: 12, repeat: Infinity }}
                 />
                 <motion.div
-                    className="absolute bottom-1/3 right-1/5 w-80 h-80 bg-blue-200/20 rounded-full blur-3xl"
+                    className="absolute bottom-1/3 right-1/6 w-80 h-80 bg-blue-200/20 rounded-full blur-3xl"
                     animate={{
                         scale: [1.2, 1, 1.2],
                         opacity: [0.2, 0.4, 0.2],
@@ -289,54 +288,51 @@ export default function WhoAmIPage() {
                 />
             </div>
 
-            {/* Hero Marquee */}
             <motion.div
-                className="bg-black text-white py-4 overflow-hidden relative"
+                className="bg-black text-white py-5 overflow-hidden relative"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 1 }}
             >
-                <div className="absolute left-0 top-0 bottom-0 w-16 bg-gradient-to-r from-black to-transparent z-10" />
-                <div className="absolute right-0 top-0 bottom-0 w-16 bg-gradient-to-l from-black to-transparent z-10" />
+                <div className="absolute left-0 top-0 bottom-0 w-24 bg-gradient-to-r from-black to-transparent z-10" />
+                <div className="absolute right-0 top-0 bottom-0 w-24 bg-gradient-to-l from-black to-transparent z-10" />
 
                 <motion.div
                     className="whitespace-nowrap"
                     animate={{ x: [1200, -1200] }}
                     transition={{ duration: 25, repeat: Infinity, ease: "linear" }}
                 >
-                    <span className="text-xl md:text-2xl font-light tracking-[0.3em] px-8">
+                    <span className="text-2xl xl:text-3xl font-light tracking-[0.4em] px-10">
                         Who I am • Who I am • Who I am • Who I am • Who I am • Who I am • Who I am • Who I am •
                     </span>
                 </motion.div>
             </motion.div>
 
-            <div className="relative z-10 max-w-7xl mx-auto px-6 py-16">
-                {/* Introduction Section */}
+            <div className="relative z-10 max-w-8xl mx-auto px-6 xl:px-12 py-24">
                 <motion.section
                     ref={introRef}
-                    className="mb-16"
+                    className="mb-20"
                     initial="hidden"
                     animate={introInView ? "visible" : "hidden"}
                     variants={staggerContainer}
                 >
-                    <motion.div className="text-center mb-12" variants={fadeInUp}>
+                    <motion.div className="text-center mb-16" variants={fadeInUp}>
                         <motion.h1
-                            className="text-4xl md:text-5xl font-light text-gray-800 mb-6 tracking-wide"
+                            className="text-5xl xl:text-6xl font-light text-gray-800 mb-8 tracking-wide"
                             style={{ fontFamily: 'serif' }}
                         >
                             S.J.Horan
                         </motion.h1>
-                        <motion.p className="text-xl md:text-2xl text-gray-600 font-light">
+                        <motion.p className="text-2xl xl:text-3xl text-gray-600 font-light">
                             London-based writer, filmmaker and producer
                         </motion.p>
 
-                        {/* Author Photo */}
                         <motion.div
-                            className="mt-8 flex justify-center"
+                            className="mt-12 flex justify-center"
                             variants={fadeInUp}
                         >
                             <motion.div
-                                className="relative w-xl h-xl rounded-full overflow-hidden shadow-2xl border-4 border-white/50"
+                                className="relative w-64 h-64 xl:w-80 xl:h-80 rounded-full overflow-hidden shadow-2xl border-4 border-white/50"
                                 whileHover={{ scale: 1.05 }}
                                 transition={{ duration: 0.3 }}
                             >
@@ -350,11 +346,11 @@ export default function WhoAmIPage() {
                     </motion.div>
 
                     <motion.div
-                        className="bg-white/70 backdrop-blur-sm rounded-2xl shadow-xl border border-white/30 p-8 md:p-12 max-w-4xl mx-auto"
+                        className="bg-white/70 backdrop-blur-sm rounded-2xl shadow-xl border border-white/30 p-10 xl:p-12 max-w-5xl mx-auto"
                         variants={fadeInUp}
                     >
                         <motion.p
-                            className="text-lg md:text-xl leading-relaxed text-gray-700 font-light mb-6"
+                            className="text-xl xl:text-2xl leading-relaxed text-gray-700 font-light mb-6"
                             variants={fadeInUp}
                         >
                             My name is S. J. Horan. I am a London-based writer, filmmaker and producer.
@@ -362,54 +358,53 @@ export default function WhoAmIPage() {
                     </motion.div>
                 </motion.section>
 
-                {/* Education Section */}
                 <motion.section
                     ref={educationRef}
-                    className="mb-16"
+                    className="mb-20"
                     initial="hidden"
                     animate={educationInView ? "visible" : "hidden"}
                     variants={staggerContainer}
                 >
                     <motion.h2
-                        className="text-3xl md:text-4xl font-light text-gray-800 mb-8 text-center tracking-wide"
+                        className="text-4xl xl:text-5xl font-light text-gray-800 mb-10 text-center tracking-wide"
                         style={{ fontFamily: 'serif' }}
                         variants={fadeInUp}
                     >
                         Education & Languages
                     </motion.h2>
 
-                    <div className="grid md:grid-cols-2 gap-8">
+                    <div className="grid xl:grid-cols-2 gap-10">
                         <motion.div
-                            className="bg-white/70 backdrop-blur-sm rounded-xl shadow-lg border border-white/30 p-6"
+                            className="bg-white/70 backdrop-blur-sm rounded-xl shadow-lg border border-white/30 p-8 xl:p-10"
                             variants={fadeInUp}
                             whileHover={{ y: -5 }}
                             transition={{ duration: 0.3 }}
                         >
-                            <h3 className="text-xl font-medium text-amber-700 mb-3">Education</h3>
-                            <div className="space-y-3">
+                            <h3 className="text-2xl font-medium text-amber-700 mb-4">Education</h3>
+                            <div className="space-y-4">
                                 <div>
-                                    <p className="font-medium text-gray-800">MA in Creative Writing</p>
-                                    <p className="text-gray-600 italic">(Plays and Scripts)</p>
+                                    <p className="font-medium text-gray-800 text-lg">MA in Creative Writing</p>
+                                    <p className="text-gray-600 italic text-base">Plays and Scripts</p>
                                 </div>
                                 <div>
-                                    <p className="font-medium text-gray-800">BSc(Hons)</p>
-                                    <p className="text-gray-600 italic">Computational Linguistics and Modern Languages</p>
+                                    <p className="font-medium text-gray-800 text-lg">BSc(Hons)</p>
+                                    <p className="text-gray-600 italic text-base">Computational Linguistics and Modern Languages</p>
                                 </div>
                             </div>
                         </motion.div>
 
                         <motion.div
-                            className="bg-white/70 backdrop-blur-sm rounded-xl shadow-lg border border-white/30 p-6"
+                            className="bg-white/70 backdrop-blur-sm rounded-xl shadow-lg border border-white/30 p-8 xl:p-10"
                             variants={fadeInUp}
                             whileHover={{ y: -5 }}
                             transition={{ duration: 0.3 }}
                         >
-                            <h3 className="text-xl font-medium text-amber-700 mb-3">Languages</h3>
-                            <div className="flex flex-wrap gap-2">
+                            <h3 className="text-2xl font-medium text-amber-700 mb-4">Languages</h3>
+                            <div className="flex flex-wrap gap-3">
                                 {["English", "French", "Spanish", "Italian", "German"].map((lang, index) => (
                                     <motion.span
                                         key={lang}
-                                        className="px-3 py-1 bg-blue-100 text-black rounded-full text-sm font-medium"
+                                        className="px-4 py-1.5 bg-blue-100 text-black rounded-full text-sm font-medium"
                                         initial={{ opacity: 0, scale: 0.8 }}
                                         animate={{ opacity: 1, scale: 1 }}
                                         transition={{ delay: 0.1 * index }}
@@ -422,25 +417,23 @@ export default function WhoAmIPage() {
                     </div>
                 </motion.section>
 
-                {/* Work Section */}
                 <motion.section
                     ref={workRef}
-                    className="mb-16"
+                    className="mb-20"
                     initial="hidden"
                     animate={workInView ? "visible" : "hidden"}
                     variants={staggerContainer}
                 >
                     <motion.h2
-                        className="text-3xl md:text-4xl font-light text-gray-800 mb-8 text-center tracking-wide"
+                        className="text-4xl xl:text-5xl font-light text-gray-800 mb-10 text-center tracking-wide"
                         style={{ fontFamily: 'serif' }}
                         variants={fadeInUp}
                     >
                         What I have done
                     </motion.h2>
 
-                    {/* Tab Navigation */}
-                    <motion.div className="flex justify-center mb-8" variants={fadeInUp}>
-                        <div className="bg-white/70 backdrop-blur-sm rounded-lg p-1 shadow-lg border border-white/30">
+                    <motion.div className="flex justify-center mb-10" variants={fadeInUp}>
+                        <div className="bg-white/70 backdrop-blur-sm rounded-lg p-1.5 shadow-lg border border-white/30">
                             {[
                                 { id: "films", label: "Films" },
                                 { id: "plays", label: "Plays" }
@@ -448,7 +441,7 @@ export default function WhoAmIPage() {
                                 <motion.button
                                     key={tab.id}
                                     onClick={() => setActiveTab(tab.id)}
-                                    className={`px-6 py-2 rounded-md font-medium transition-all duration-200 ${activeTab === tab.id
+                                    className={`px-8 py-3 rounded-md font-medium text-lg transition-all duration-200 ${activeTab === tab.id
                                         ? "bg-amber-600 text-white shadow-md"
                                         : "text-gray-600 hover:text-gray-800"
                                         }`}
@@ -461,10 +454,9 @@ export default function WhoAmIPage() {
                         </div>
                     </motion.div>
 
-                    {/* Films Grid */}
                     {activeTab === "films" && (
                         <motion.div
-                            className="grid md:grid-cols-2 lg:grid-cols-3 gap-6"
+                            className="grid xl:grid-cols-3 gap-8"
                             variants={staggerContainer}
                             initial="hidden"
                             animate="visible"
@@ -472,17 +464,16 @@ export default function WhoAmIPage() {
                             {films.map((film, index) => (
                                 <motion.div
                                     key={film.title}
-                                    className={`bg-white/70 backdrop-blur-sm rounded-xl shadow-lg border border-white/30 p-6 hover:shadow-xl transition-all duration-300 ${film.highlight ? 'ring-2 ring-amber-300/50' : ''
-                                        }`}
+                                    className={`bg-white/70 backdrop-blur-sm rounded-xl shadow-lg border border-white/30 p-8 hover:shadow-xl transition-all duration-300 ${film.highlight ? 'ring-2 ring-amber-300/50' : ''}`}
                                     variants={fadeInUp}
                                     whileHover={{ y: -5, scale: 1.02 }}
                                 >
-                                    <div className="flex items-start justify-between mb-3">
-                                        <h3 className="text-lg font-medium text-gray-800 italic">{film.title}</h3>
-                                        <span className="text-sm font-medium text-gray-500">({film.year})</span>
+                                    <div className="flex items-start justify-between mb-4">
+                                        <h3 className="text-xl font-medium text-gray-800 italic">{film.title}</h3>
+                                        <span className="text-base font-medium text-gray-500">({film.year})</span>
                                     </div>
 
-                                    <div className={`inline-block px-3 py-1 rounded-full text-xs font-medium mb-3 ${film.color === 'blue' ? 'bg-blue-100 text-blue-800' :
+                                    <div className={`inline-block px-4 py-1.5 rounded-full text-sm font-medium mb-4 ${film.color === 'blue' ? 'bg-blue-100 text-blue-800' :
                                         film.color === 'purple' ? 'bg-purple-100 text-purple-800' :
                                             film.color === 'green' ? 'bg-green-100 text-green-800' :
                                                 film.color === 'amber' ? 'bg-amber-100 text-amber-800' :
@@ -496,11 +487,11 @@ export default function WhoAmIPage() {
                                         {film.type}
                                     </div>
 
-                                    <p className="text-gray-600 text-sm mb-4 leading-relaxed">{film.description}</p>
+                                    <p className="text-gray-600 text-base mb-4 leading-relaxed">{film.description}</p>
 
-                                    <div className="space-y-2">
-                                        <p className="text-xs font-medium text-gray-500">Role: {film.role}</p>
-                                        <p className={`text-xs font-medium ${film.status.includes('Seeking') ? 'text-orange-600' :
+                                    <div className="space-y-3">
+                                        <p className="text-sm font-medium text-gray-500">Role: {film.role}</p>
+                                        <p className={`text-sm font-medium ${film.status.includes('Seeking') ? 'text-orange-600' :
                                             film.status.includes('Nominated') || film.status.includes('Finalist') ? 'text-green-600 font-semibold' :
                                                 'text-green-600'
                                             }`}>
@@ -508,18 +499,17 @@ export default function WhoAmIPage() {
                                         </p>
                                     </div>
 
-                                    {/* Special badges for notable achievements */}
                                     {film.status.includes('Nominated') && (
-                                        <div className="mt-3 inline-block">
-                                            <span className="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-yellow-100 text-yellow-800">
+                                        <div className="mt-4 inline-block">
+                                            <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-yellow-100 text-yellow-800">
                                                 🏆 Cannes Nominee
                                             </span>
                                         </div>
                                     )}
 
                                     {film.status.includes('BAFTA') && (
-                                        <div className="mt-3 inline-block">
-                                            <span className="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-purple-100 text-purple-800">
+                                        <div className="mt-4 inline-block">
+                                            <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-purple-100 text-purple-800">
                                                 ⭐ BAFTA Rated
                                             </span>
                                         </div>
@@ -529,10 +519,9 @@ export default function WhoAmIPage() {
                         </motion.div>
                     )}
 
-                    {/* Plays Section */}
                     {activeTab === "plays" && (
                         <motion.div
-                            className="grid md:grid-cols-2 lg:grid-cols-3 gap-6"
+                            className="grid xl:grid-cols-3 gap-8"
                             variants={staggerContainer}
                             initial="hidden"
                             animate="visible"
@@ -540,19 +529,18 @@ export default function WhoAmIPage() {
                             {plays.map((play, index) => (
                                 <motion.div
                                     key={play.title}
-                                    className={`bg-white/70 backdrop-blur-sm rounded-xl shadow-lg border border-white/30 p-6 hover:shadow-xl transition-all duration-300 ${play.highlight ? 'ring-2 ring-amber-300/50' : ''
-                                        }`}
+                                    className={`bg-white/70 backdrop-blur-sm rounded-xl shadow-lg border border-white/30 p-8 hover:shadow-xl transition-all duration-300 ${play.highlight ? 'ring-2 ring-amber-300/50' : ''}`}
                                     variants={fadeInUp}
                                     whileHover={{ y: -5, scale: 1.02 }}
                                 >
-                                    <div className="flex items-start justify-between mb-3">
-                                        <h3 className="text-lg font-medium text-gray-800 italic">{play.title}</h3>
+                                    <div className="flex items-start justify-between mb-4">
+                                        <h3 className="text-xl font-medium text-gray-800 italic">{play.title}</h3>
                                         {play.year !== "N/A" && (
-                                            <span className="text-sm font-medium text-gray-500">({play.year})</span>
+                                            <span className="text-base font-medium text-gray-500">({play.year})</span>
                                         )}
                                     </div>
 
-                                    <div className={`inline-block px-3 py-1 rounded-full text-xs font-medium mb-3 ${play.color === 'blue' ? 'bg-blue-100 text-blue-800' :
+                                    <div className={`inline-block px-4 py-1.5 rounded-full text-sm font-medium mb-4 ${play.color === 'blue' ? 'bg-blue-100 text-blue-800' :
                                         play.color === 'purple' ? 'bg-purple-100 text-purple-800' :
                                             play.color === 'green' ? 'bg-green-100 text-green-800' :
                                                 play.color === 'amber' ? 'bg-amber-100 text-amber-800' :
@@ -567,22 +555,22 @@ export default function WhoAmIPage() {
                                         {play.note || 'Play'}
                                     </div>
 
-                                    <p className="text-gray-600 text-sm mb-4 leading-relaxed" dangerouslySetInnerHTML={{ __html: play.description }}></p>
+                                    <p className="text-gray-600 text-base mb-4 leading-relaxed" dangerouslySetInnerHTML={{ __html: play.description }}></p>
 
-                                    <div className="space-y-2">
+                                    <div className="space-y-3">
                                         {play.venue && (
-                                            <p className="text-xs font-medium text-gray-500">Venue: {play.venue}</p>
+                                            <p className="text-sm font-medium text-gray-500">Venue: {play.venue}</p>
                                         )}
                                         {play.producer && (
-                                            <p className="text-xs font-medium text-gray-500">Producer: {play.producer}</p>
+                                            <p className="text-sm font-medium text-gray-500">Producer: {play.producer}</p>
                                         )}
                                         {play.director && (
-                                            <p className="text-xs font-medium text-gray-500">Director: {play.director}</p>
+                                            <p className="text-sm font-medium text-gray-500">Director: {play.director}</p>
                                         )}
                                         {play.role && (
-                                            <p className="text-xs font-medium text-gray-500">Role: {play.role}</p>
+                                            <p className="text-sm font-medium text-gray-500">Role: {play.role}</p>
                                         )}
-                                        <p className={`text-xs font-medium ${play.status.includes('waiting') || play.status.includes('Cancelled') ? 'text-orange-600' :
+                                        <p className={`text-sm font-medium ${play.status.includes('waiting') || play.status.includes('Cancelled') ? 'text-orange-600' :
                                             play.status.includes('best') || play.status.includes('favourably') || play.status.includes('Great') ? 'text-green-600 font-semibold' :
                                                 'text-green-600'
                                             }`}>
@@ -590,18 +578,17 @@ export default function WhoAmIPage() {
                                         </p>
                                     </div>
 
-                                    {/* Special badges for notable achievements */}
                                     {play.status.includes('favourably reviewed') && (
-                                        <div className="mt-3 inline-block">
-                                            <span className="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-purple-100 text-purple-800">
+                                        <div className="mt-4 inline-block">
+                                            <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-purple-100 text-purple-800">
                                                 ⭐ Critically Acclaimed
                                             </span>
                                         </div>
                                     )}
 
                                     {play.status.includes('Great reviews') && (
-                                        <div className="mt-3 inline-block">
-                                            <span className="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-green-100 text-green-800">
+                                        <div className="mt-4 inline-block">
+                                            <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-green-100 text-green-800">
                                                 📝 Great Reviews
                                             </span>
                                         </div>
@@ -612,7 +599,6 @@ export default function WhoAmIPage() {
                     )}
                 </motion.section>
 
-                {/* Reviews Section */}
                 <motion.section
                     ref={reviewsRef}
                     initial="hidden"
@@ -620,7 +606,7 @@ export default function WhoAmIPage() {
                     variants={staggerContainer}
                 >
                     <motion.h2
-                        className="text-3xl md:text-4xl font-light text-gray-800 mb-8 text-center tracking-wide"
+                        className="text-4xl xl:text-5xl font-light text-gray-800 mb-10 text-center tracking-wide"
                         style={{ fontFamily: 'serif' }}
                         variants={fadeInUp}
                     >
@@ -628,25 +614,25 @@ export default function WhoAmIPage() {
                     </motion.h2>
 
                     <motion.div
-                        className="grid md:grid-cols-2 gap-6"
+                        className="grid xl:grid-cols-3 gap-8"
                         variants={staggerContainer}
                     >
                         {reviews.map((review, index) => (
                             <motion.div
                                 key={index}
-                                className="bg-white/70 backdrop-blur-sm rounded-xl shadow-lg border border-white/30 p-6"
+                                className="bg-white/70 backdrop-blur-sm rounded-xl shadow-lg border border-white/30 p-8"
                                 variants={fadeInUp}
                                 whileHover={{ y: -3 }}
                                 transition={{ duration: 0.3 }}
                             >
                                 <div className="mb-4">
-                                    <svg className="w-8 h-8 text-amber-500 mb-2" fill="currentColor" viewBox="0 0 24 24">
+                                    <svg className="w-10 h-10 text-amber-500 mb-3" fill="currentColor" viewBox="0 0 24 24">
                                         <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h4v10h-10z" />
                                     </svg>
-                                    <p className="text-gray-700 leading-relaxed italic">"{review.quote}"</p>
+                                    <p className="text-gray-700 text-base xl:text-lg leading-relaxed italic">"{review.quote}"</p>
                                 </div>
-                                <div className="border-t border-gray-200 pt-3">
-                                    <p className="font-medium text-gray-800">{review.author}</p>
+                                <div className="border-t border-gray-200 pt-4">
+                                    <p className="font-medium text-gray-800 text-lg">{review.author}</p>
                                     <p className="text-sm text-amber-600">{review.type}</p>
                                 </div>
                             </motion.div>
@@ -654,16 +640,15 @@ export default function WhoAmIPage() {
                     </motion.div>
                 </motion.section>
 
-                {/* Bottom decorative element */}
                 <motion.div
-                    className="flex justify-center items-center mt-16"
+                    className="flex justify-center items-center mt-20"
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ delay: 1, duration: 1 }}
                 >
-                    <div className="w-20 h-px bg-amber-400"></div>
-                    <div className="w-3 h-3 rounded-full bg-amber-400 mx-4"></div>
-                    <div className="w-20 h-px bg-amber-400"></div>
+                    <div className="w-24 h-px bg-amber-400"></div>
+                    <div className="w-4 h-4 rounded-full bg-amber-400 mx-6"></div>
+                    <div className="w-24 h-px bg-amber-400"></div>
                 </motion.div>
             </div>
         </div>

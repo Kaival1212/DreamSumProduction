@@ -28,10 +28,9 @@ export default function SpellInGreecePage() {
 
     return (
         <div className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100">
-            {/* Animated Background */}
             <div className="absolute inset-0 overflow-hidden">
                 <motion.div
-                    className="absolute top-1/4 left-1/5 w-96 h-96 bg-blue-200/20 rounded-full blur-3xl"
+                    className="absolute top-1/4 left-1/6 w-96 h-96 bg-blue-200/20 rounded-full blur-3xl"
                     animate={{
                         scale: [1, 1.2, 1],
                         opacity: [0.3, 0.5, 0.3],
@@ -39,7 +38,7 @@ export default function SpellInGreecePage() {
                     transition={{ duration: 12, repeat: Infinity }}
                 />
                 <motion.div
-                    className="absolute bottom-1/3 right-1/5 w-80 h-80 bg-cyan-200/20 rounded-full blur-3xl"
+                    className="absolute bottom-1/3 right-1/6 w-80 h-80 bg-cyan-200/20 rounded-full blur-3xl"
                     animate={{
                         scale: [1.2, 1, 1.2],
                         opacity: [0.2, 0.4, 0.2],
@@ -48,53 +47,49 @@ export default function SpellInGreecePage() {
                 />
             </div>
 
-            {/* Hero Marquee */}
             <motion.div
-                className="bg-black text-white py-4 overflow-hidden relative"
+                className="bg-black text-white py-5 overflow-hidden relative"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 1 }}
             >
-                <div className="absolute left-0 top-0 bottom-0 w-16 bg-gradient-to-r from-black to-transparent z-10" />
-                <div className="absolute right-0 top-0 bottom-0 w-16 bg-gradient-to-l from-black to-transparent z-10" />
+                <div className="absolute left-0 top-0 bottom-0 w-24 bg-gradient-to-r from-black to-transparent z-10" />
+                <div className="absolute right-0 top-0 bottom-0 w-24 bg-gradient-to-l from-black to-transparent z-10" />
 
                 <motion.div
                     className="whitespace-nowrap"
                     animate={{ x: [1200, -1200] }}
                     transition={{ duration: 25, repeat: Infinity, ease: "linear" }}
                 >
-                    <span className="text-xl md:text-2xl font-light tracking-[0.3em] px-8">
+                    <span className="text-2xl xl:text-3xl font-light tracking-[0.4em] px-10">
                         A Spell in Greece • A Spell in Greece • A Spell in Greece • A Spell in Greece • A Spell in Greece •
                     </span>
                 </motion.div>
             </motion.div>
 
             <motion.div
-                className="relative z-10 max-w-6xl mx-auto px-6 py-16 md:py-20"
+                className="relative z-10 max-w-8xl mx-auto px-6 xl:px-12 py-24"
                 initial="hidden"
                 animate="visible"
                 variants={staggerContainer}
             >
-                {/* Header Section */}
-                <motion.div className="text-center mb-16" variants={fadeInUp}>
+                <motion.div className="text-center mb-20" variants={fadeInUp}>
                     <motion.h1
-                        className="text-4xl md:text-5xl font-light text-gray-800 mb-6 tracking-wide italic"
+                        className="text-5xl xl:text-6xl font-light text-gray-800 mb-8 tracking-wide italic"
                         style={{ fontFamily: 'serif' }}
                     >
                         A Spell in Greece
                     </motion.h1>
-                    <motion.div className="w-24 h-1 bg-blue-500 mx-auto rounded-full mb-6" />
-                    <motion.p className="text-xl text-gray-600 font-light">
+                    <motion.div className="w-32 h-1 bg-blue-500 mx-auto rounded-full mb-8" />
+                    <motion.p className="text-2xl xl:text-3xl text-gray-600 font-light">
                         Romantic Comedy Feature Film
                     </motion.p>
                 </motion.div>
 
-                {/* Main Content */}
-                <div className="grid lg:grid-cols-2 gap-12 items-start">
-                    {/* Left Column - Image */}
+                <div className="grid xl:grid-cols-2 gap-16 items-start">
                     <motion.div variants={fadeInUp}>
                         <motion.div
-                            className="relative bg-white/80 backdrop-blur-sm p-6 rounded-2xl shadow-2xl border border-white/30"
+                            className="relative bg-white/80 backdrop-blur-sm p-8 xl:p-10 rounded-2xl shadow-2xl border border-white/30"
                             whileHover={{ scale: 1.02 }}
                             transition={{ duration: 0.3 }}
                         >
@@ -105,40 +100,36 @@ export default function SpellInGreecePage() {
                             />
                         </motion.div>
 
-                        {/* Status Badge */}
-                        <motion.div className="mt-6 text-center" variants={fadeInUp}>
-                            <span className="px-4 py-2 rounded-full text-sm font-medium bg-blue-100 text-blue-800 border border-blue-200">
+                        <motion.div className="mt-8 text-center" variants={fadeInUp}>
+                            <span className="px-4 py-2 rounded-full text-base font-medium bg-blue-100 text-blue-800 border border-blue-200">
                                 Seeking Funding
                             </span>
                         </motion.div>
                     </motion.div>
 
-                    {/* Right Column - Content */}
-                    <motion.div className="space-y-8" variants={staggerContainer}>
-                        {/* Intro */}
+                    <motion.div className="space-y-10" variants={staggerContainer}>
                         <motion.div
-                            className="bg-white/70 backdrop-blur-sm rounded-xl shadow-lg border border-white/30 p-6"
+                            className="bg-white/70 backdrop-blur-sm rounded-xl shadow-lg border border-white/30 p-8 xl:p-10"
                             variants={fadeInUp}
                         >
-                            <h2 className="text-2xl font-medium text-gray-800 mb-4" style={{ fontFamily: 'serif' }}>
+                            <h2 className="text-3xl font-medium text-gray-800 mb-4" style={{ fontFamily: 'serif' }}>
                                 Intro
                             </h2>
-                            <p className="text-gray-700 leading-relaxed">
+                            <p className="text-gray-700 text-lg xl:text-xl leading-relaxed">
                                 If your happiness is on the line and your stepdaughter's in the way,
                                 there's only one thing for it - she's got to go. This is an upbeat Rom
                                 Com conceived to make you laugh.
                             </p>
                         </motion.div>
 
-                        {/* Synopsis */}
                         <motion.div
-                            className="bg-white/70 backdrop-blur-sm rounded-xl shadow-lg border border-white/30 p-6"
+                            className="bg-white/70 backdrop-blur-sm rounded-xl shadow-lg border border-white/30 p-8 xl:p-10"
                             variants={fadeInUp}
                         >
-                            <h2 className="text-2xl font-medium text-gray-800 mb-4" style={{ fontFamily: 'serif' }}>
+                            <h2 className="text-3xl font-medium text-gray-800 mb-4" style={{ fontFamily: 'serif' }}>
                                 Synopsis
                             </h2>
-                            <div className="text-gray-700 leading-relaxed space-y-4">
+                            <div className="text-gray-700 text-lg xl:text-xl leading-relaxed space-y-6">
                                 <p>
                                     Saffron's fella, Hugh, has put Peaches, his spoilt-brat daughter, ahead
                                     of her once too often. So she gives him an ultimatum: "It's her or me."
@@ -179,29 +170,27 @@ export default function SpellInGreecePage() {
                             </div>
                         </motion.div>
 
-                        {/* Target Audience */}
                         <motion.div
-                            className="bg-white/70 backdrop-blur-sm rounded-xl shadow-lg border border-white/30 p-6"
+                            className="bg-white/70 backdrop-blur-sm rounded-xl shadow-lg border border-white/30 p-8 xl:p-10"
                             variants={fadeInUp}
                         >
-                            <h2 className="text-2xl font-medium text-gray-800 mb-4" style={{ fontFamily: 'serif' }}>
+                            <h2 className="text-3xl font-medium text-gray-800 mb-4" style={{ fontFamily: 'serif' }}>
                                 Target Audience
                             </h2>
-                            <p className="text-gray-700 leading-relaxed">
+                            <p className="text-gray-700 text-lg xl:text-xl leading-relaxed">
                                 16 and over. This will appeal to all those who agree with the Dalai
                                 Lama - life <em className="italic">is</em> all about the pursuit of happiness.
                             </p>
                         </motion.div>
 
-                        {/* Visual Realisation */}
                         <motion.div
-                            className="bg-white/70 backdrop-blur-sm rounded-xl shadow-lg border border-white/30 p-6"
+                            className="bg-white/70 backdrop-blur-sm rounded-xl shadow-lg border border-white/30 p-8 xl:p-10"
                             variants={fadeInUp}
                         >
-                            <h2 className="text-2xl font-medium text-gray-800 mb-4" style={{ fontFamily: 'serif' }}>
-                                Visual realisation
+                            <h2 className="text-3xl font-medium text-gray-800 mb-4" style={{ fontFamily: 'serif' }}>
+                                Visual Realisation
                             </h2>
-                            <p className="text-gray-700 leading-relaxed">
+                            <p className="text-gray-700 text-lg xl:text-xl leading-relaxed">
                                 Set on a beautiful Greek Island, this is an upbeat comic feast for mind,
                                 body and soul. We follow our characters as they struggle with broken
                                 promises, inner wounds and misunderstandings. Only for them to emerge
@@ -210,28 +199,26 @@ export default function SpellInGreecePage() {
                             </p>
                         </motion.div>
 
-                        {/* Influence */}
                         <motion.div
-                            className="bg-white/70 backdrop-blur-sm rounded-xl shadow-lg border border-white/30 p-6"
+                            className="bg-white/70 backdrop-blur-sm rounded-xl shadow-lg border border-white/30 p-8 xl:p-10"
                             variants={fadeInUp}
                         >
-                            <h2 className="text-2xl font-medium text-gray-800 mb-4" style={{ fontFamily: 'serif' }}>
+                            <h2 className="text-3xl font-medium text-gray-800 mb-4" style={{ fontFamily: 'serif' }}>
                                 Influence
                             </h2>
-                            <p className="text-gray-700 leading-relaxed">
+                            <p className="text-gray-700 text-lg xl:text-xl leading-relaxed">
                                 Mamma Mia
                             </p>
                         </motion.div>
 
-                        {/* To Sum Up */}
                         <motion.div
-                            className="bg-gradient-to-r from-blue-50 to-cyan-50 rounded-xl p-6 border border-blue-200"
+                            className="bg-gradient-to-r from-blue-50 to-cyan-50 rounded-xl p-8 xl:p-10 border border-blue-200"
                             variants={fadeInUp}
                         >
-                            <h2 className="text-2xl font-medium text-gray-800 mb-4" style={{ fontFamily: 'serif' }}>
-                                To sum up...
+                            <h2 className="text-3xl font-medium text-gray-800 mb-4" style={{ fontFamily: 'serif' }}>
+                                To Sum Up...
                             </h2>
-                            <p className="text-gray-700 leading-relaxed">
+                            <p className="text-gray-700 text-lg xl:text-xl leading-relaxed">
                                 <em className="italic">A Spell in Greece</em> is an original, feel-good film that encourages
                                 people to grab life by the scruff of the neck and take control. Accept
                                 that life changes and live it with a passion.
@@ -240,14 +227,13 @@ export default function SpellInGreecePage() {
                     </motion.div>
                 </div>
 
-                {/* Back Button */}
                 <motion.div
-                    className="mt-16 text-center"
+                    className="mt-20 text-center"
                     variants={fadeInUp}
                 >
                     <motion.button
                         onClick={() => window.history.back()}
-                        className="px-8 py-4 bg-blue-600 text-white rounded-lg font-medium hover:bg-blue-700 transition-colors shadow-lg"
+                        className="px-10 py-4 bg-blue-600 text-white rounded-lg font-medium text-lg hover:bg-blue-700 transition-colors shadow-lg"
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}
                     >
@@ -255,14 +241,13 @@ export default function SpellInGreecePage() {
                     </motion.button>
                 </motion.div>
 
-                {/* Bottom decorative element */}
                 <motion.div
-                    className="flex justify-center items-center mt-16"
+                    className="flex justify-center items-center mt-20"
                     variants={fadeInUp}
                 >
-                    <div className="w-20 h-px bg-blue-400"></div>
-                    <div className="w-3 h-3 rounded-full bg-blue-400 mx-4"></div>
-                    <div className="w-20 h-px bg-blue-400"></div>
+                    <div className="w-24 h-px bg-blue-400"></div>
+                    <div className="w-4 h-4 rounded-full bg-blue-400 mx-6"></div>
+                    <div className="w-24 h-px bg-blue-400"></div>
                 </motion.div>
             </motion.div>
         </div>

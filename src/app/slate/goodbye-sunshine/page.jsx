@@ -28,10 +28,9 @@ export default function GoodbyeSunshinePage() {
 
     return (
         <div className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100">
-            {/* Animated Background */}
             <div className="absolute inset-0 overflow-hidden">
                 <motion.div
-                    className="absolute top-1/4 left-1/5 w-96 h-96 bg-yellow-200/20 rounded-full blur-3xl"
+                    className="absolute top-1/4 left-1/6 w-96 h-96 bg-yellow-200/20 rounded-full blur-3xl"
                     animate={{
                         scale: [1, 1.2, 1],
                         opacity: [0.3, 0.5, 0.3],
@@ -39,7 +38,7 @@ export default function GoodbyeSunshinePage() {
                     transition={{ duration: 12, repeat: Infinity }}
                 />
                 <motion.div
-                    className="absolute bottom-1/3 right-1/5 w-80 h-80 bg-orange-200/20 rounded-full blur-3xl"
+                    className="absolute bottom-1/3 right-1/6 w-80 h-80 bg-orange-200/20 rounded-full blur-3xl"
                     animate={{
                         scale: [1.2, 1, 1.2],
                         opacity: [0.2, 0.4, 0.2],
@@ -48,60 +47,55 @@ export default function GoodbyeSunshinePage() {
                 />
             </div>
 
-            {/* Hero Marquee */}
             <motion.div
-                className="bg-black text-white py-4 overflow-hidden relative"
+                className="bg-black text-white py-5 overflow-hidden relative"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 1 }}
             >
-                <div className="absolute left-0 top-0 bottom-0 w-16 bg-gradient-to-r from-black to-transparent z-10" />
-                <div className="absolute right-0 top-0 bottom-0 w-16 bg-gradient-to-l from-black to-transparent z-10" />
+                <div className="absolute left-0 top-0 bottom-0 w-24 bg-gradient-to-r from-black to-transparent z-10" />
+                <div className="absolute right-0 top-0 bottom-0 w-24 bg-gradient-to-l from-black to-transparent z-10" />
 
                 <motion.div
                     className="whitespace-nowrap"
                     animate={{ x: [1200, -1200] }}
                     transition={{ duration: 25, repeat: Infinity, ease: "linear" }}
                 >
-                    <span className="text-xl md:text-2xl font-light tracking-[0.3em] px-8">
+                    <span className="text-2xl xl:text-3xl font-light tracking-[0.4em] px-10">
                         Goodbye Sunshine • Goodbye Sunshine • Goodbye Sunshine • Goodbye Sunshine • Goodbye Sunshine •
                     </span>
                 </motion.div>
             </motion.div>
 
             <motion.div
-                className="relative z-10 max-w-6xl mx-auto px-6 py-16 md:py-20"
+                className="relative z-10 max-w-8xl mx-auto px-6 xl:px-12 py-24"
                 initial="hidden"
                 animate="visible"
                 variants={staggerContainer}
             >
-                {/* Header Section */}
-                <motion.div className="text-center mb-16" variants={fadeInUp}>
+                <motion.div className="text-center mb-20" variants={fadeInUp}>
                     <motion.h1
-                        className="text-4xl md:text-5xl font-light text-gray-800 mb-6 tracking-wide italic"
+                        className="text-5xl xl:text-6xl font-light text-gray-800 mb-8 tracking-wide italic"
                         style={{ fontFamily: 'serif' }}
                     >
                         Goodbye Sunshine
                     </motion.h1>
-                    <motion.div className="w-24 h-1 bg-yellow-500 mx-auto rounded-full mb-6" />
-                    <motion.p className="text-xl text-gray-600 font-light">
+                    <motion.div className="w-32 h-1 bg-yellow-500 mx-auto rounded-full mb-8" />
+                    <motion.p className="text-2xl xl:text-3xl text-gray-600 font-light">
                         A Cannes-nominated short film about knife-crime
                     </motion.p>
                 </motion.div>
 
-                {/* Cannes Badge */}
-                <motion.div className="text-center mb-12" variants={fadeInUp}>
-                    <span className="px-6 py-3 rounded-full text-lg font-medium bg-yellow-100 text-yellow-800 border-2 border-yellow-300 inline-flex items-center">
+                <motion.div className="text-center mb-16" variants={fadeInUp}>
+                    <span className="px-6 py-3 rounded-full text-lg xl:text-xl font-medium bg-yellow-100 text-yellow-800 border-2 border-yellow-300 inline-flex items-center">
                         🏆 Cannes Indie Shorts Festival Nominee
                     </span>
                 </motion.div>
 
-                {/* Main Content */}
-                <div className="grid lg:grid-cols-2 gap-12 items-start">
-                    {/* Left Column - Image */}
+                <div className="grid xl:grid-cols-2 gap-16 items-start">
                     <motion.div variants={fadeInUp}>
                         <motion.div
-                            className="relative bg-white/80 backdrop-blur-sm p-6 rounded-2xl shadow-2xl border border-white/30"
+                            className="relative bg-white/80 backdrop-blur-sm p-8 xl:p-10 rounded-2xl shadow-2xl border border-white/30"
                             whileHover={{ scale: 1.02 }}
                             transition={{ duration: 0.3 }}
                         >
@@ -112,36 +106,33 @@ export default function GoodbyeSunshinePage() {
                             />
                         </motion.div>
 
-                        {/* Status Badge */}
-                        <motion.div className="mt-6 text-center" variants={fadeInUp}>
-                            <span className="px-4 py-2 rounded-full text-sm font-medium bg-green-100 text-green-800 border border-green-200">
+                        <motion.div className="mt-8 text-center" variants={fadeInUp}>
+                            <span className="px-4 py-2 rounded-full text-base font-medium bg-green-100 text-green-800 border border-green-200">
                                 Completed & Nominated
                             </span>
                         </motion.div>
 
-                        {/* Credits */}
                         <motion.div
-                            className="mt-6 bg-white/70 backdrop-blur-sm rounded-xl shadow-lg border border-white/30 p-4"
+                            className="mt-8 bg-white/70 backdrop-blur-sm rounded-xl shadow-lg border border-white/30 p-6 xl:p-8"
                             variants={fadeInUp}
                         >
-                            <h3 className="text-lg font-medium text-gray-800 mb-3">Credits</h3>
-                            <div className="space-y-2 text-sm text-gray-700">
+                            <h3 className="text-xl font-medium text-gray-800 mb-3">Credits</h3>
+                            <div className="space-y-3 text-base text-gray-700">
                                 <p><strong>Written by:</strong> S.J.Horan</p>
                                 <p><strong>Directed by:</strong> Ufuk Gokkaya</p>
                             </div>
                         </motion.div>
                     </motion.div>
 
-                    {/* Right Column - Synopsis */}
-                    <motion.div className="space-y-8" variants={staggerContainer}>
+                    <motion.div className="space-y-10" variants={staggerContainer}>
                         <motion.div
-                            className="bg-white/70 backdrop-blur-sm rounded-xl shadow-lg border border-white/30 p-6"
+                            className="bg-white/70 backdrop-blur-sm rounded-xl shadow-lg border border-white/30 p-8 xl:p-10"
                             variants={fadeInUp}
                         >
-                            <h2 className="text-2xl font-medium text-gray-800 mb-4" style={{ fontFamily: 'serif' }}>
+                            <h2 className="text-3xl font-medium text-gray-800 mb-4" style={{ fontFamily: 'serif' }}>
                                 Synopsis
                             </h2>
-                            <div className="text-gray-700 leading-relaxed space-y-4">
+                            <div className="text-gray-700 text-lg xl:text-xl leading-relaxed space-y-6">
                                 <p>
                                     It's an ordinary school day at the home of Junior, Lilia and Alesha in
                                     south London. Lilia, the mother, and Junior, her young son, exchange
@@ -201,23 +192,21 @@ export default function GoodbyeSunshinePage() {
                             </div>
                         </motion.div>
 
-                        {/* Key Question */}
                         <motion.div
-                            className="bg-gradient-to-r from-yellow-50 to-orange-50 rounded-xl p-6 border border-yellow-200 text-center"
+                            className="bg-gradient-to-r from-yellow-50 to-orange-50 rounded-xl p-8 xl:p-10 border border-yellow-200 text-center"
                             variants={fadeInUp}
                         >
-                            <h3 className="text-xl font-medium text-gray-800 mb-4" style={{ fontFamily: 'serif' }}>
+                            <h3 className="text-2xl xl:text-3xl font-medium text-gray-800 mb-4" style={{ fontFamily: 'serif' }}>
                                 How does a mother deal with the loss of her child?
                             </h3>
                         </motion.div>
 
-                        {/* Impact Statement */}
                         <motion.div
-                            className="bg-white/70 backdrop-blur-sm rounded-xl shadow-lg border border-white/30 p-6"
+                            className="bg-white/70 backdrop-blur-sm rounded-xl shadow-lg border border-white/30 p-8 xl:p-10"
                             variants={fadeInUp}
                         >
-                            <h3 className="text-lg font-medium text-gray-800 mb-3">About the Film</h3>
-                            <p className="text-gray-700 leading-relaxed">
+                            <h3 className="text-xl font-medium text-gray-800 mb-3">About the Film</h3>
+                            <p className="text-gray-700 text-lg xl:text-xl leading-relaxed">
                                 <em className="italic">Goodbye Sunshine</em> is a powerful short film that explores the devastating
                                 impact of knife crime through the lens of a mother's grief. Nominated for
                                 the Cannes Indie Shorts Festival, this film confronts one of society's
@@ -227,14 +216,13 @@ export default function GoodbyeSunshinePage() {
                     </motion.div>
                 </div>
 
-                {/* Back Button */}
                 <motion.div
-                    className="mt-16 text-center"
+                    className="mt-20 text-center"
                     variants={fadeInUp}
                 >
                     <motion.button
                         onClick={() => window.history.back()}
-                        className="px-8 py-4 bg-yellow-600 text-white rounded-lg font-medium hover:bg-yellow-700 transition-colors shadow-lg"
+                        className="px-10 py-4 bg-yellow-600 text-white rounded-lg font-medium text-lg hover:bg-yellow-700 transition-colors shadow-lg"
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}
                     >
@@ -242,14 +230,13 @@ export default function GoodbyeSunshinePage() {
                     </motion.button>
                 </motion.div>
 
-                {/* Bottom decorative element */}
                 <motion.div
-                    className="flex justify-center items-center mt-16"
+                    className="flex justify-center items-center mt-20"
                     variants={fadeInUp}
                 >
-                    <div className="w-20 h-px bg-yellow-400"></div>
-                    <div className="w-3 h-3 rounded-full bg-yellow-400 mx-4"></div>
-                    <div className="w-20 h-px bg-yellow-400"></div>
+                    <div className="w-24 h-px bg-yellow-400"></div>
+                    <div className="w-4 h-4 rounded-full bg-yellow-400 mx-6"></div>
+                    <div className="w-24 h-px bg-yellow-400"></div>
                 </motion.div>
             </motion.div>
         </div>
