@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 import { motion, useScroll, useTransform, useInView } from "framer-motion";
+import Head from "next/head";
 
 // Donate/Invest Component
 function DonateInvestSection() {
