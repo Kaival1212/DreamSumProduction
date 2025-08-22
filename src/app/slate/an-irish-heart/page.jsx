@@ -194,7 +194,7 @@ export default function AnIrishHeartPage() {
                                 variants={fadeInUp}
                             >
                                 <h2 className="text-3xl font-medium text-gray-800 mb-4" style={{ fontFamily: 'serif' }}>
-                                    Influence
+                                    Influences
                                 </h2>
                                 <p className="text-gray-700 text-lg xl:text-xl leading-relaxed">
                                     <i>A Holiday Affair, Leap Year, Rumour Has It</i>

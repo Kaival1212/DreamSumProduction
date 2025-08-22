@@ -189,7 +189,7 @@ export default function OnTheSlatePage() {
                 </motion.div>
 
                 <motion.div
-                    className="grid xl:grid-cols-3 gap-10"
+                    className="grid xl:grid-cols-4 gap-10"
                     variants={staggerContainer}
                 >
                     {projects.map((project, index) => (

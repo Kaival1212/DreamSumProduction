@@ -388,7 +388,7 @@ export default function WhoAmIPage() {
                                 variants={fadeInUp}
                             >
                                 <motion.div
-                                    className="relative w-64 h-64 xl:w-80 xl:h-80 rounded-full overflow-hidden shadow-2xl border-4 border-white/50"
+                                    className="relative w-64 h-64 xl:w-1/3 xl:h-1/3 rounded-full overflow-hidden shadow-2xl border-4 border-white/50"
                                     whileHover={{ scale: 1.05 }}
                                     transition={{ duration: 0.3 }}
                                 >
@@ -402,11 +402,11 @@ export default function WhoAmIPage() {
                         </motion.div>
 
                         <motion.div
-                            className="bg-white/70 backdrop-blur-sm rounded-2xl shadow-xl border border-white/30 p-10 xl:p-12 max-w-5xl mx-auto"
+                            className="bg-white/70 backdrop-blur-sm rounded-2xl shadow-xl border border-white/30 p-10 max-w-6xl mx-auto"
                             variants={fadeInUp}
                         >
                             <motion.p
-                                className="text-xl xl:text-2xl leading-relaxed text-gray-700 font-light mb-6"
+                                className="flex text-xl xl:text-3xl leading-relaxed text-gray-700 font-light mb-6 justify-center align-middle"
                                 variants={fadeInUp}
                             >
                                 My name is S. J. Horan. I am a London-based writer, filmmaker and producer.
@@ -431,7 +431,7 @@ export default function WhoAmIPage() {
 
                         <div className="grid xl:grid-cols-2 gap-10">
                             <motion.div
-                                className="bg-white/70 backdrop-blur-sm rounded-xl shadow-lg border border-white/30 p-8 xl:p-10"
+                                className="bg-white/70 backdrop-blur-sm  rounded-xl shadow-lg border border-white/30 p-8 xl:p-8"
                                 variants={fadeInUp}
                                 whileHover={{ y: -5 }}
                                 transition={{ duration: 0.3 }}
@@ -512,7 +512,7 @@ export default function WhoAmIPage() {
 
                         {activeTab === "films" && (
                             <motion.div
-                                className="grid xl:grid-cols-3 gap-8"
+                                className="grid xl:grid-cols-4 gap-8"
                                 variants={staggerContainer}
                                 initial="hidden"
                                 animate="visible"
@@ -577,7 +577,7 @@ export default function WhoAmIPage() {
 
                         {activeTab === "plays" && (
                             <motion.div
-                                className="grid xl:grid-cols-3 gap-8"
+                                className="grid xl:grid-cols-4 gap-8"
                                 variants={staggerContainer}
                                 initial="hidden"
                                 animate="visible"
@@ -670,7 +670,7 @@ export default function WhoAmIPage() {
                         </motion.h2>
 
                         <motion.div
-                            className="grid xl:grid-cols-3 gap-8"
+                            className="grid xl:grid-cols-4 gap-8"
                             variants={staggerContainer}
                         >
                             {reviews.map((review, index) => (
