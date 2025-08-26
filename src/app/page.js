@@ -169,6 +169,20 @@ export default function Home() {
           className="relative z-10 w-full mx-auto px-6 xl:px-96"
           style={{ y: heroY }}
         >
+
+          <section className="section absolute z-0">
+            <span className="Span"></span>
+            <span className="Span"></span>
+            <span className="Span"></span>
+            <span className="Span"></span>
+            <span className="Span"></span>
+            <span className="Span"></span>
+            <span className="Span"></span>
+            <span className="Span"></span>
+            <span className="Span"></span>
+            <span className="Span"></span>
+          </section>
+
           <motion.div
             className="relative mb-12"
             variants={fadeInUp}
@@ -196,7 +210,7 @@ export default function Home() {
           </motion.div>
 
           <motion.div
-            className="text-center"
+            className="text-center relative"
             variants={fadeInUp}
           >
             <motion.div
