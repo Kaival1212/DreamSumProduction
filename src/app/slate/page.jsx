@@ -305,7 +305,9 @@ export default function OnTheSlatePage() {
                                 whileHover={{ scale: 1.05 }}
                                 whileTap={{ scale: 0.95 }}
                             >
-                                Learn More
+                                <Link href="/whoAmI">
+                                    Learn More
+                                </Link>
                             </motion.button>
                         </div>
                     </motion.div>
