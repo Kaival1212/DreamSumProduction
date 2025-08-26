@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 
 export default function OnTheSlatePage() {
@@ -87,7 +88,7 @@ export default function OnTheSlatePage() {
             status: "Pre-Production",
             image: "/Irish.png",
             description: "A romantic comedy exploring themes of love, passion and risk.",
-            year: "2026",
+            year: "2025",
             type: "Feature Film",
             role: "Writer and Producer",
             achievement: "Part of expanding portfolio"
@@ -200,7 +201,7 @@ export default function OnTheSlatePage() {
                             whileHover={{ y: -10, scale: 1.02 }}
                             onClick={() => handleProjectClick(project.title)}
                         >
-                            <div className="relative h-80 overflow-hidden">
+                            <div className="relative h-80 overflow-hidden ">
                                 <motion.img
                                     src={project.image}
                                     alt={project.title}
@@ -215,7 +216,7 @@ export default function OnTheSlatePage() {
                                 </div>
 
                                 {project.achievement && project.status === "Completed & Nominated" && (
-                                    <div className="absolute top-6 left-6">
+                                    <div className="absolute sm:top-6 left-6 top-15">
                                         <span className="px-4 py-1.5 rounded-full text-sm font-medium bg-yellow-100 text-yellow-800 border border-yellow-200">
                                             🏆 Award Nominee
                                         </span>
@@ -289,13 +290,16 @@ export default function OnTheSlatePage() {
                             we'd love to hear from you. Every great story begins with a conversation.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-6 justify-center">
-                            <motion.button
+                            <motion.div
+                                href="/contact"
                                 className="px-10 py-4 bg-amber-600 text-white rounded-lg font-medium text-lg hover:bg-amber-700 transition-colors shadow-lg"
                                 whileHover={{ scale: 1.05 }}
                                 whileTap={{ scale: 0.95 }}
                             >
-                                Contact Us
-                            </motion.button>
+                                <Link href="/contact">
+                                    Contact Us
+                                </Link>
+                            </motion.div>
                             <motion.button
                                 className="px-10 py-4 bg-white text-amber-600 rounded-lg font-medium text-lg border border-amber-300 hover:bg-amber-50 transition-colors"
                                 whileHover={{ scale: 1.05 }}
