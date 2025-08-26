@@ -86,7 +86,7 @@ export default function OnTheSlatePage() {
             subtitle: "Romantic Comedy Feature",
             status: "Pre-Production",
             image: "/Irish.png",
-            description: "A romantic comedy exploring themes of love, culture, and connection.",
+            description: "A romantic comedy exploring themes of love, passion and risk.",
             year: "2026",
             type: "Feature Film",
             role: "Writer and Producer",
@@ -239,7 +239,7 @@ export default function OnTheSlatePage() {
 
                                 <div className="space-y-3 text-sm text-gray-500">
                                     <div className="flex justify-between">
-                                        <span>Year to be filmed:</span>
+                                        <span>Year Written:</span>
                                         <span className="font-medium">{project.year}</span>
                                     </div>
                                     <div className="flex justify-between">

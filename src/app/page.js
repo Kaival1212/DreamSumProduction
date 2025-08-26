@@ -358,7 +358,7 @@ export default function Home() {
                 </motion.p>
 
                 <motion.p
-                  className="text-lg xl:text-xl leading-relaxed text-gray-600 font-light"
+                  className="text-xl xl:text-2xl leading-relaxed text-gray-800 font-light"
                   variants={fadeInUp}
                 >
                   We believe in the power of storytelling to connect people, challenge perspectives, and

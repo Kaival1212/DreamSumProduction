@@ -57,7 +57,9 @@ export default function WhoAmIPage() {
             description: "Maria, an ambitious actress and writer is at a crossroads in her life. Does she marry her long-term boyfriend, Jamie, just as his Nonna wants - or does she role the dice and run off to the bright lights of New York with a free spirited musician, and risk losing everything",
             status: "In pre-production",
             role: "Writer, Producer",
-            color: "purple"
+            color: "purple",
+            highlight: true
+
         },
         {
             title: "Revenge is a Hot Chocolate Fudge Cake",
@@ -66,7 +68,8 @@ export default function WhoAmIPage() {
             description: "A short comedic film that I wrote, has been rated highly by a local BAFTA judge. In consideration for production.",
             status: "In consideration for production",
             role: "Writer",
-            color: "purple"
+            color: "purple",
+            highlight: true
         },
         {
             title: "Larry Lobbyist",
@@ -75,7 +78,8 @@ export default function WhoAmIPage() {
             description: "A film campaigning against a third Heathrow runway. Produced. Reached the competition finals.",
             status: "Completed - Competition Finalist",
             role: "Producer",
-            color: "green"
+            color: "green",
+            highlight: true
         },
         {
             title: "A Spell in Greece",
@@ -84,7 +88,8 @@ export default function WhoAmIPage() {
             description: "A Rom Com feature film. A short proof of concept film is in pre-production. Seeking funding.",
             status: "Seeking funding",
             role: "Writer",
-            color: "amber"
+            color: "amber",
+            highlight: true
         },
         {
             title: "Supper's Off",
@@ -93,7 +98,8 @@ export default function WhoAmIPage() {
             description: "A Rom Com feature film, an update of Shirley Valentine. Producers are seeking development funding.",
             status: "Seeking development funding",
             role: "Writer",
-            color: "pink"
+            color: "pink",
+            highlight: true
         },
         {
             title: "City in Flames",
@@ -112,7 +118,8 @@ export default function WhoAmIPage() {
             description: "A short film written, directed, produced and edited by S.J.Horan",
             status: "Completed",
             role: "Writer, Director, Producer, Editor",
-            color: "teal"
+            color: "teal",
+            highlight: true
         },
         {
             title: "Lost in Translation",
@@ -121,7 +128,8 @@ export default function WhoAmIPage() {
             description: "A short film written, directed, produced and edited by S.J.Horan",
             status: "Completed",
             role: "Writer, Director, Producer, Editor",
-            color: "indigo"
+            color: "indigo",
+            highlight: true
         },
         {
             title: "La Dolce Vita",
@@ -130,7 +138,8 @@ export default function WhoAmIPage() {
             description: "A short film written, directed, produced and edited by S.J.Horan",
             status: "Completed",
             role: "Writer, Director, Producer, Editor",
-            color: "orange"
+            color: "orange",
+            highlight: true
         }
     ];
 
@@ -143,7 +152,8 @@ export default function WhoAmIPage() {
             producer: "Red on Black Productions",
             status: "Produced",
             note: "Turner Plays showcase",
-            color: "blue"
+            color: "blue",
+            highlight: true
         },
         {
             title: "All or Nothing",
@@ -154,7 +164,8 @@ export default function WhoAmIPage() {
             director: "Lucy Collingwood (BBC)",
             status: "Produced",
             note: "Part of Love Bites series",
-            color: "purple"
+            color: "purple",
+            highlight: true
         },
         {
             title: "Family Holiday",
@@ -163,7 +174,8 @@ export default function WhoAmIPage() {
             description: "<i>Family Holiday</i>, May 2010, was written, directed and produced by S. J. Horan, at the Cockpit Theatre, Marylebone, London. This play deals with deep family tensions and long-held resentments.",
             role: "Writer, Director, Producer",
             status: "Produced",
-            color: "green"
+            color: "green",
+            highlight: true
         },
         {
             title: "All In The Mind",
@@ -172,7 +184,8 @@ export default function WhoAmIPage() {
             description: "<i>All In The Mind</i>, a comedic play written by S. J. Horan, was chosen by 17% Theatre Company for their inaugural show. Inspired by The Odd Couple, it deals with the perception of relationships. Two people, one relationship - two very different takes.",
             status: "Produced",
             note: "Comedic play",
-            color: "amber"
+            color: "amber",
+            highlight: true
         },
         {
             title: "Cook It like Mamma",
@@ -191,7 +204,8 @@ export default function WhoAmIPage() {
             description: "<i>A Life in Ruins</i>, the second part of S. J. Horan's Irish trilogy, was produced in London, August 2014. This play deals with the devastating effects of rape.",
             status: "Produced",
             note: "Part of Irish trilogy",
-            color: "red"
+            color: "red",
+            highlight: true
         },
         {
             title: "All That Glitters",
@@ -200,7 +214,8 @@ export default function WhoAmIPage() {
             description: "<i>All That Glitters</i>, written by S. J. was performed in Kent, August 2015 and produced by 17% Theatre Company. This play deals with the illusion that the grass is always greener.",
             producer: "17% Theatre Company",
             status: "Produced",
-            color: "teal"
+            color: "teal",
+            highlight: true
         },
         {
             title: "Ménage à quatre",
@@ -218,7 +233,8 @@ export default function WhoAmIPage() {
             description: "A short, comic Nativity play, <i>Gary Loses his Way</i>, written by S.J.Horan was to be produced in 2020 as part of the Christmas Cracker Show in Barnes, London. Sadly, the show was cancelled due to Covid. A rather impish take on a former Education Secretary.",
             status: "Cancelled due to Covid",
             note: "Comic Nativity play",
-            color: "pink"
+            color: "pink",
+            highlight: true
         },
         {
             title: "Dance Me To The End",
@@ -227,6 +243,7 @@ export default function WhoAmIPage() {
             description: "A radio play, <i>Dance Me To The End</i>, written by S. J. Horan in October 2021 was judged best radio drama. It deals with marriage tensions during Covid and the unhelpful emails from an old French flame.",
             status: "Judged best radio drama",
             color: "emerald",
+            highlight: true
         }
     ];
 
@@ -520,7 +537,7 @@ export default function WhoAmIPage() {
                                 {films.map((film, index) => (
                                     <motion.div
                                         key={film.title}
-                                        className={`bg-white/70 backdrop-blur-sm rounded-xl shadow-lg border border-white/30 p-8 hover:shadow-xl transition-all duration-300 ${film.highlight ? 'ring-2 ring-amber-300/50' : ''}`}
+                                        className={`bg-white/70 backdrop-blur-sm rounded-xl shadow-xl border border-white/30 p-8 hover:shadow-2xl transition-all duration-300 ${film.highlight ? 'ring-2 ring-amber-300/50' : ''}`}
                                         variants={fadeInUp}
                                         whileHover={{ y: -5, scale: 1.02 }}
                                     >
@@ -585,7 +602,7 @@ export default function WhoAmIPage() {
                                 {plays.map((play, index) => (
                                     <motion.div
                                         key={play.title}
-                                        className={`bg-white/70 backdrop-blur-sm rounded-xl shadow-lg border border-white/30 p-8 hover:shadow-xl transition-all duration-300 ${play.highlight ? 'ring-2 ring-amber-300/50' : ''}`}
+                                        className={`bg-white/70 backdrop-blur-sm rounded-xl shadow-xl border border-white/30 p-8 hover:shadow-2xl transition-all duration-300 ${play.highlight ? 'ring-2 ring-amber-300/50' : ''}`}
                                         variants={fadeInUp}
                                         whileHover={{ y: -5, scale: 1.02 }}
                                     >
@@ -676,7 +693,8 @@ export default function WhoAmIPage() {
                             {reviews.map((review, index) => (
                                 <motion.div
                                     key={index}
-                                    className="bg-white/70 backdrop-blur-sm rounded-xl shadow-lg border border-white/30 p-8"
+                                    className="bg-white/70 backdrop-blur-sm rounded-xl shadow-lg border border-white/30 p-8
+                                    "
                                     variants={fadeInUp}
                                     whileHover={{ y: -3 }}
                                     transition={{ duration: 0.3 }}

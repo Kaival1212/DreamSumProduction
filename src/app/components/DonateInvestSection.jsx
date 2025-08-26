@@ -139,7 +139,9 @@ export default function DonateInvestSection() {
                 />
             </div>
 
-            <motion.div className="relative z-10 max-w-8xl mx-auto px-6 xl:px-12" variants={staggerContainer}>
+            <motion.div className="relative z-10 max-w-8xl mx-auto px-6 xl:px-12" variants={staggerContainer}
+
+            >
                 <div className="grid xl:grid-cols-2 gap-12 xl:gap-20 items-start">
                     <motion.div className="space-y-10" variants={fadeInUp}>
                         <motion.h2
@@ -150,11 +152,13 @@ export default function DonateInvestSection() {
                             Donate/Invest
                         </motion.h2>
 
-                        <motion.div className="space-y-8 text-lg xl:text-xl leading-relaxed text-gray-700" variants={staggerContainer}>
+                        <motion.div className="space-y-8 text-xl xl:text-2xl font-light tracking-wide leading-relaxed        text-gray-800" variants={staggerContainer}
+                            
+                        >
                             <motion.p variants={fadeInUp}>
                                 If you are interested in reading one of our scripts, investing, or donating even just a small amount to cover production costs, please contact{" "}
                                 <motion.em
-                                    className="text-gray-700 font-medium"
+                                    className="text-gray-800 font-light"
                                     whileHover={{ scale: 1.02 }}
                                     style={{ display: "inline-block", fontFamily: 'serif' }}
                                 >
@@ -174,7 +178,7 @@ export default function DonateInvestSection() {
                             <motion.p variants={fadeInUp}>
                                 And, however{" "}
                                 <motion.em
-                                    className="text-gray-700 italic"
+                                    className="text-gray-800 italic"
                                     whileHover={{ scale: 1.02 }}
                                     style={{ display: "inline-block" }}
                                 >
@@ -184,7 +188,7 @@ export default function DonateInvestSection() {
                             </motion.p>
 
                             <motion.div className="pt-8 border-t border-gray-200" variants={fadeInUp}>
-                                <motion.p className="font-medium text-gray-800 text-xl xl:text-2xl" variants={fadeInUp}>
+                                <motion.p className="font-light text-gray-800 text-xl xl:text-2xl" variants={fadeInUp}>
                                     S.J. Horan
                                 </motion.p>
                                 <motion.p className="text-gray-600 italic text-lg" variants={fadeInUp}>

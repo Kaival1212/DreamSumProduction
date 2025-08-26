@@ -111,6 +111,12 @@ export default function SpellInGreecePage() {
                         </motion.p>
                     </header>
 
+                    <motion.div className="text-center mb-16" variants={fadeInUp}>
+                        <span className="px-6 py-3 rounded-full text-lg xl:text-xl font-medium bg-yellow-100 text-yellow-800 border-2 border-yellow-300 inline-flex items-center">
+                            Honourable Mention in LA film and documentary award festival 2025
+                            
+                        </span>
+                    </motion.div>
 
                     <section className="grid xl:grid-cols-2 gap-16 items-start" variants={staggerContainer}>
                         <motion.article variants={fadeInUp}>
