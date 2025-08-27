@@ -36,7 +36,7 @@ export default function OnTheSlatePage() {
             id: 1,
             title: "Goodbye Sunshine",
             subtitle: "Cannes Nominated Short Film",
-            status: "Completed & Nominated",
+            status: "Produced",
             image: "/goodbyesun.png",
             description: "A powerful short film about knife-crime, seen through the harrowing prism of a mother's grief.",
             year: "2024",
@@ -215,8 +215,8 @@ export default function OnTheSlatePage() {
                                     </span>
                                 </div>
 
-                                {project.achievement && project.status === "Completed & Nominated" && (
-                                    <div className="absolute sm:top-6 left-6 top-15">
+                                {project.achievement && project.title === "Goodbye Sunshine" && (
+                                    <div className="absolute top-6 left-6 ">
                                         <span className="px-4 py-1.5 rounded-full text-sm font-medium bg-yellow-100 text-yellow-800 border border-yellow-200">
                                             🏆 Award Nominee
                                         </span>

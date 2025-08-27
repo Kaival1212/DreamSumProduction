@@ -142,7 +142,7 @@ export default function GoodbyeSunshinePage() {
                             </motion.div>
                             <motion.div className="mt-8 text-center" variants={fadeInUp}>
                                 <span className="px-4 py-2 rounded-full text-base font-medium bg-green-100 text-green-800 border border-green-200">
-                                    Completed & Nominated
+                                    Produced
                                 </span>
                             </motion.div>
                             <motion.div

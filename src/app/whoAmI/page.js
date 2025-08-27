@@ -537,11 +537,11 @@ export default function WhoAmIPage() {
                                 {films.map((film, index) => (
                                     <motion.div
                                         key={film.title}
-                                        className={`bg-white/70 backdrop-blur-sm rounded-xl shadow-xl border border-white/30 p-8 hover:shadow-2xl transition-all duration-300 ${film.highlight ? 'ring-2 ring-amber-300/50' : ''}`}
+                                        className={`bg-white/70 flex flex-col items-center backdrop-blur-sm rounded-xl shadow-xl border border-white/30 p-8 hover:shadow-2xl transition-all duration-300 ${film.highlight ? 'ring-2 ring-amber-300/50' : ''}`}
                                         variants={fadeInUp}
                                         whileHover={{ y: -5, scale: 1.02 }}
                                     >
-                                        <div className="flex items-start justify-between mb-4">
+                                        <div className="flex items-start gap-2 justify-between mb-4">
                                             <h3 className="text-xl font-medium text-gray-800 italic">{film.title}</h3>
                                             <span className="text-base font-medium text-gray-500">({film.year})</span>
                                         </div>
@@ -560,9 +560,9 @@ export default function WhoAmIPage() {
                                             {film.type}
                                         </div>
 
-                                        <p className="text-gray-600 text-base mb-4 leading-relaxed">{film.description}</p>
+                                        <p className="text-gray-600 text-center mb-4 leading-relaxed">{film.description}</p>
 
-                                        <div className="space-y-3">
+                                        <div className="space-y-3 flex flex-col items-center">
                                             <p className="text-sm font-medium text-gray-500">Role: {film.role}</p>
                                             <p className={`text-sm font-medium ${film.status.includes('Seeking') ? 'text-orange-600' :
                                                 film.status.includes('Nominated') || film.status.includes('Finalist') ? 'text-green-600 font-semibold' :
@@ -602,11 +602,11 @@ export default function WhoAmIPage() {
                                 {plays.map((play, index) => (
                                     <motion.div
                                         key={play.title}
-                                        className={`bg-white/70 backdrop-blur-sm rounded-xl shadow-xl border border-white/30 p-8 hover:shadow-2xl transition-all duration-300 ${play.highlight ? 'ring-2 ring-amber-300/50' : ''}`}
+                                        className={`bg-white/70 flex flex-col items-center backdrop-blur-sm rounded-xl shadow-xl border border-white/30 p-6 hover:shadow-2xl transition-all duration-300 ${play.highlight ? 'ring-2 ring-amber-300/50' : ''}`}
                                         variants={fadeInUp}
                                         whileHover={{ y: -5, scale: 1.02 }}
                                     >
-                                        <div className="flex items-start justify-between mb-4">
+                                        <div className="flex items-start justify-between gap-2 mb-4">
                                             <h3 className="text-xl font-medium text-gray-800 italic">{play.title}</h3>
                                             {play.year !== "N/A" && (
                                                 <span className="text-base font-medium text-gray-500">({play.year})</span>
@@ -628,9 +628,10 @@ export default function WhoAmIPage() {
                                             {play.note || 'Play'}
                                         </div>
 
-                                        <p className="text-gray-600 text-base mb-4 leading-relaxed" dangerouslySetInnerHTML={{ __html: play.description }}></p>
 
-                                        <div className="space-y-3">
+                                        <p className="text-gray-600 text-center mb-4 leading-relaxed" dangerouslySetInnerHTML={{ __html: play.description }}></p>
+
+                                        <div className="space-y-3 flex flex-col items-center">
                                             {play.venue && (
                                                 <p className="text-sm font-medium text-gray-500">Venue: {play.venue}</p>
                                             )}
