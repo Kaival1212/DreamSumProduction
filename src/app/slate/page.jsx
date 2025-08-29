@@ -113,7 +113,7 @@ export default function OnTheSlatePage() {
 
     const getStatusColor = (status) => {
         switch (status) {
-            case "Completed & Nominated":
+            case "Produced & Nominated":
                 return "bg-green-100 text-green-800 border-green-200";
             case "Seeking Producers":
                 return "bg-orange-100 text-orange-800 border-orange-200";
@@ -320,8 +320,8 @@ export default function OnTheSlatePage() {
                     {[
                         { number: "20+", label: "Projects Created" },
                         { number: "1", label: "Cannes Nomination" },
-                        { number: "5", label: "Feature Films" },
-                        { number: "10+", label: "Award Recognition" }
+                        { number: "4", label: "Feature Films" },
+                        { number: "4+", label: "Award Recognition" }
                     ].map((stat, index) => (
                         <motion.div
                             key={index}

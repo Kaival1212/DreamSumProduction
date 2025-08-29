@@ -45,7 +45,7 @@ export default function WhoAmIPage() {
             year: "2024",
             type: "Short Film - Drama",
             description: "A short film about knife-crime, written by S.J. Horan and directed by Ufuk Gokkaya. Nominated for the Cannes Indie Shorts Festival and on IMDb, it's seen through the harrowing prism of a mother's grief.",
-            status: "Completed & Nominated",
+            status: "Produced & Nominated",
             role: "Writer, Producer",
             color: "blue",
             highlight: true
@@ -76,7 +76,7 @@ export default function WhoAmIPage() {
             year: "2014",
             type: "Campaign Film",
             description: "A film campaigning against a third Heathrow runway. Produced. Reached the competition finals.",
-            status: "Completed - Competition Finalist",
+            status: "Produced - Competition Finalist",
             role: "Producer",
             color: "green",
             highlight: true
@@ -116,7 +116,7 @@ export default function WhoAmIPage() {
             year: "2025",
             type: "Short Film",
             description: "A short film written, directed, produced and edited by S.J.Horan",
-            status: "Completed",
+            status: "Produced",
             role: "Writer, Director, Producer, Editor",
             color: "teal",
             highlight: true
@@ -126,7 +126,7 @@ export default function WhoAmIPage() {
             year: "2024",
             type: "Short Film",
             description: "A short film written, directed, produced and edited by S.J.Horan",
-            status: "Completed",
+            status: "Produced",
             role: "Writer, Director, Producer, Editor",
             color: "indigo",
             highlight: true
@@ -136,7 +136,7 @@ export default function WhoAmIPage() {
             year: "2024",
             type: "Short Film",
             description: "A short film written, directed, produced and edited by S.J.Horan",
-            status: "Completed",
+            status: "Produced",
             role: "Writer, Director, Producer, Editor",
             color: "orange",
             highlight: true
@@ -529,7 +529,7 @@ export default function WhoAmIPage() {
 
                         {activeTab === "films" && (
                             <motion.div
-                                className="grid xl:grid-cols-4 gap-8"
+                                className="flex flex-row flex-wrap gap-8 justify-center "
                                 variants={staggerContainer}
                                 initial="hidden"
                                 animate="visible"
@@ -537,7 +537,7 @@ export default function WhoAmIPage() {
                                 {films.map((film, index) => (
                                     <motion.div
                                         key={film.title}
-                                        className={`bg-white/70 flex flex-col items-center backdrop-blur-sm rounded-xl shadow-xl border border-white/30 p-8 hover:shadow-2xl transition-all duration-300 ${film.highlight ? 'ring-2 ring-amber-300/50' : ''}`}
+                                        className={`bg-white/70 flex flex-col w-120  items-center backdrop-blur-sm rounded-xl shadow-xl border border-white/30 p-8 hover:shadow-2xl transition-all duration-300 ${film.highlight ? 'ring-2 ring-amber-300/50' : ''}`}
                                         variants={fadeInUp}
                                         whileHover={{ y: -5, scale: 1.02 }}
                                     >
@@ -594,7 +594,7 @@ export default function WhoAmIPage() {
 
                         {activeTab === "plays" && (
                             <motion.div
-                                className="grid xl:grid-cols-4 gap-8"
+                                className="flex flex-row flex-wrap gap-8 justify-center"
                                 variants={staggerContainer}
                                 initial="hidden"
                                 animate="visible"
@@ -602,7 +602,7 @@ export default function WhoAmIPage() {
                                 {plays.map((play, index) => (
                                     <motion.div
                                         key={play.title}
-                                        className={`bg-white/70 flex flex-col items-center backdrop-blur-sm rounded-xl shadow-xl border border-white/30 p-6 hover:shadow-2xl transition-all duration-300 ${play.highlight ? 'ring-2 ring-amber-300/50' : ''}`}
+                                        className={`bg-white/70 flex max-w-120 flex-col items-center backdrop-blur-sm rounded-xl shadow-xl border border-white/30 p-6 hover:shadow-2xl transition-all duration-300 ${play.highlight ? 'ring-2 ring-amber-300/50' : ''}`}
                                         variants={fadeInUp}
                                         whileHover={{ y: -5, scale: 1.02 }}
                                     >
@@ -688,13 +688,13 @@ export default function WhoAmIPage() {
                         </motion.h2>
 
                         <motion.div
-                            className="grid xl:grid-cols-4 gap-8"
+                            className="flex flex-row flex-wrap gap-8 justify-center "
                             variants={staggerContainer}
                         >
                             {reviews.map((review, index) => (
                                 <motion.div
                                     key={index}
-                                    className="bg-white/70 backdrop-blur-sm rounded-xl shadow-lg border border-white/30 p-8
+                                    className="bg-white/70 backdrop-blur-sm w-120 rounded-xl shadow-lg border border-white/30 p-8
                                     "
                                     variants={fadeInUp}
                                     whileHover={{ y: -3 }}
