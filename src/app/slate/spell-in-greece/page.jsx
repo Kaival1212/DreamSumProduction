@@ -88,7 +88,7 @@ export default function SpellInGreecePage() {
                     <div className="absolute right-0 top-0 bottom-0 w-24 bg-gradient-to-l from-black to-transparent z-10" />
                     <motion.div
                         className="whitespace-nowrap"
-                        animate={{ x: [1200, -1200] }}
+                        animate={{ x: [200, -1200] }}
                         transition={{ duration: 25, repeat: Infinity, ease: "linear" }}
                     >
                         <span className="text-2xl xl:text-3xl font-light tracking-[0.4em] px-10">

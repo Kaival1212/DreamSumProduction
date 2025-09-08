@@ -160,7 +160,7 @@ export default function OnTheSlatePage() {
 
                 <motion.div
                     className="whitespace-nowrap"
-                    animate={{ x: [1200, -1200] }}
+                    animate={{ x: [200, -1200] }}
                     transition={{ duration: 25, repeat: Infinity, ease: "linear" }}
                 >
                     <span className="text-2xl xl:text-3xl font-light tracking-[0.4em] px-10">
