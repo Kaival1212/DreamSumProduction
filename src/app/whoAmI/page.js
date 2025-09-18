@@ -85,8 +85,8 @@ export default function WhoAmIPage() {
             title: "A Spell in Greece",
             year: "2023",
             type: "Rom Com Feature",
-            description: "A Rom Com feature film. A short proof of concept film is in pre-production. Seeking funding.",
-            status: "Seeking funding",
+            description: "A Rom Com feature film. A short proof of concept film is in pre-production.",
+            status: "In Development",
             role: "Writer",
             color: "amber",
             highlight: true
@@ -96,7 +96,7 @@ export default function WhoAmIPage() {
             year: "2022",
             type: "Rom Com Feature",
             description: "A Rom Com feature film, an update of Shirley Valentine. Producers are seeking development funding.",
-            status: "Seeking development funding",
+            status: "In Development",
             role: "Writer",
             color: "pink",
             highlight: true
@@ -105,8 +105,8 @@ export default function WhoAmIPage() {
             title: "City in Flames",
             year: "2021",
             type: "Historical Drama Feature",
-            description: "A Historical Drama feature film that recounts one of the worst refugee crises of the twentieth century. In 1922, hundreds of thousands of Greek and Armenian refugees were forced to flee Smyrna (formerly of the Ottoman Empire) as it burned to the ground. Seeking Producers and funding.",
-            status: "Seeking Producers and funding",
+            description: "A Historical Drama feature film that recounts one of the worst refugee crises of the twentieth century. In 1922, hundreds of thousands of Greek and Armenian refugees were forced to flee Smyrna (formerly of the Ottoman Empire) as it burned to the ground.",
+            status: "In Development",
             role: "Writer",
             color: "red",
             highlight: true
@@ -329,7 +329,7 @@ export default function WhoAmIPage() {
                                 {
                                     "@type": "CreativeWork",
                                     "name": "Supper's Off",
-                                    "description": "A romantic comedy feature film, seeking development funding."
+                                    "description": "A romantic comedy feature film, In development."
                                 },
                                 {
                                     "@type": "CreativeWork",
@@ -564,7 +564,7 @@ export default function WhoAmIPage() {
 
                                         <div className="space-y-3 flex flex-col items-center">
                                             <p className="text-sm font-medium text-gray-500">Role: {film.role}</p>
-                                            <p className={`text-sm font-medium ${film.status.includes('Seeking') ? 'text-orange-600' :
+                                            <p className={`text-sm font-medium ${film.status.includes('In Development') ? 'text-orange-600' :
                                                 film.status.includes('Nominated') || film.status.includes('Finalist') ? 'text-green-600 font-semibold' :
                                                     'text-green-600'
                                                 }`}>
