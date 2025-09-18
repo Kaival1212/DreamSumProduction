@@ -49,7 +49,7 @@ export default function OnTheSlatePage() {
             id: 2,
             title: "City in Flames",
             subtitle: "Historical Drama Feature",
-            status: "Seeking Producers",
+            status: "In development",
             image: "/Cityflames.jpg",
             description: "Recounts one of the worst refugee crises of the twentieth century - the 1922 Smyrna tragedy.",
             year: "2021",
@@ -61,7 +61,7 @@ export default function OnTheSlatePage() {
             id: 3,
             title: "Supper's Off",
             subtitle: "Romantic Comedy Feature",
-            status: "Seeking Development Funding",
+            status: "In development",
             image: "/supper.png",
             description: "A romantic comedy feature film, an update of Shirley Valentine.",
             year: "2022",
@@ -73,7 +73,7 @@ export default function OnTheSlatePage() {
             id: 4,
             title: "A Spell in Greece",
             subtitle: "Romantic Comedy Feature",
-            status: "Seeking Funding",
+            status: "In development",
             image: "/spell.png",
             description: "A Rom Com feature film with vibrant characters and witty dialogue.",
             year: "2023",
@@ -119,7 +119,7 @@ export default function OnTheSlatePage() {
                 return "bg-orange-100 text-orange-800 border-orange-200";
             case "Seeking Development Funding":
                 return "bg-yellow-100 text-yellow-800 border-yellow-200";
-            case "Seeking Funding":
+            case "In development":
                 return "bg-blue-100 text-blue-800 border-blue-200";
             case "Pre-Production":
                 return "bg-purple-100 text-purple-800 border-purple-200";
