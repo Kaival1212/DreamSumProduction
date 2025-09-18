@@ -128,11 +128,11 @@ export default function CityInFlamesPage() {
                                     priority
                                 />
                             </motion.div>
-                            <motion.div className="mt-8 text-center" variants={fadeInUp}>
+                            {/* <motion.div className="mt-8 text-center" variants={fadeInUp}>
                                 <span className="px-4 py-2 rounded-full text-base font-medium bg-orange-100 text-orange-800 border border-orange-200">
                                     Seeking Producers and Funding
                                 </span>
-                            </motion.div>
+                            </motion.div> */}
                         </motion.article>
 
                         <motion.div className="space-y-10" variants={staggerContainer}>

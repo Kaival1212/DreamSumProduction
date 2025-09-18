@@ -128,11 +128,11 @@ export default function SuppersOffPage() {
                                     priority
                                 />
                             </motion.div>
-                            <motion.div className="mt-8 text-center" variants={fadeInUp}>
+                            {/* <motion.div className="mt-8 text-center" variants={fadeInUp}>
                                 <span className="px-4 py-2 rounded-full text-base font-medium bg-yellow-100 text-yellow-800 border border-yellow-200">
                                     Seeking Development Funding
                                 </span>
-                            </motion.div>
+                            </motion.div> */}
                         </motion.article>
 
                         <motion.div className="space-y-10" variants={staggerContainer}>
