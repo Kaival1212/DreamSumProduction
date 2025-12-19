@@ -44,8 +44,8 @@ export default function WhoAmIPage() {
             title: "Goodbye Sunshine",
             year: "2024",
             type: "Short Film - Drama",
-            description: "A short film about knife-crime, written by S.J. Horan and directed by Ufuk Gokkaya. Nominated for the Cannes Indie Shorts Festival and on IMDb, it's seen through the harrowing prism of a mother's grief.",
-            status: "Produced & Nominated",
+            description: "A short film about knife-crime, written by S.J. Horan and directed by Ufuk Gokkaya. Selected for the Cannes Indie Shorts Festival and on IMDb, it's seen through the harrowing prism of a mother's grief.",
+            status: "Produced & Selected at Cannes Indie Shorts Festival",
             role: "Writer, Producer",
             color: "blue",
             highlight: true
