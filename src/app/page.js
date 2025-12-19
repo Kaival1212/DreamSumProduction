@@ -74,11 +74,7 @@ export default function Home() {
               },
               "description": "Dreamsum Productions is a London-based film production company led by S.J. Horan, creating award-nominated films and podcasts to inspire, inform, and entertain.",
               "logo": "https://www.dreamsumproductions.co.uk/logo.png",
-              "contactPoint": {
-                "@type": "ContactPoint",
-                "contactType": "Customer Service",
-                "email": "contact@dreamsumproductions.co.uk"
-              },
+
               "founder": {
                 "@type": "Person",
                 "name": "S.J. Horan",

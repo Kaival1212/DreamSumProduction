@@ -31,12 +31,12 @@ export default function GoodbyeSunshinePage() {
     return (
         <>
             <Head>
-                <title>Goodbye Sunshine - Cannes-Nominated Short Film on Knife Crime</title>
-                <meta name="description" content="'Goodbye Sunshine,' a Cannes-nominated short film, explores a mother's grief over knife crime in London. Written by S.J. Horan, directed by Ufuk Gokkaya." />
+                <title>Goodbye Sunshine - Cannes-Selected Short Film on Knife Crime</title>
+                <meta name="description" content="'Goodbye Sunshine,' a Cannes-selected short film, explores a mother's grief over knife crime in London. Written by S.J. Horan, directed by Ufuk Gokkaya." />
                 <meta name="keywords" content="knife crime short film, Goodbye Sunshine Cannes, grief short film, London film" />
                 <meta name="robots" content="index, follow" />
-                <meta property="og:title" content="Goodbye Sunshine - Cannes-Nominated Short Film" />
-                <meta property="og:description" content="A powerful short film exploring the impact of knife crime through a mother's grief, nominated at Cannes Indie Shorts Festival." />
+                <meta property="og:title" content="Goodbye Sunshine - Cannes-Selected Short Film" />
+                <meta property="og:description" content="A powerful short film exploring the impact of knife crime through a mother's grief, selected at Cannes Indie Shorts Festival." />
                 <meta property="og:image" content="/goodbyesun.png" />
                 <meta property="og:url" content="https://www.dreamsumproductions.co.uk/slate/goodbye-sunshine" />
                 <meta name="twitter:card" content="summary_large_image" />
@@ -47,7 +47,7 @@ export default function GoodbyeSunshinePage() {
                             "@context": "https://schema.org",
                             "@type": "Movie",
                             "name": "Goodbye Sunshine",
-                            "description": "A Cannes-nominated short film about the devastating impact of knife crime in London, seen through a mother's grief.",
+                            "description": "A Cannes-selected short film about the devastating impact of knife crime in London, seen through a mother's grief.",
                             "genre": ["Drama", "Short Film"],
                             "inLanguage": "en",
                             "author": [
@@ -113,13 +113,13 @@ export default function GoodbyeSunshinePage() {
                         </motion.h1>
                         <motion.div className="w-32 h-1 bg-yellow-500 mx-auto rounded-full mb-8" />
                         <motion.p className="text-2xl xl:text-3xl text-gray-600 font-light">
-                            A Cannes-nominated short film about knife-crime
+                            A Cannes-Selected short film about knife-crime
                         </motion.p>
                     </header>
 
                     <motion.div className="text-center mb-16" variants={fadeInUp}>
                         <span className="px-6 py-3 rounded-full text-lg xl:text-xl font-medium bg-yellow-100 text-yellow-800 border-2 border-yellow-300 inline-flex items-center">
-                            🏆 Cannes Indie Shorts Festival Nominee
+                            🏆 Cannes Indie Shorts Festival Selected
                         </span>
                     </motion.div>
 
@@ -233,7 +233,7 @@ export default function GoodbyeSunshinePage() {
                                 <h3 className="text-xl font-medium text-gray-800 mb-3">About the Film</h3>
                                 <p className="text-gray-700 text-lg xl:text-xl leading-relaxed">
                                     <em className="italic">Goodbye Sunshine</em> is a powerful short film that explores the devastating
-                                    impact of knife crime through the lens of a mother's grief. Nominated for
+                                    impact of knife crime through the lens of a mother's grief. Selected for
                                     the Cannes Indie Shorts Festival, this film confronts one of society's
                                     most pressing issues with raw honesty and emotional depth.
                                 </p>

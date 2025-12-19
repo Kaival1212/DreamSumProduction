@@ -35,7 +35,7 @@ export default function OnTheSlatePage() {
         {
             id: 1,
             title: "Goodbye Sunshine",
-            subtitle: "Cannes Nominated Short Film",
+            subtitle: "Cannes Selected Short Film",
             status: "Produced",
             image: "/goodbyesun.png",
             description: "A powerful short film about knife-crime, seen through the harrowing prism of a mother's grief.",
@@ -43,7 +43,7 @@ export default function OnTheSlatePage() {
             type: "Short Film",
             director: "Ufuk Gokkaya",
             role: "Writer, Producer",
-            achievement: "Cannes Indie Shorts Festival Nominee"
+            achievement: "Cannes Indie Shorts Festival Selected"
         },
         {
             id: 2,
@@ -218,7 +218,7 @@ export default function OnTheSlatePage() {
                                 {project.achievement && project.title === "Goodbye Sunshine" && (
                                     <div className="absolute top-6 left-6 ">
                                         <span className="px-4 py-1.5 rounded-full text-sm font-medium bg-yellow-100 text-yellow-800 border border-yellow-200">
-                                            🏆 Award Nominee
+                                            🏆 Awared
                                         </span>
                                     </div>
                                 )}
@@ -319,7 +319,7 @@ export default function OnTheSlatePage() {
                 >
                     {[
                         { number: "20+", label: "Projects Created" },
-                        { number: "1", label: "Cannes Nomination" },
+                        { number: "1", label: "Cannes Selection" },
                         { number: "4", label: "Feature Films" },
                         { number: "4+", label: "Award Recognition" }
                     ].map((stat, index) => (
