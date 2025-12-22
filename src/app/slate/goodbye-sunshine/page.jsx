@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import Head from "next/head";
 import Image from "next/image";
+import { useState } from "react";
 
 export default function GoodbyeSunshinePage() {
     const fadeInUp = {
@@ -27,6 +28,25 @@ export default function GoodbyeSunshinePage() {
             },
         },
     };
+
+    const posters = [
+        {
+            src: "/goodbyesun.png",
+            alt: "Goodbye Sunshine - Official Festival Poster",
+        },
+        {
+            src: "/goodbyesunold.png",
+            alt: "Goodbye Sunshine - Early Concept Poster",
+        },
+    ];
+
+    const [posterIndex, setPosterIndex] = useState(0);
+
+    const nextPoster = () =>
+        setPosterIndex((posterIndex + 1) % posters.length);
+
+    const prevPoster = () =>
+        setPosterIndex((posterIndex - 1 + posters.length) % posters.length);
 
     return (
         <>
@@ -125,34 +145,54 @@ export default function GoodbyeSunshinePage() {
 
 
                     <section className="grid xl:grid-cols-2 gap-16 items-start" variants={staggerContainer}>
-                        <motion.article variants={fadeInUp}>
+                        <motion.article>
                             <motion.div
-                                className="relative bg-white/80 backdrop-blur-sm p-8 xl:p-10 rounded-2xl shadow-2xl border border-white/30"
+                                className="relative bg-white/80 backdrop-blur-sm p-8 rounded-2xl shadow-2xl border border-white/30 overflow-hidden"
                                 whileHover={{ scale: 1.02 }}
-                                transition={{ duration: 0.3 }}
                             >
-                                <Image
-                                    src="/goodbyesun.png"
-                                    alt="Poster for Goodbye Sunshine, a Cannes-nominated short film on knife crime"
-                                    width={600}
-                                    height={400}
-                                    className="w-full h-auto rounded-lg"
-                                    priority
-                                />
-                            </motion.div>
-                            <motion.div className="mt-8 text-center" variants={fadeInUp}>
-                                <span className="px-4 py-2 rounded-full text-base font-medium bg-green-100 text-green-800 border border-green-200">
-                                    Produced
-                                </span>
-                            </motion.div>
-                            <motion.div
-                                className="mt-8 bg-white/70 backdrop-blur-sm rounded-xl shadow-lg border border-white/30 p-6 xl:p-8"
-                                variants={fadeInUp}
-                            >
-                                <h3 className="text-xl font-medium text-gray-800 mb-3">Credits</h3>
-                                <div className="space-y-3 text-base text-gray-700">
-                                    <p><strong>Written by:</strong> S.J. Horan</p>
-                                    <p><strong>Directed by:</strong> Ufuk Gokkaya</p>
+                                <motion.div
+                                    key={posterIndex}
+                                    initial={{ opacity: 0, x: 40 }}
+                                    animate={{ opacity: 1, x: 0 }}
+                                    transition={{ duration: 0.4 }}
+                                >
+                                    <Image
+                                        src={posters[posterIndex].src}
+                                        alt={posters[posterIndex].alt}
+                                        width={600}
+                                        height={800}
+                                        className="w-full h-auto rounded-lg"
+                                        priority
+                                    />
+                                </motion.div>
+
+                                {/* Controls */}
+                                <button
+                                    onClick={prevPoster}
+                                    className="absolute left-4 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-black/60 text-white"
+                                >
+                                    ‹
+                                </button>
+
+                                <button
+                                    onClick={nextPoster}
+                                    className="absolute right-4 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-black/60 text-white"
+                                >
+                                    ›
+                                </button>
+
+                                {/* Dots */}
+                                <div className="flex justify-center gap-2 mt-4">
+                                    {posters.map((_, i) => (
+                                        <button
+                                            key={i}
+                                            onClick={() => setPosterIndex(i)}
+                                            className={`w-2.5 h-2.5 rounded-full ${i === posterIndex
+                                                ? "bg-yellow-500"
+                                                : "bg-gray-300"
+                                                }`}
+                                        />
+                                    ))}
                                 </div>
                             </motion.div>
                         </motion.article>
