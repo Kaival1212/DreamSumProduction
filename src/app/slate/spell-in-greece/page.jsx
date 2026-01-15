@@ -119,7 +119,7 @@ export default function SpellInGreecePage() {
                     </motion.div>
 
                     <motion.div className="text-center mb-16" variants={fadeInUp}>
-                        <span className="px-6 py-3 rounded-full text-lg xl:text-xl font-medium border-2 bg-green-200 text-green-800 bo inline-flex items-center">
+                        <span className="px-6 py-3 rounded-full text-lg xl:text-xl font-medium border-2 bg-green-200 text-green-800 border-green-300 inline-flex items-center">
                             The script for A Spell in Greece  has also passed the first round of the Cannes Film Awards 2026.
                         </span>
                     </motion.div>

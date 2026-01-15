@@ -53,7 +53,7 @@ export default function WhoAmIPage() {
         {
             title: "An Irish Heart",
             year: "2025",
-            type: "Feature Film - Drama",
+            type: "Rom Com Feature",
             description: "Maria, an ambitious actress and writer is at a crossroads in her life. Does she marry her long-term boyfriend, Jamie, just as his Nonna wants - or does she role the dice and run off to the bright lights of New York with a free spirited musician, and risk losing everything",
             status: "In pre-production",
             role: "Writer, Producer",
