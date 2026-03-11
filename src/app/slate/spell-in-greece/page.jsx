@@ -10,9 +10,8 @@ export default function SpellInGreecePage() {
 
     const images = [
         { src: "/spell.png", alt: "Poster for A Spell in Greece, a romantic comedy set on a Greek island" },
-        { src: "/spell2.png", alt: "Poster for A Spell in Greece, a romantic comedy set on a Greek island" },
-        { src: "/spell3.png", alt: "Poster for A Spell in Greece, a romantic comedy set on a Greek island" },
-        { src: "/spellold.png", alt: "Poster for A Spell in Greece, a romantic comedy set on a Greek island" },
+        // { src: "/spell2.png", alt: "Poster for A Spell in Greece, a romantic comedy set on a Greek island" },
+        // { src: "/spell3.png", alt: "Poster for A Spell in Greece, a romantic comedy set on a Greek island" },
     ];
     const fadeInUp = {
         hidden: { opacity: 0, y: 30 },
