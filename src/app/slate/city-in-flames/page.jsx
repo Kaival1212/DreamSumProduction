@@ -2,9 +2,15 @@
 
 import { motion } from "framer-motion";
 import Head from "next/head";
-import Image from "next/image";
+import { useRouter } from "next/navigation";
+import ImageCarousel from "../../components/ImageCarousel";
 
 export default function CityInFlamesPage() {
+    const router = useRouter();
+
+    const images = [
+        { src: "/Cityflames.jpg", alt: "Poster for City in Flames, a historical drama about the 1922 Smyrna crisis" },
+    ];
     const fadeInUp = {
         hidden: { opacity: 0, y: 30 },
         visible: {
@@ -114,25 +120,7 @@ export default function CityInFlamesPage() {
 
                     <section className="grid xl:grid-cols-2 gap-16 items-start" variants={staggerContainer}>
                         <motion.article variants={fadeInUp}>
-                            <motion.div
-                                className="relative bg-white/80 backdrop-blur-sm p-8 xl:p-10 rounded-2xl shadow-2xl border border-white/30"
-                                whileHover={{ scale: 1.02 }}
-                                transition={{ duration: 0.3 }}
-                            >
-                                <Image
-                                    src="/Cityflames.jpg"
-                                    alt="Poster for City in Flames, a historical drama about the 1922 Smyrna crisis"
-                                    width={600}
-                                    height={400}
-                                    className="w-full h-auto rounded-lg"
-                                    priority
-                                />
-                            </motion.div>
-                            {/* <motion.div className="mt-8 text-center" variants={fadeInUp}>
-                                <span className="px-4 py-2 rounded-full text-base font-medium bg-orange-100 text-orange-800 border border-orange-200">
-                                    Seeking Producers and Funding
-                                </span>
-                            </motion.div> */}
+                            <ImageCarousel images={images} />
                         </motion.article>
 
                         <motion.div className="space-y-10" variants={staggerContainer}>
@@ -265,7 +253,7 @@ export default function CityInFlamesPage() {
                         variants={fadeInUp}
                     >
                         <motion.button
-                            onClick={() => window.history.back()}
+                            onClick={() => router.push('/slate')}
                             className="px-10 py-4 bg-red-600 text-white rounded-lg font-medium text-lg hover:bg-red-700 transition-colors shadow-lg"
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}

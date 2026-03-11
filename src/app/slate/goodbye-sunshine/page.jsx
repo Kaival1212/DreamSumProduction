@@ -2,10 +2,17 @@
 
 import { motion } from "framer-motion";
 import Head from "next/head";
-import Image from "next/image";
-import { useState } from "react";
+import { useRouter } from "next/navigation";
+import ImageCarousel from "../../components/ImageCarousel";
 
 export default function GoodbyeSunshinePage() {
+    const router = useRouter();
+
+    const images = [
+        { src: "/goodbyesun.png", alt: "Goodbye Sunshine - Official Festival Poster" },
+        { src: "/goodbyesunold.png", alt: "Goodbye Sunshine - Early Concept Poster" },
+    ];
+
     const fadeInUp = {
         hidden: { opacity: 0, y: 30 },
         visible: {
@@ -28,25 +35,6 @@ export default function GoodbyeSunshinePage() {
             },
         },
     };
-
-    const posters = [
-        {
-            src: "/goodbyesun.png",
-            alt: "Goodbye Sunshine - Official Festival Poster",
-        },
-        {
-            src: "/goodbyesunold.png",
-            alt: "Goodbye Sunshine - Early Concept Poster",
-        },
-    ];
-
-    const [posterIndex, setPosterIndex] = useState(0);
-
-    const nextPoster = () =>
-        setPosterIndex((posterIndex + 1) % posters.length);
-
-    const prevPoster = () =>
-        setPosterIndex((posterIndex - 1 + posters.length) % posters.length);
 
     return (
         <>
@@ -146,55 +134,7 @@ export default function GoodbyeSunshinePage() {
 
                     <section className="grid xl:grid-cols-2 gap-16 items-start" variants={staggerContainer}>
                         <motion.article>
-                            <motion.div
-                                className="relative bg-white/80 backdrop-blur-sm p-8 rounded-2xl shadow-2xl border border-white/30 overflow-hidden"
-                                whileHover={{ scale: 1.02 }}
-                            >
-                                <motion.div
-                                    key={posterIndex}
-                                    initial={{ opacity: 0, x: 40 }}
-                                    animate={{ opacity: 1, x: 0 }}
-                                    transition={{ duration: 0.4 }}
-                                >
-                                    <Image
-                                        src={posters[posterIndex].src}
-                                        alt={posters[posterIndex].alt}
-                                        width={600}
-                                        height={800}
-                                        className="w-full h-auto rounded-lg"
-                                        priority
-                                    />
-                                </motion.div>
-
-                                {/* Controls */}
-                                <button
-                                    onClick={prevPoster}
-                                    className="absolute left-4 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-black/60 text-white"
-                                >
-                                    ‹
-                                </button>
-
-                                <button
-                                    onClick={nextPoster}
-                                    className="absolute right-4 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-black/60 text-white"
-                                >
-                                    ›
-                                </button>
-
-                                {/* Dots */}
-                                <div className="flex justify-center gap-2 mt-4">
-                                    {posters.map((_, i) => (
-                                        <button
-                                            key={i}
-                                            onClick={() => setPosterIndex(i)}
-                                            className={`w-2.5 h-2.5 rounded-full ${i === posterIndex
-                                                ? "bg-yellow-500"
-                                                : "bg-gray-300"
-                                                }`}
-                                        />
-                                    ))}
-                                </div>
-                            </motion.div>
+                            <ImageCarousel images={images} />
                         </motion.article>
 
                         <motion.div className="space-y-10" variants={staggerContainer}>
@@ -286,7 +226,7 @@ export default function GoodbyeSunshinePage() {
                         variants={fadeInUp}
                     >
                         <motion.button
-                            onClick={() => window.history.back()}
+                            onClick={() => router.push('/slate')}
                             className="px-10 py-4 bg-yellow-600 text-white rounded-lg font-medium text-lg hover:bg-yellow-700 transition-colors shadow-lg"
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}

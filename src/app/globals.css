@@ -80,7 +80,7 @@
 }
 
 .Span:nth-child(3) {
-    top: 80;
+    top: 80px;
     right: 0px;
     left: initial;
     animation-delay: 0.4s;
@@ -125,14 +125,6 @@
     left: initial;
     animation-delay: 1.4s;
     animation-duration: 1.25s;
-}
-
-.Span:nth-child(9) {
-    top: 0px;
-    right: 1000px;
-    left: initial;
-    animation-delay: 0.75s;
-    animation-duration: 2.25s;
 }
 
 .Span:nth-child(9) {

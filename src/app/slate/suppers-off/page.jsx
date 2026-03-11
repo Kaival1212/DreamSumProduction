@@ -2,9 +2,19 @@
 
 import { motion } from "framer-motion";
 import Head from "next/head";
-import Image from "next/image";
+import { useRouter } from "next/navigation";
+import ImageCarousel from "../../components/ImageCarousel";
 
 export default function SuppersOffPage() {
+    const router = useRouter();
+
+    const images = [
+        { src: "/supper.png", alt: "Poster for Supper's Off, a romantic comedy set in Tuscany" },
+        { src: "/supper2.png", alt: "Poster for Supper's Off, a romantic comedy set in Tuscany" },
+        { src: "/supper3.png", alt: "Poster for Supper's Off, a romantic comedy set in Tuscany" },
+
+        
+    ];
     const fadeInUp = {
         hidden: { opacity: 0, y: 30 },
         visible: {
@@ -114,25 +124,7 @@ export default function SuppersOffPage() {
 
                     <section className="grid xl:grid-cols-2 gap-16 items-start" variants={staggerContainer}>
                         <motion.article variants={fadeInUp}>
-                            <motion.div
-                                className="relative bg-white/80 backdrop-blur-sm p-8 xl:p-10 rounded-2xl shadow-2xl border border-white/30"
-                                whileHover={{ scale: 1.02 }}
-                                transition={{ duration: 0.3 }}
-                            >
-                                <Image
-                                    src="/supper.png"
-                                    alt="Poster for Supper's Off, a romantic comedy set in Tuscany"
-                                    width={600}
-                                    height={400}
-                                    className="w-full h-auto rounded-lg"
-                                    priority
-                                />
-                            </motion.div>
-                            {/* <motion.div className="mt-8 text-center" variants={fadeInUp}>
-                                <span className="px-4 py-2 rounded-full text-base font-medium bg-yellow-100 text-yellow-800 border border-yellow-200">
-                                    Seeking Development Funding
-                                </span>
-                            </motion.div> */}
+                            <ImageCarousel images={images} />
                         </motion.article>
 
                         <motion.div className="space-y-10" variants={staggerContainer}>
@@ -239,7 +231,7 @@ export default function SuppersOffPage() {
                         variants={fadeInUp}
                     >
                         <motion.button
-                            onClick={() => window.history.back()}
+                            onClick={() => router.push('/slate')}
                             className="px-10 py-4 bg-pink-600 text-white rounded-lg font-medium text-lg hover:bg-pink-700 transition-colors shadow-lg"
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}

@@ -2,9 +2,15 @@
 
 import { motion } from "framer-motion";
 import Head from "next/head";
-import Image from "next/image";
+import { useRouter } from "next/navigation";
+import ImageCarousel from "../../components/ImageCarousel";
 
 export default function AnIrishHeartPage() {
+    const router = useRouter();
+
+    const images = [
+        { src: "/Irish.png", alt: "Poster for An Irish Heart, a romantic comedy set in Ireland" },
+    ];
     const fadeInUp = {
         hidden: { opacity: 0, y: 30 },
         visible: {
@@ -111,20 +117,7 @@ export default function AnIrishHeartPage() {
 
                     <section className="grid xl:grid-cols-2 gap-16 items-start" variants={staggerContainer}>
                         <motion.article variants={fadeInUp}>
-                            <motion.div
-                                className="relative bg-white/80 backdrop-blur-sm p-8 xl:p-10 rounded-2xl shadow-2xl border border-white/30"
-                                whileHover={{ scale: 1.02 }}
-                                transition={{ duration: 0.3 }}
-                            >
-                                <Image
-                                    src="/Irish.png"
-                                    alt="Poster for An Irish Heart, a romantic comedy set in Ireland"
-                                    width={600}
-                                    height={400}
-                                    className="w-full h-auto rounded-lg"
-                                    priority
-                                />
-                            </motion.div>
+                            <ImageCarousel images={images} />
                             <motion.div className="mt-8 text-center" variants={fadeInUp}>
                                 <span className="px-4 py-2 rounded-full text-base font-medium bg-blue-100 text-blue-800 border border-blue-200">
                                     Pre-Production
@@ -220,7 +213,7 @@ export default function AnIrishHeartPage() {
                         variants={fadeInUp}
                     >
                         <motion.button
-                            onClick={() => window.history.back()}
+                            onClick={() => router.push('/slate')}
                             className="px-10 py-4 bg-blue-600 text-white rounded-lg font-medium text-lg hover:bg-blue-700 transition-colors shadow-lg"
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}

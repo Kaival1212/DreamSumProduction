@@ -1,12 +1,12 @@
 "use client";
 
-import { useState } from "react";
+import { useRouter } from "next/navigation";
 import { motion } from "framer-motion";
 import Link from "next/link";
 
 
 export default function OnTheSlatePage() {
-    const [selectedProject, setSelectedProject] = useState(null);
+    const router = useRouter();
 
     const fadeInUp = {
         hidden: { opacity: 0, y: 30 },
@@ -97,7 +97,6 @@ export default function OnTheSlatePage() {
 
     const handleProjectClick = (projectTitle) => {
         const urlTitle = projectTitle.toLowerCase().replace(/[^a-z0-9]/g, '-').replace(/-+/g, '-').replace(/^-|-$/g, '');
-        console.log(`Redirecting to project: ${urlTitle}`);
         const projectRoutes = {
             'goodbye-sunshine': '/slate/goodbye-sunshine',
             'city-in-flames': '/slate/city-in-flames',
@@ -107,7 +106,7 @@ export default function OnTheSlatePage() {
         };
         const route = projectRoutes[urlTitle];
         if (route) {
-            window.location.href = route;
+            router.push(route);
         }
     };
 
@@ -218,7 +217,7 @@ export default function OnTheSlatePage() {
                                 {project.achievement && project.title === "Goodbye Sunshine" && (
                                     <div className="absolute top-6 left-6 ">
                                         <span className="px-4 py-1.5 rounded-full text-sm font-medium bg-yellow-100 text-yellow-800 border border-yellow-200">
-                                            🏆 Awared
+                                            🏆 Awarded
                                         </span>
                                     </div>
                                 )}
@@ -349,47 +348,6 @@ export default function OnTheSlatePage() {
                 </motion.div>
             </motion.div>
 
-            {selectedProject && (
-                <motion.div
-                    className="fixed inset-0 bg-black/50 backdrop-blur-sm z-50 flex items-center justify-center p-6"
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    onClick={() => setSelectedProject(null)}
-                >
-                    <motion.div
-                        className="bg-white rounded-2xl p-10 xl:p-12 max-w-3xl w-full max-h-[80vh] overflow-y-auto"
-                        initial={{ scale: 0.8, opacity: 0 }}
-                        animate={{ scale: 1, opacity: 1 }}
-                        onClick={(e) => e.stopPropagation()}
-                    >
-                        <div className="flex justify-between items-start mb-8">
-                            <h3 className="text-3xl font-medium text-gray-800" style={{ fontFamily: 'serif' }}>
-                                {selectedProject.title}
-                            </h3>
-                            <button
-                                onClick={() => setSelectedProject(null)}
-                                className="text-gray-400 hover:text-gray-600"
-                            >
-                                <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-                                </svg>
-                            </button>
-                        </div>
-                        <img
-                            src={selectedProject.image}
-                            alt={selectedProject.title}
-                            className="w-full h-80 object-cover rounded-lg mb-8"
-                        />
-                        <p className="text-gray-600 text-base xl:text-lg mb-4">{selectedProject.description}</p>
-                        <div className="space-y-3 text-base">
-                            <p><strong>Year:</strong> {selectedProject.year}</p>
-                            <p><strong>Type:</strong> {selectedProject.type}</p>
-                            <p><strong>Role:</strong> {selectedProject.role}</p>
-                            <p><strong>Achievement:</strong> {selectedProject.achievement}</p>
-                        </div>
-                    </motion.div>
-                </motion.div>
-            )}
         </div>
     );
 }
