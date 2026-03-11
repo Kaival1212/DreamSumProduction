@@ -208,7 +208,7 @@ export default function ContactUsPage() {
                                         whileHover={{ scale: 1.02 }}
                                         style={{ display: "inline-block" }}
                                     >
-                                        "dreamsum"
+                                        &quot;dreamsum&quot;
                                     </motion.span>{" "}
                                     this sounds.
                                 </motion.p>
@@ -264,8 +264,8 @@ export default function ContactUsPage() {
                         >
                             <h3 className="text-xl font-medium text-gray-800 mb-3">Ready to Collaborate?</h3>
                             <p className="text-gray-700 mb-4">
-                                Whether you're interested in investing, donating, or exploring partnership opportunities,
-                                we'd love to hear from you. Every conversation starts with a simple message.
+                                Whether you&apos;re interested in investing, donating, or exploring partnership opportunities,
+                                we&apos;d love to hear from you. Every conversation starts with a simple message.
                             </p>
                             <div className="flex items-center space-x-4">
                                 <div className="flex -space-x-2">
@@ -305,7 +305,7 @@ export default function ContactUsPage() {
                                         </svg>
                                     </motion.div>
                                     <h3 className="text-2xl font-medium text-gray-800 mb-3">Thank you!</h3>
-                                    <p className="text-gray-600 mb-6">Your message has been sent successfully. We'll get back to you within 24-48 hours.</p>
+                                    <p className="text-gray-600 mb-6">Your message has been sent successfully. We&apos;ll get back to you within 24-48 hours.</p>
                                     <motion.button
                                         onClick={() => setIsSubmitted(false)}
                                         className="text-amber-700 hover:text-amber-800 font-medium px-6 py-2 rounded-lg border border-amber-200 hover:bg-amber-50 transition-colors"
@@ -321,7 +321,7 @@ export default function ContactUsPage() {
                                         <h3 className="text-2xl font-light text-gray-800 mb-2" style={{ fontFamily: 'serif' }}>
                                             Get in Touch
                                         </h3>
-                                        <p className="text-gray-600">Fill out the form below and we'll be in touch soon.</p>
+                                        <p className="text-gray-600">Fill out the form below and we&apos;ll be in touch soon.</p>
                                     </div>
 
                                     {/* Name Fields */}

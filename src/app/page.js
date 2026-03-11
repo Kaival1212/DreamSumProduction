@@ -260,8 +260,8 @@ export default function Home() {
                   className="text-xl xl:text-2xl leading-relaxed text-gray-800 font-light"
                   variants={fadeInUp}
                 >
-                  All our projects aim, through different ways, to add something positive to people's experience
-                  of films or podcasts. Whether that's by showing how individual acts of courage can redress
+                  All our projects aim, through different ways, to add something positive to people&apos;s experience
+                  of films or podcasts. Whether that&apos;s by showing how individual acts of courage can redress
                   political failures, as with my feature film{" "}
                   <motion.em
                     className="text-gray-900"
@@ -284,7 +284,7 @@ export default function Home() {
                     whileHover={{ scale: 1.02 }}
                     style={{ display: "inline-block" }}
                   >
-                    Supper's Off
+                    Supper&apos;s Off
                   </motion.em>
                   .
                 </motion.p>

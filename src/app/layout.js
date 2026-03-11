@@ -1,5 +1,6 @@
 import "./globals.css";
 import Header from "./components/Header";
+import Link from "next/link";
 
 export default function RootLayout({ children }) {
   return (
@@ -26,7 +27,7 @@ export default function RootLayout({ children }) {
               <div>
                 <h4 className="text-lg font-light mb-4">Explore</h4>
                 <ul className="space-y-2">
-                  <li><a href="/" className="text-gray-300 hover:text-white transition-colors font-light">Home</a></li>
+                  <li><Link href="/" className="text-gray-300 hover:text-white transition-colors font-light">Home</Link></li>
                   <li><a href="/whoAmI" className="text-gray-300 hover:text-white transition-colors font-light">Who I am</a></li>
                   <li><a href="#contact" className="text-gray-300 hover:text-white transition-colors font-light">Contact</a></li>
                 </ul>
