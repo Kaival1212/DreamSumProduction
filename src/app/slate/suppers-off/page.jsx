@@ -9,7 +9,7 @@ export default function SuppersOffPage() {
     const router = useRouter();
 
     const images = [
-        { src: "/supper.png", alt: "Poster for Supper's Off, a romantic comedy set in Tuscany" },
+        // { src: "/supper.png", alt: "Poster for Supper's Off, a romantic comedy set in Tuscany" },
         { src: "/supper2.png", alt: "Poster for Supper's Off, a romantic comedy set in Tuscany" },
         { src: "/supper3.png", alt: "Poster for Supper's Off, a romantic comedy set in Tuscany" },
 

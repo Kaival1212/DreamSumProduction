@@ -10,6 +10,10 @@ export default function SpellInGreecePage() {
 
     const images = [
         { src: "/spell.png", alt: "Poster for A Spell in Greece, a romantic comedy set on a Greek island" },
+        { src: "/spell4.png", alt: "Poster for A Spell in Greece, a romantic comedy set on a Greek island" },
+        { src: "/spell5.png", alt: "Poster for A Spell in Greece, a romantic comedy set on a Greek island" },
+        { src: "/spell6.png", alt: "Poster for A Spell in Greece, a romantic comedy set on a Greek island" },
+
         // { src: "/spell2.png", alt: "Poster for A Spell in Greece, a romantic comedy set on a Greek island" },
         // { src: "/spell3.png", alt: "Poster for A Spell in Greece, a romantic comedy set on a Greek island" },
     ];
@@ -119,12 +123,12 @@ export default function SpellInGreecePage() {
                         </motion.p>
                     </header>
 
-                    <motion.div className="text-center mb-6" variants={fadeInUp}>
+                    {/* <motion.div className="text-center mb-6" variants={fadeInUp}>
                         <span className="px-6 py-3 rounded-full text-lg xl:text-xl font-medium bg-yellow-100 text-yellow-800 border-2 border-yellow-300 inline-flex items-center">
                             Honourable Mention in LA film and documentary award festival 2025
 
                         </span>
-                    </motion.div>
+                    </motion.div> */}
 
                     <motion.div className="text-center mb-16" variants={fadeInUp}>
                         <span className="px-6 py-3 rounded-full text-lg xl:text-xl font-medium border-2 bg-green-200 text-green-800 border-green-300 inline-flex items-center">
