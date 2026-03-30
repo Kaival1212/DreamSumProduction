@@ -10,6 +10,8 @@ export default function SuppersOffClient() {
     const images = [
         { src: "/supper2.png", alt: "Poster for Supper's Off, a romantic comedy set in Tuscany" },
         { src: "/supper3.png", alt: "Poster for Supper's Off, a romantic comedy set in Tuscany" },
+        { src: "/supper4.png", alt: "Poster for Supper's Off, a romantic comedy set in Tuscany" },
+
     ];
     const fadeInUp = {
         hidden: { opacity: 0, y: 30 },
