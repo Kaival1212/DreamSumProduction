@@ -48,6 +48,12 @@ export default function Header() {
                 On the slate
               </a>
               <a
+                href="/reviews"
+                className="text-sm font-medium tracking-wide text-gray-600 hover:text-amber-700 transition-colors"
+              >
+                Reviews & Testimonials
+              </a>
+              <a
                 href="/contact"
                 className="text-sm font-medium tracking-wide text-gray-600 hover:text-amber-700 transition-colors"
               >
@@ -100,6 +106,13 @@ export default function Header() {
                   className="text-base font-medium tracking-wide text-gray-600 hover:text-amber-700 transition-colors py-2 border-b border-gray-200 last:border-b-0"
                 >
                   On the slate
+                </a>
+                <a
+                  href="/reviews"
+                  onClick={closeMobileMenu}
+                  className="text-base font-medium tracking-wide text-gray-600 hover:text-amber-700 transition-colors py-2 border-b border-gray-200"
+                >
+                  Reviews & Testimonials
                 </a>
                 <a
                   href="/contact"

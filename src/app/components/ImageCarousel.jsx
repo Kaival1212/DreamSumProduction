@@ -1,23 +1,34 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 
 export default function ImageCarousel({ images }) {
     const [index, setIndex] = useState(0);
-
-    const prev = () => setIndex((index - 1 + images.length) % images.length);
-    const next = () => setIndex((index + 1) % images.length);
+    const [autoKey, setAutoKey] = useState(0);
     const hasMultiple = images.length > 1;
+
+    const prev = () => {
+        setIndex((i) => (i - 1 + images.length) % images.length);
+        setAutoKey((k) => k + 1);
+    };
+    const next = () => {
+        setIndex((i) => (i + 1) % images.length);
+        setAutoKey((k) => k + 1);
+    };
+    const goTo = (i) => {
+        setIndex(i);
+        setAutoKey((k) => k + 1);
+    };
 
     useEffect(() => {
         if (!hasMultiple) return;
         const timer = setInterval(() => {
             setIndex((i) => (i + 1) % images.length);
-        }, 4000);
+        }, 6000);
         return () => clearInterval(timer);
-    }, [hasMultiple, images.length]);
+    }, [hasMultiple, images.length, autoKey]);
 
     return (
         <motion.div
@@ -25,23 +36,26 @@ export default function ImageCarousel({ images }) {
             whileHover={{ scale: 1.01 }}
             transition={{ duration: 0.3 }}
         >
-            <motion.div
-                key={index}
-                initial={{ opacity: 0, x: 40 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.4 }}
-                className="will-change-transform"
-            >
-                <Image
-                    src={images[index].src}
-                    alt={images[index].alt}
-                    width={560}
-                    height={750}
-                    className="w-full h-auto rounded-lg"
-                    priority
-                    quality={100}
-                />
-            </motion.div>
+            <AnimatePresence mode="wait">
+                <motion.div
+                    key={index}
+                    initial={{ opacity: 0, x: 30 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    exit={{ opacity: 0, x: -30 }}
+                    transition={{ duration: 0.5, ease: "easeInOut" }}
+                    className="will-change-transform"
+                >
+                    <Image
+                        src={images[index].src}
+                        alt={images[index].alt}
+                        width={560}
+                        height={750}
+                        className="w-full h-auto rounded-lg"
+                        priority
+                        quality={100}
+                    />
+                </motion.div>
+            </AnimatePresence>
 
             {hasMultiple && (
                 <>
@@ -63,7 +77,7 @@ export default function ImageCarousel({ images }) {
                         {images.map((_, i) => (
                             <button
                                 key={i}
-                                onClick={() => setIndex(i)}
+                                onClick={() => goTo(i)}
                                 aria-label={`Go to image ${i + 1}`}
                                 className={`w-2.5 h-2.5 rounded-full transition-colors ${i === index ? "bg-amber-500" : "bg-gray-300"}`}
                             />

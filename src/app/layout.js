@@ -57,7 +57,8 @@ export default function RootLayout({ children }) {
                 <ul className="space-y-2">
                   <li><Link href="/" className="text-gray-300 hover:text-white transition-colors font-light">Home</Link></li>
                   <li><a href="/whoAmI" className="text-gray-300 hover:text-white transition-colors font-light">Who I am</a></li>
-                  <li><a href="#contact" className="text-gray-300 hover:text-white transition-colors font-light">Contact</a></li>
+                  <li><a href="/reviews" className="text-gray-300 hover:text-white transition-colors font-light">Reviews & Testimonials</a></li>
+                  <li><a href="/contact" className="text-gray-300 hover:text-white transition-colors font-light">Contact</a></li>
                 </ul>
               </div>
 
