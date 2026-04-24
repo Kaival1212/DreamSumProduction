@@ -1,6 +1,11 @@
 "use client";
 
 import React, { useState, useEffect } from 'react';
+import { trackEvent } from '../lib/gtag';
+
+const handleNavClick = (label, href) => {
+  trackEvent("nav_click", { link_text: label, link_url: href });
+};
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -37,24 +42,28 @@ export default function Header() {
             <div className="hidden md:flex items-center space-x-8 pt-4">
               <a
                 href="/whoAmI"
+                onClick={() => handleNavClick("Who I am", "/whoAmI")}
                 className="text-sm font-medium tracking-wide text-gray-600 hover:text-amber-700 transition-colors"
               >
                 Who I am
               </a>
               <a
                 href="/slate"
+                onClick={() => handleNavClick("On the slate", "/slate")}
                 className="text-sm font-medium tracking-wide text-gray-600 hover:text-amber-700 transition-colors"
               >
                 On the slate
               </a>
               <a
                 href="/reviews"
+                onClick={() => handleNavClick("Reviews & Testimonials", "/reviews")}
                 className="text-sm font-medium tracking-wide text-gray-600 hover:text-amber-700 transition-colors"
               >
                 Reviews & Testimonials
               </a>
               <a
                 href="/contact"
+                onClick={() => handleNavClick("Contact", "/contact")}
                 className="text-sm font-medium tracking-wide text-gray-600 hover:text-amber-700 transition-colors"
               >
                 Contact
@@ -95,28 +104,28 @@ export default function Header() {
               <div className="flex flex-col space-y-4 px-6">
                 <a
                   href="/whoAmI"
-                  onClick={closeMobileMenu}
+                  onClick={() => { closeMobileMenu(); handleNavClick("Who I am", "/whoAmI"); }}
                   className="text-base font-medium tracking-wide text-gray-600 hover:text-amber-700 transition-colors py-2 border-b border-gray-200 last:border-b-0"
                 >
                   Who I am
                 </a>
                 <a
                   href="/slate"
-                  onClick={closeMobileMenu}
+                  onClick={() => { closeMobileMenu(); handleNavClick("On the slate", "/slate"); }}
                   className="text-base font-medium tracking-wide text-gray-600 hover:text-amber-700 transition-colors py-2 border-b border-gray-200 last:border-b-0"
                 >
                   On the slate
                 </a>
                 <a
                   href="/reviews"
-                  onClick={closeMobileMenu}
+                  onClick={() => { closeMobileMenu(); handleNavClick("Reviews & Testimonials", "/reviews"); }}
                   className="text-base font-medium tracking-wide text-gray-600 hover:text-amber-700 transition-colors py-2 border-b border-gray-200"
                 >
                   Reviews & Testimonials
                 </a>
                 <a
                   href="/contact"
-                  onClick={closeMobileMenu}
+                  onClick={() => { closeMobileMenu(); handleNavClick("Contact", "/contact"); }}
                   className="text-base font-medium tracking-wide text-gray-600 hover:text-amber-700 transition-colors py-2"
                 >
                   Contact

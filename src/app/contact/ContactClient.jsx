@@ -1,7 +1,8 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { motion } from "framer-motion";
+import { trackEvent } from "../lib/gtag";
 
 export default function ContactClient() {
     const [formData, setFormData] = useState({
@@ -13,9 +14,15 @@ export default function ContactClient() {
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [isSubmitted, setIsSubmitted] = useState(false);
     const [errors, setErrors] = useState({});
+    const formStarted = useRef(false);
 
     const handleInputChange = (e) => {
         const { name, value } = e.target;
+        // Track the first interaction with the form
+        if (!formStarted.current) {
+            formStarted.current = true;
+            trackEvent("contact_form_start");
+        }
         setFormData(prev => ({
             ...prev,
             [name]: value
@@ -52,9 +59,13 @@ export default function ContactClient() {
     };
 
     const handleSubmit = async () => {
-        if (!validateForm()) return;
+        if (!validateForm()) {
+            trackEvent("contact_form_validation_error");
+            return;
+        }
 
         setIsSubmitting(true);
+        trackEvent("contact_form_submit");
 
         try {
             // Using Formspree - replace with your actual form ID
@@ -72,7 +83,9 @@ export default function ContactClient() {
             });
 
             if (response.ok) {
+                trackEvent("contact_form_success");
                 setIsSubmitted(true);
+                formStarted.current = false;
                 setFormData({
                     firstName: "",
                     lastName: "",
@@ -84,6 +97,7 @@ export default function ContactClient() {
             }
         } catch (error) {
             console.error('Form submission error:', error);
+            trackEvent("contact_form_error", { error_message: error.message });
             alert('There was an error sending your message. Please try again.');
         } finally {
             setIsSubmitting(false);

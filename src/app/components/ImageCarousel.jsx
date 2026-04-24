@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
+import { trackEvent } from "../lib/gtag";
 
 export default function ImageCarousel({ images }) {
     const [index, setIndex] = useState(0);
@@ -12,14 +13,17 @@ export default function ImageCarousel({ images }) {
     const prev = () => {
         setIndex((i) => (i - 1 + images.length) % images.length);
         setAutoKey((k) => k + 1);
+        trackEvent("carousel_prev", { total_images: images.length });
     };
     const next = () => {
         setIndex((i) => (i + 1) % images.length);
         setAutoKey((k) => k + 1);
+        trackEvent("carousel_next", { total_images: images.length });
     };
     const goTo = (i) => {
         setIndex(i);
         setAutoKey((k) => k + 1);
+        trackEvent("carousel_dot_click", { target_index: i, total_images: images.length });
     };
 
     useEffect(() => {
