@@ -9,6 +9,8 @@ export default function CityInFlamesClient() {
 
     const images = [
         { src: "/Cityflames.jpg", alt: "Poster for City in Flames, a historical drama about the 1922 Smyrna crisis" },
+        { src: "/Cityflames2.png", alt: "Poster for City in Flames, a historical drama about the 1922 Smyrna crisis" },
+
     ];
     const fadeInUp = {
         hidden: { opacity: 0, y: 30 },
@@ -85,7 +87,14 @@ export default function CityInFlamesClient() {
                     <motion.p className="text-2xl xl:text-3xl text-gray-600 font-light">
                         Historical Drama Feature Film
                     </motion.p>
+
                 </header>
+                
+                <motion.div className="text-center mb-16" variants={fadeInUp}>
+                    <span className="px-6 py-3 rounded-full text-lg xl:text-xl font-medium bg-yellow-100 text-yellow-800 border-2 border-yellow-300 inline-flex items-center">
+                        🔥 HOT OFF THE PRESS City in Flames has just been selected as a quarter finalist in the New York International Screenplay Awards.
+                    </span>
+                </motion.div>
 
 
                 <section className="grid xl:grid-cols-2 gap-16 items-start" variants={staggerContainer}>
