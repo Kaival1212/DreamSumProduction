@@ -24,7 +24,7 @@ export default function CityInFlamesClient() {
     }, [isInView]);
 
     const images = [
-        { src: "/Cityflames.jpg", alt: "Poster for City in Flames, a historical drama about the 1922 Smyrna crisis" },
+        // { src: "/Cityflames.jpg", alt: "Poster for City in Flames, a historical drama about the 1922 Smyrna crisis" },
         { src: "/Cityflames2.png", alt: "Poster for City in Flames, a historical drama about the 1922 Smyrna crisis" },
 
     ];
