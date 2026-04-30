@@ -1,11 +1,27 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { motion, useInView } from "framer-motion";
 import { useRouter } from "next/navigation";
+import { useEffect, useRef } from "react";
 import ImageCarousel from "../../components/ImageCarousel";
 
 export default function CityInFlamesClient() {
     const router = useRouter();
+    const bannerRef = useRef(null);
+    const isInView = useInView(bannerRef, { once: true });
+
+    useEffect(() => {
+        if (!isInView) return;
+        let cancelled = false;
+        import("canvas-confetti").then(({ default: confetti }) => {
+            if (cancelled) return;
+            const rect = bannerRef.current?.getBoundingClientRect();
+            const x = rect ? (rect.left + rect.width / 2) / window.innerWidth : 0.5;
+            const y = rect ? (rect.top + rect.height / 2) / window.innerHeight : 0.4;
+            confetti({ particleCount: 120, spread: 80, origin: { x, y }, colors: ["#f59e0b", "#ef4444", "#fbbf24", "#ffffff", "#fde68a"] });
+        });
+        return () => { cancelled = true; };
+    }, [isInView]);
 
     const images = [
         { src: "/Cityflames.jpg", alt: "Poster for City in Flames, a historical drama about the 1922 Smyrna crisis" },
@@ -90,7 +106,7 @@ export default function CityInFlamesClient() {
 
                 </header>
                 
-                <motion.div className="text-center mb-16" variants={fadeInUp}>
+                <motion.div ref={bannerRef} className="text-center mb-16" variants={fadeInUp}>
                     <span className="px-6 py-3 rounded-full text-lg xl:text-xl font-medium bg-yellow-100 text-yellow-800 border-2 border-yellow-300 inline-flex items-center">
                         🔥 HOT OFF THE PRESS City in Flames has just been selected as a quarter finalist in the New York International Screenplay Awards.
                     </span>
