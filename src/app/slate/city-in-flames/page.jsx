@@ -6,7 +6,7 @@ export const metadata = {
   openGraph: {
     title: "City in Flames | Historical Drama Feature Film",
     description: "An epic historical drama about the 1922 Smyrna tragedy and the heroic American minister who saved hundreds of thousands of lives.",
-    images: [{ url: "/Cityflames.jpg", alt: "City in Flames - Historical Drama Film Poster" }],
+    images: [{ url: "/Cityflames2.png", alt: "City in Flames - Historical Drama Film Poster" }],
     url: "https://www.dreamsumproductions.co.uk/slate/city-in-flames",
   },
 };
