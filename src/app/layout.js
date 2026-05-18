@@ -22,7 +22,7 @@ export const metadata = {
     type: 'website',
     siteName: 'SJH Studios',
     locale: 'en_GB',
-    images: [{ url: '/logo.png', alt: 'SJH Studios' }],
+    images: [{ url: '/logonew.webp', alt: 'SJH Studios' }],
   },
   robots: {
     index: true,

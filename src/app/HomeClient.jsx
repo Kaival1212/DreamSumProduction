@@ -115,7 +115,7 @@ export default function HomeClient() {
               }}
             >
               <motion.img
-                src="/logo.png"
+                src="/logonew.webp"
                 alt="SJH Studios - to inspire, inform, entertain"
                 className="w-full rounded-lg"
                 initial={{ opacity: 0, scale: 2.1 }}

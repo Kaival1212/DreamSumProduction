@@ -6,7 +6,7 @@ export const metadata = {
   openGraph: {
     title: "SJH Studios | London Film & Podcast Production Company",
     description: "A London-based production company creating compelling films and podcasts. Home of Goodbye Sunshine (Cannes-selected) and multiple award-recognised projects.",
-    images: [{ url: "/logo.png", alt: "SJH Studios" }],
+    images: [{ url: "/logonew.webp", alt: "SJH Studios" }],
     url: "https://www.sjhstudios.co.uk",
   },
 };
@@ -23,7 +23,7 @@ export default function Home() {
             "name": "SJH Studios",
             "description": "A London-based film and podcast production company that produces feature films, short films and podcast dramas.",
             "url": "https://www.sjhstudios.co.uk",
-            "logo": "https://www.sjhstudios.co.uk/logo.png",
+            "logo": "https://www.sjhstudios.co.uk/logonew.webp",
             "address": {
               "@type": "PostalAddress",
               "addressLocality": "London",
