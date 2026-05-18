@@ -67,7 +67,7 @@ export default function DonateInvestPage() {
                     name: `${formData.firstName} ${formData.lastName}`,
                     email: formData.email,
                     message: formData.message,
-                    _subject: 'New Dreamsum Productions Contact Form Submission'
+                    _subject: 'New SJH Studios Contact Form Submission'
                 }),
             });
 
@@ -161,7 +161,7 @@ export default function DonateInvestPage() {
                                     whileHover={{ scale: 1.02 }}
                                     style={{ display: "inline-block", fontFamily: 'serif' }}
                                 >
-                                    Dreamsum Productions
+                                    SJH Studios
                                 </motion.em>{" "}
                                 via the contact form, to start up a conversation.
                             </motion.p>
@@ -174,7 +174,7 @@ export default function DonateInvestPage() {
                                 Ultimately though, our mission is simple: to make the world a better place, however small our contribution.
                             </motion.p>
 
-                            <motion.p variants={fadeInUp}>
+                            {/* <motion.p variants={fadeInUp}>
                                 And, however{" "}
                                 <motion.em
                                     className="text-amber-700 italic"
@@ -184,7 +184,7 @@ export default function DonateInvestPage() {
                                     dreamsum
                                 </motion.em>{" "}
                                 this sounds.
-                            </motion.p>
+                            </motion.p> */}
 
                             <motion.div className="pt-6 border-t border-gray-200" variants={fadeInUp}>
                                 <motion.p className="font-medium text-gray-800 text-xl" variants={fadeInUp}>
@@ -307,7 +307,7 @@ export default function DonateInvestPage() {
                                                 rows={6}
                                                 className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-transparent transition-all duration-200 bg-white/80 resize-none ${errors.message ? 'border-red-500' : 'border-gray-300'
                                                     }`}
-                                                placeholder="Tell us about your interest in investing, donating, or collaborating with Dreamsum Productions..."
+                                                placeholder="Tell us about your interest in investing, donating, or collaborating with SJH Studios..."
                                             />
                                             {errors.message && (
                                                 <p className="text-red-500 text-xs mt-1">{errors.message}</p>

@@ -8,25 +8,21 @@ import Script from "next/script";
 const GA_MEASUREMENT_ID = "G-VD0TB2FS8Y";
 
 export const metadata = {
-  metadataBase: new URL('https://www.dreamsumproductions.co.uk'),
+  metadataBase: new URL('https://www.sjhstudios.co.uk'),
   title: {
-    default: 'Dreamsum Productions | To Inspire, Inform, Entertain',
-    template: '%s | Dreamsum Productions',
+    default: 'SJH Studios | To Inspire, Inform, Entertain',
+    template: '%s | SJH Studios',
   },
-  description: 'Dreamsum Productions is a London-based company producing high-quality feature films, short films and podcast dramas that inspire, inform and entertain.',
-  keywords: ['Dreamsum Productions', 'London film production', 'S.J. Horan', 'feature films', 'short films', 'podcast dramas', 'screenwriter London'],
+  description: 'SJH Studios is a London-based company producing high-quality feature films, short films and podcast dramas that inspire, inform and entertain.',
+  keywords: ['SJH Studios', 'London film production', 'S.J. Horan', 'feature films', 'short films', 'podcast dramas', 'screenwriter London'],
   authors: [{ name: 'S.J. Horan' }],
   creator: 'S.J. Horan',
-  publisher: 'Dreamsum Productions',
+  publisher: 'SJH Studios',
   openGraph: {
     type: 'website',
-    siteName: 'Dreamsum Productions',
+    siteName: 'SJH Studios',
     locale: 'en_GB',
-    images: [{ url: '/logo.png', alt: 'Dreamsum Productions' }],
-  },
-  twitter: {
-    card: 'summary_large_image',
-    creator: '@DreamsumProd',
+    images: [{ url: '/logo.png', alt: 'SJH Studios' }],
   },
   robots: {
     index: true,

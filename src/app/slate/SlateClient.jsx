@@ -183,7 +183,7 @@ export default function SlateClient() {
                     </motion.h1>
                     <motion.div className="w-32 h-1 bg-amber-400 mx-auto rounded-full mb-8" />
                     <motion.p className="text-2xl xl:text-3xl text-gray-600 font-light max-w-4xl mx-auto">
-                        Current and upcoming projects from Dreamsum Productions -
+                        Current and upcoming projects from SJH Studios -
                         featuring compelling stories that inspire, inform, and entertain.
                     </motion.p>
                 </motion.div>

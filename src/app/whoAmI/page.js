@@ -7,7 +7,7 @@ export const metadata = {
     title: "S.J. Horan | London Filmmaker & Screenwriter",
     description: "Explore the portfolio of S.J. Horan — London filmmaker, screenwriter and producer behind Goodbye Sunshine and multiple award-recognised feature films.",
     images: [{ url: "/Sallyphoto.jpg", alt: "S.J. Horan - Writer, filmmaker and producer" }],
-    url: "https://www.dreamsumproductions.co.uk/whoAmI",
+    url: "https://www.sjhstudios.co.uk/whoAmI",
   },
 };
 
@@ -22,7 +22,7 @@ export default function WhoAmIPage() {
             "@type": "Person",
             "name": "S.J. Horan",
             "jobTitle": "Filmmaker, Screenwriter, Producer",
-            "image": "https://www.dreamsumproductions.co.uk/Sallyphoto.jpg",
+            "image": "https://www.sjhstudios.co.uk/Sallyphoto.jpg",
             "address": {
               "@type": "PostalAddress",
               "addressLocality": "London",
@@ -31,8 +31,8 @@ export default function WhoAmIPage() {
             "knowsLanguage": ["English", "French", "Spanish", "Italian", "German"],
             "worksFor": {
               "@type": "Organization",
-              "name": "Dreamsum Productions",
-              "url": "https://www.dreamsumproductions.co.uk"
+              "name": "SJH Studios",
+              "url": "https://www.sjhstudios.co.uk"
             },
             "hasCredential": [
               { "@type": "EducationalOccupationalCredential", "name": "MA in Creative Writing (Plays and Scripts)" },

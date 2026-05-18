@@ -7,7 +7,7 @@ export const metadata = {
     title: "Supper's Off | Romantic Comedy Feature Film",
     description: "A romantic comedy set in Tuscany following Daisy's escape from routine life into love and laughter. Praised by Raindance Film School.",
     images: [{ url: "/supper2.png", alt: "Supper's Off - Romantic Comedy Film Poster" }],
-    url: "https://www.dreamsumproductions.co.uk/slate/suppers-off",
+    url: "https://www.sjhstudios.co.uk/slate/suppers-off",
   },
 };
 
@@ -24,8 +24,8 @@ export default function SuppersOffPage() {
             "description": "A romantic comedy set in Tuscany following Daisy's escape from routine life, inspired by Shirley Valentine. Praised by Raindance Film School.",
             "genre": ["Romantic Comedy", "Feature Film"],
             "inLanguage": "en",
-            "image": "https://www.dreamsumproductions.co.uk/supper2.png",
-            "productionCompany": { "@type": "Organization", "name": "Dreamsum Productions" },
+            "image": "https://www.sjhstudios.co.uk/supper2.png",
+            "productionCompany": { "@type": "Organization", "name": "SJH Studios" },
             "author": { "@type": "Person", "name": "S.J. Horan" }
           })
         }}

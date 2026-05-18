@@ -32,7 +32,7 @@ export default function Footer() {
             <div className="max-w-7xl mx-auto px-6">
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
                     <div>
-                        <h3 className="text-xl font-light tracking-[0.1em] mb-4">DREAMSUM PRODUCTIONS</h3>
+                        <h3 className="text-xl font-light tracking-[0.1em] mb-4">SJH STUDIOS</h3>
                         <p className="text-gray-300 font-light mb-4">
                             Creating meaningful cinema and podcasts that inspire, inform and entertain
                         </p>
@@ -64,7 +64,9 @@ export default function Footer() {
                 </div>
 
                 <div className="border-t border-gray-800 mt-12 pt-8 text-center">
-                    <p className="text-gray-400 text-sm font-light">© 2025 Dreamsum Productions. All rights reserved.</p>
+                    <p className="text-gray-400 text-sm font-light">
+                          © {new Date().getFullYear()} SJH Studios. All rights reserved.
+                        </p>
                 </div>
             </div>
         </footer>

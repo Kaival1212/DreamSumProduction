@@ -34,7 +34,7 @@ export default function Header() {
           <div className="flex md:flex-col items-center justify-around pb-4">
             <div className="flex items-center">
               <a href="/" className="text-xl md:text-3xl font-light tracking-[0.2em] text-gray-800 hover:text-amber-700 transition-colors">
-                DREAMSUM PRODUCTIONS
+                SJH STUDIOS
               </a>
             </div>
 
