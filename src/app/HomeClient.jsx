@@ -96,7 +96,7 @@ export default function HomeClient() {
         </div>
 
         <motion.div
-          className="relative z-10 w-full mx-auto px-6 xl:px-96"
+          className="relative z-10 w-full mx-auto px-2 md:px-6 xl:px-96"
           style={{ y: heroY }}
         >
           <motion.div
@@ -104,7 +104,7 @@ export default function HomeClient() {
             variants={fadeInUp}
           >
             <motion.div
-              className="relative bg-white/80 backdrop-blur-xl p-8 xl:p-10 rounded-2xl shadow-2xl border border-white/20 mx-auto "
+              className="relative bg-white/80 backdrop-blur-xl p-3 md:p-8 xl:p-10 rounded-2xl shadow-2xl border border-white/20 mx-auto "
               whileHover={{
                 scale: 1.02,
                 y: -5,
