@@ -7,7 +7,7 @@ export const metadata = {
     title: "A Spell in Greece | Romantic Comedy Feature Film",
     description: "A feel-good romantic comedy set on a Greek island — Cannes Film Awards 2026 first-round qualifier. Written by S.J. Horan.",
     images: [{ url: "/spell.png", alt: "A Spell in Greece - Romantic Comedy Film Poster" }],
-    url: "https://www.dreamsumproductions.co.uk/slate/spell-in-greece",
+    url: "https://www.sjhstudios.co.uk/slate/spell-in-greece",
   },
 };
 
@@ -24,8 +24,8 @@ export default function SpellInGreecePage() {
             "description": "A romantic comedy set on a Greek island following Saffron's hilarious battle to win her partner's affections. Cannes Film Awards 2026 first-round qualifier.",
             "genre": ["Romantic Comedy", "Feature Film"],
             "inLanguage": "en",
-            "image": "https://www.dreamsumproductions.co.uk/spell.png",
-            "productionCompany": { "@type": "Organization", "name": "Dreamsum Productions" },
+            "image": "https://www.sjhstudios.co.uk/spell.png",
+            "productionCompany": { "@type": "Organization", "name": "SJH Studios" },
             "author": { "@type": "Person", "name": "S.J. Horan" }
           })
         }}

@@ -31,10 +31,11 @@ export default function Header() {
         }`}
     >
         <nav className="max-w-7xl mx-auto px-6 py-4 ">
-          <div className="flex md:flex-col items-center justify-around pb-4">
+          <div className="flex md:flex-col items-center justify-between md:justify-around pb-4">
+            <div className="md:hidden w-10 shrink-0" aria-hidden="true" />
             <div className="flex items-center">
               <a href="/" className="text-xl md:text-3xl font-light tracking-[0.2em] text-gray-800 hover:text-amber-700 transition-colors">
-                DREAMSUM PRODUCTIONS
+                SJH STUDIOS
               </a>
             </div>
 

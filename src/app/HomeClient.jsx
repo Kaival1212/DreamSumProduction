@@ -96,7 +96,7 @@ export default function HomeClient() {
         </div>
 
         <motion.div
-          className="relative z-10 w-full mx-auto px-6 xl:px-96"
+          className="relative z-10 w-full mx-auto px-2 md:px-6 xl:px-96"
           style={{ y: heroY }}
         >
           <motion.div
@@ -104,7 +104,7 @@ export default function HomeClient() {
             variants={fadeInUp}
           >
             <motion.div
-              className="relative bg-white/80 backdrop-blur-xl p-8 xl:p-10 rounded-2xl shadow-2xl border border-white/20 mx-auto "
+              className="relative bg-white/80 backdrop-blur-xl p-3 md:p-8 xl:p-10 rounded-2xl shadow-2xl border border-white/20 mx-auto "
               whileHover={{
                 scale: 1.02,
                 y: -5,
@@ -115,8 +115,8 @@ export default function HomeClient() {
               }}
             >
               <motion.img
-                src="/logo.png"
-                alt="Dreamsum Productions - to inspire, inform, entertain"
+                src="/logonew.webp"
+                alt="SJH Studios - to inspire, inform, entertain"
                 className="w-full rounded-lg"
                 initial={{ opacity: 0, scale: 2.1 }}
                 animate={{ opacity: 1, scale: 1 }}
@@ -138,7 +138,7 @@ export default function HomeClient() {
                 className="text-3xl xl:text-4xl font-light text-amber-100 mb-3 tracking-wide"
                 style={{ fontFamily: 'serif' }}
               >
-                Dreamsum Productions
+                SJH Studios
               </motion.h1>
               <motion.p
                 className="text-lg xl:text-xl font-light italic text-amber-200/90"
@@ -204,7 +204,7 @@ export default function HomeClient() {
                 whileHover={{ scale: 1.02 }}
                 style={{ display: "inline-block" }}
               >
-                Dreamsum Productions
+                SJH Studios
               </motion.span>{" "}
               is a London-based company that produces and promotes high-quality feature films,
               short films and podcast dramas, comedies and interviews with figures from the creative industries.
