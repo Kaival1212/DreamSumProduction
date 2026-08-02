@@ -7,7 +7,7 @@ export const metadata = {
     title: "City in Flames | Historical Drama Feature Film",
     description: "An epic historical drama about the 1922 Smyrna tragedy and the heroic American minister who saved hundreds of thousands of lives.",
     images: [{ url: "/Cityflames2.png", alt: "City in Flames - Historical Drama Film Poster" }],
-    url: "https://www.sjhstudios.co.uk/slate/city-in-flames",
+    url: "https://www.dreamsumproductions.co.uk/slate/city-in-flames",
   },
 };
 
@@ -24,8 +24,8 @@ export default function CityInFlamesPage() {
             "description": "A historical drama about the 1922 Smyrna crisis, told through Asa K. Jennings' heroic efforts to evacuate hundreds of thousands of Greek and Armenian refugees.",
             "genre": ["Historical Drama", "Feature Film"],
             "inLanguage": "en",
-            "image": "https://www.sjhstudios.co.uk/Cityflames.jpg",
-            "productionCompany": { "@type": "Organization", "name": "SJH Studios" },
+            "image": "https://www.dreamsumproductions.co.uk/Cityflames.jpg",
+            "productionCompany": { "@type": "Organization", "name": "Dreamsum Studios" },
             "author": { "@type": "Person", "name": "S.J. Horan" }
           })
         }}

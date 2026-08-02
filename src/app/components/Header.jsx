@@ -35,7 +35,7 @@ export default function Header() {
             <div className="md:hidden w-10 shrink-0" aria-hidden="true" />
             <div className="flex items-center">
               <a href="/" className="text-xl md:text-3xl font-light tracking-[0.2em] text-gray-800 hover:text-amber-700 transition-colors">
-                SJH STUDIOS
+                DREAMSUM STUDIOS
               </a>
             </div>
 

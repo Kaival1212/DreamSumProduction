@@ -116,7 +116,7 @@ export default function HomeClient() {
             >
               <motion.img
                 src="/logonew.webp"
-                alt="SJH Studios - to inspire, inform, entertain"
+                alt="Dreamsum Studios - to inspire, inform, entertain"
                 className="w-full rounded-lg"
                 initial={{ opacity: 0, scale: 2.1 }}
                 animate={{ opacity: 1, scale: 1 }}
@@ -138,7 +138,7 @@ export default function HomeClient() {
                 className="text-3xl xl:text-4xl font-light text-amber-100 mb-3 tracking-wide"
                 style={{ fontFamily: 'serif' }}
               >
-                SJH Studios
+                Dreamsum Studios
               </motion.h1>
               <motion.p
                 className="text-lg xl:text-xl font-light italic text-amber-200/90"
@@ -204,7 +204,7 @@ export default function HomeClient() {
                 whileHover={{ scale: 1.02 }}
                 style={{ display: "inline-block" }}
               >
-                SJH Studios
+                Dreamsum Studios
               </motion.span>{" "}
               is a London-based company that produces and promotes high-quality feature films,
               short films and podcast dramas, comedies and interviews with figures from the creative industries.

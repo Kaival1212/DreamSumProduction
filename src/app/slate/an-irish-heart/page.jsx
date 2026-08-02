@@ -7,7 +7,7 @@ export const metadata = {
     title: "An Irish Heart | Romantic Comedy Feature Film",
     description: "A funny and romantic story about finding out who we really are, before it's too late. Set in the beautiful emerald isle of Ireland.",
     images: [{ url: "/Irish.png", alt: "An Irish Heart - Romantic Comedy Film Poster" }],
-    url: "https://www.sjhstudios.co.uk/slate/an-irish-heart",
+    url: "https://www.dreamsumproductions.co.uk/slate/an-irish-heart",
   },
 };
 
@@ -24,8 +24,8 @@ export default function AnIrishHeartPage() {
             "description": "A romantic comedy set in Ireland following Maria's journey to choose between stable love and adventure. Currently in pre-production.",
             "genre": ["Romantic Comedy", "Feature Film"],
             "inLanguage": "en",
-            "image": "https://www.sjhstudios.co.uk/Irish.png",
-            "productionCompany": { "@type": "Organization", "name": "SJH Studios" },
+            "image": "https://www.dreamsumproductions.co.uk/Irish.png",
+            "productionCompany": { "@type": "Organization", "name": "Dreamsum Studios" },
             "author": { "@type": "Person", "name": "S.J. Horan" }
           })
         }}
