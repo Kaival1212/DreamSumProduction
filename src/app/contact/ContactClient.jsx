@@ -78,7 +78,7 @@ export default function ContactClient() {
                     name: `${formData.firstName} ${formData.lastName}`,
                     email: formData.email,
                     message: formData.message,
-                    _subject: 'New SJH Studios Contact Form Submission'
+                    _subject: 'New Dreamsum Studios Contact Form Submission'
                 }),
             });
 
@@ -202,7 +202,7 @@ export default function ContactClient() {
                                         whileHover={{ scale: 1.02 }}
                                         style={{ display: "inline-block", fontFamily: 'serif' }}
                                     >
-                                        SJH Studios
+                                        Dreamsum Studios
                                     </motion.em>{" "}
                                     via the email below to start up a conversation.
                                 </motion.p>
@@ -405,7 +405,7 @@ export default function ContactClient() {
                                                 onChange={handleInputChange}
                                                 rows={6}
                                                 className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-transparent transition-all duration-200 bg-white/90 resize-none ${errors.message ? 'border-red-500' : 'border-gray-300'}`}
-                                                placeholder="Tell us about your interest in investing, donating, or collaborating with SJH Studios..."
+                                                placeholder="Tell us about your interest in investing, donating, or collaborating with Dreamsum Studios..."
                                             />
                                             {errors.message && (
                                                 <p className="text-red-500 text-xs mt-1">{errors.message}</p>

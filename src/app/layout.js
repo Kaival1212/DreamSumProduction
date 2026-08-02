@@ -8,21 +8,21 @@ import Script from "next/script";
 const GA_MEASUREMENT_ID = "G-VD0TB2FS8Y";
 
 export const metadata = {
-  metadataBase: new URL('https://www.sjhstudios.co.uk'),
+  metadataBase: new URL('https://www.dreamsumproductions.co.uk'),
   title: {
-    default: 'SJH Studios | To Inspire, Inform, Entertain',
-    template: '%s | SJH Studios',
+    default: 'Dreamsum Studios | To Inspire, Inform, Entertain',
+    template: '%s | Dreamsum Studios',
   },
-  description: 'SJH Studios is a London-based company producing high-quality feature films, short films and podcast dramas that inspire, inform and entertain.',
-  keywords: ['SJH Studios', 'London film production', 'S.J. Horan', 'feature films', 'short films', 'podcast dramas', 'screenwriter London'],
+  description: 'Dreamsum Studios is a London-based company producing high-quality feature films, short films and podcast dramas that inspire, inform and entertain.',
+  keywords: ['Dreamsum Studios', 'London film production', 'S.J. Horan', 'feature films', 'short films', 'podcast dramas', 'screenwriter London'],
   authors: [{ name: 'S.J. Horan' }],
   creator: 'S.J. Horan',
-  publisher: 'SJH Studios',
+  publisher: 'Dreamsum Studios',
   openGraph: {
     type: 'website',
-    siteName: 'SJH Studios',
+    siteName: 'Dreamsum Studios',
     locale: 'en_GB',
-    images: [{ url: '/logonew.webp', alt: 'SJH Studios' }],
+    images: [{ url: '/logonew.webp', alt: 'Dreamsum Studios' }],
   },
   robots: {
     index: true,

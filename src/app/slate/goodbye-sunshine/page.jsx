@@ -7,7 +7,7 @@ export const metadata = {
     title: "Goodbye Sunshine | Cannes-Selected Short Film",
     description: "A powerful short film exploring knife crime through a mother's grief. Selected for the Cannes Indie Shorts Festival.",
     images: [{ url: "/goodbyesun.png", alt: "Goodbye Sunshine - Official Festival Poster" }],
-    url: "https://www.sjhstudios.co.uk/slate/goodbye-sunshine",
+    url: "https://www.dreamsumproductions.co.uk/slate/goodbye-sunshine",
   },
 };
 
@@ -24,8 +24,8 @@ export default function GoodbyeSunshinePage() {
             "description": "A Cannes Indie Shorts Festival selected short film about the devastating impact of knife crime in London, seen through a mother's grief.",
             "genre": ["Drama", "Short Film"],
             "inLanguage": "en",
-            "image": "https://www.sjhstudios.co.uk/goodbyesun.png",
-            "productionCompany": { "@type": "Organization", "name": "SJH Studios" },
+            "image": "https://www.dreamsumproductions.co.uk/goodbyesun.png",
+            "productionCompany": { "@type": "Organization", "name": "Dreamsum Studios" },
             "author": { "@type": "Person", "name": "S.J. Horan" },
             "director": { "@type": "Person", "name": "Ufuk Gokkaya" }
           })

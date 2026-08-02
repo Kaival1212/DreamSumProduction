@@ -2,12 +2,12 @@ import SlateClient from "./SlateClient";
 
 export const metadata = {
   title: "On the Slate | Film Portfolio",
-  description: "Explore SJH Studios' current and upcoming film projects: Goodbye Sunshine (Cannes-selected), City in Flames, Supper's Off, A Spell in Greece, and An Irish Heart.",
+  description: "Explore Dreamsum Studios' current and upcoming film projects: Goodbye Sunshine (Cannes-selected), City in Flames, Supper's Off, A Spell in Greece, and An Irish Heart.",
   openGraph: {
-    title: "On the Slate | SJH Studios Film Portfolio",
-    description: "Current and upcoming projects from SJH Studios — compelling stories that inspire, inform and entertain. Seeking investors and co-producers.",
+    title: "On the Slate | Dreamsum Studios Film Portfolio",
+    description: "Current and upcoming projects from Dreamsum Studios — compelling stories that inspire, inform and entertain. Seeking investors and co-producers.",
     images: [{ url: "/goodbyesun.png", alt: "Goodbye Sunshine - Cannes Selected Short Film" }],
-    url: "https://www.sjhstudios.co.uk/slate",
+    url: "https://www.dreamsumproductions.co.uk/slate",
   },
 };
 
@@ -20,14 +20,14 @@ export default function OnTheSlatePage() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "ItemList",
-            "name": "SJH Studios Film Portfolio",
-            "description": "Current and upcoming film projects from SJH Studios",
+            "name": "Dreamsum Studios Film Portfolio",
+            "description": "Current and upcoming film projects from Dreamsum Studios",
             "itemListElement": [
-              { "@type": "ListItem", "position": 1, "name": "Goodbye Sunshine", "url": "https://www.sjhstudios.co.uk/slate/goodbye-sunshine" },
-              { "@type": "ListItem", "position": 2, "name": "City in Flames", "url": "https://www.sjhstudios.co.uk/slate/city-in-flames" },
-              { "@type": "ListItem", "position": 3, "name": "Supper's Off", "url": "https://www.sjhstudios.co.uk/slate/suppers-off" },
-              { "@type": "ListItem", "position": 4, "name": "A Spell in Greece", "url": "https://www.sjhstudios.co.uk/slate/spell-in-greece" },
-              { "@type": "ListItem", "position": 5, "name": "An Irish Heart", "url": "https://www.sjhstudios.co.uk/slate/an-irish-heart" }
+              { "@type": "ListItem", "position": 1, "name": "Goodbye Sunshine", "url": "https://www.dreamsumproductions.co.uk/slate/goodbye-sunshine" },
+              { "@type": "ListItem", "position": 2, "name": "City in Flames", "url": "https://www.dreamsumproductions.co.uk/slate/city-in-flames" },
+              { "@type": "ListItem", "position": 3, "name": "Supper's Off", "url": "https://www.dreamsumproductions.co.uk/slate/suppers-off" },
+              { "@type": "ListItem", "position": 4, "name": "A Spell in Greece", "url": "https://www.dreamsumproductions.co.uk/slate/spell-in-greece" },
+              { "@type": "ListItem", "position": 5, "name": "An Irish Heart", "url": "https://www.dreamsumproductions.co.uk/slate/an-irish-heart" }
             ]
           })
         }}
