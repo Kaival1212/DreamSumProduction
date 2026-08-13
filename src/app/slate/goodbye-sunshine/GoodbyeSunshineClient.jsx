@@ -9,7 +9,9 @@ export default function GoodbyeSunshineClient() {
 
     const images = [
         { src: "/goodbyesun.png", alt: "Goodbye Sunshine - Official Festival Poster" },
-        { src: "/goodbyesunold.png", alt: "Goodbye Sunshine - Early Concept Poster" },
+        { src: "/goodbyesunold.png", alt: "Goodbye Sunshine - Early Concept Poster" },        
+        { src: "/goodbyesun2.png", alt: "Goodbye Sunshine - Early Concept Poster" }
+
     ];
 
     const fadeInUp = {
