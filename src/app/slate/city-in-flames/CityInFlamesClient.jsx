@@ -27,6 +27,7 @@ export default function CityInFlamesClient() {
         { src: "/Cityflames2.png", alt: "Poster for City in Flames, a historical drama about the 1922 Smyrna crisis" },
         { src: "/Cityflames3.png", alt: "A scene from City in Flames, showing the chaos of the Smyrna crisis" },
         { src: "/Cityflames4.png", alt: "A still from City in Flames, depicting the evacuation of refugees" },
+        { src: "/Cityflames5.png", alt: "A still from City in Flames, depicting the evacuation of refugees" },
 
     ];
     const fadeInUp = {
